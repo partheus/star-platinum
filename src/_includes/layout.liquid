@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>{{ pageTitle }}</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/" class="link">Home</a></li>
+        <li><a href="/writing" class="link">Writing</a></li>
+        <li><a href="/about" class="link">About</a></li>
+      </ul>
+    </nav>
+    <h1 class="pagetitle">{{ pageTitle }}</h1>
+    <div class="content">
+    {{ content }}
+  </div>
+<footer>
+   <a href="https://parth.ninja" class="link"> © Parth Shiralkar, 2020</a>
+</footer>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+</body>
+</html>
