@@ -58,13 +58,13 @@
   // svg span for button icons
   span {
     display: inline-block;
-    margin-left: 6px;
+    margin-left: 0.35em;
     transition: margin-left 0.4s ease; /* Smooth transition for the left property */
   }
 
   &:hover {
     span {
-        margin-left: 12px;
+        margin-left: 0.75em;
     }
   }
 }

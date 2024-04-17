@@ -5,17 +5,21 @@
     margin: 0 0 2em;
     flex-direction: column;
     display: none; // hides the menu initially on mobile
+    font-family: 'Rubik One', sans-serif;
     font-weight: 700;
   }
 
   li a {
     color: $color--primary;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 1.1em;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: $color--tertiary;
+    transition: all 0.3s ease;
 
     &:hover {
-      text-decoration: underline;
       color: $color--tertiary;
+      text-decoration-color: $color--primary;
     }
   }
 
@@ -73,7 +77,6 @@
         display: inline-block;
         margin-right: 2.75em;
         margin-bottom: 0.5em;
-        text-decoration: none;
       }
     }
   }

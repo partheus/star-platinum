@@ -1,1 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap&family=Space+Mono:wght@400;700&display=swap');
+
+// path: fontfiles/RubikOne-Regular.ttf
+
+// set up the font-face
+
+@font-face {
+  font-family: 'Rubik One';
+  src: url('../fontfiles/RubikOne-Regular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
