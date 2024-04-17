@@ -8,16 +8,17 @@
 </head>
 <body>
 
-<div class="landing-page__container">
-    <div class="content">
+<div class="landing-page-container">
+    <div class="landing-page-container__content">
         <h1 class="pagetitle">{{ pageTitle }}</h1>
-        <h2 class="subtitle">{{ pageSubtitle }}</h2>
+        <h2 class="pagesubtitle">{{ pageSubtitle }}</h2>
         {{ content | safe }}
     </div>
-    <div class="landing-svg">
+    <div class="landing-page__container__image">
         <img src="/img/rose-vines.svg" alt="Main SVG"/>
     </div>
 </div>
+<div id="animatedCursor"></div>
 <footer>
     <a href="https://parth.ninja" class="link">Parth Shiralkar, 2024 and forever</a>
 </footer>
