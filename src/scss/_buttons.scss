@@ -1,0 +1,49 @@
+.button {
+  // generic button with em values so i can make &--primary, &--secondary, etc.
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.45em 1.5em;
+  border-radius: 1.25em;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &--primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+
+    &:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+  }
+
+  &--secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+
+    &:hover {
+      background-color: #545b62;
+      border-color: #4e555b;
+    }
+  }
+
+  //tertiary button
+  &--tertiary {
+    background-color: #fff;
+    border-color: #6c757d;
+    color: #6c757d;
+
+    &:hover {
+      background-color: #f8f9fa;
+      border-color: #6c757d;
+      color: #6c757d;
+    }
+  }
+
+}
