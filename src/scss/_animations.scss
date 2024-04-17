@@ -1,0 +1,12 @@
+#animatedCursor {
+  width: 2.9em;
+  height: 2.9em;
+  border-radius: 50%;
+  background-color: #fff; /* White background */
+  border: 5px solid #000; /* Contrasting outline */
+  mix-blend-mode: difference; /* Enhances visibility against varying backgrounds */
+  position: absolute;
+  pointer-events: none;
+  display: none; /* Start hidden */
+  z-index: 10000; /* Ensure it's above other elements */
+}
