@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/main.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>{{ pageTitle }}</title>
 </head>
 <body>
-<h1 class="pagetitle">{{ pageTitle }}</h1>
-<h2 class="subtitle">{{ pageSubtitle }}</h2>
-<div class="content">
-    {{ content | safe }}
+
+<div class="landing-page__container">
+    <div class="content">
+        <h1 class="pagetitle">{{ pageTitle }}</h1>
+        <h2 class="subtitle">{{ pageSubtitle }}</h2>
+        {{ content | safe }}
+    </div>
+    <div class="landing-svg">
+        <img src="/img/rose-vines.svg" alt="Main SVG"/>
+    </div>
 </div>
 <footer>
-    <a href="https://parth.ninja" class="link"> © Parth Shiralkar, 2024</a>
+    <a href="https://parth.ninja" class="link">Parth Shiralkar, 2024 and forever</a>
 </footer>
 <script type="module" src="/js/animations.js"></script>
 </body>
