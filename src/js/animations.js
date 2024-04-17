@@ -25,6 +25,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// animate the letters in the span .art-word so that they appear one after the other on load of the page
+document.addEventListener('DOMContentLoaded', () => {
+    const artWord = document.querySelector('.art-word');
+    const letters = artWord.textContent.split('');
+
+    artWord.innerHTML = ''; // Clear the text content
+
+    letters.forEach((letter, index) => {
+        const span = document.createElement('span');
+        span.textContent = letter;
+        span.style.opacity = 0;
+        span.style.animation = `fadeIn 0.3s ease forwards ${index / 10 + 1.5}s`;
+        artWord.appendChild(span);
+    });
+
+    anime({
+        targets: '.art-word span',
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        delay: anime.stagger(300, { start: 400 })
+    });
+});
+
+
 // animation for menubar navigation on click on mobile
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('.menu-icon');
@@ -107,8 +133,15 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     let cursor = document.querySelector('#animatedCursor');
 
-    // Function to move the cursor to the mouse position
+    // Function to move the cursor to the mouse position only on desktop
+    // This is to prevent the cursor from moving on mobile devices
+
+
     function moveCursor(e) {
+        if (window.innerWidth <= 768) {
+            return;
+            cursor.style.display = 'none'; // Hide cursor on mobile
+        }
         cursor.style.display = 'block'; // Ensure cursor is visible
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';

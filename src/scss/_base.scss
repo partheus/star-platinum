@@ -9,7 +9,6 @@ body {
   padding: 2em 1.5em;
   margin: 0 auto;
   font-size: 110%;
-  cursor: none;
 
   @include media-query('lg') {
     padding: 1em 5em;
