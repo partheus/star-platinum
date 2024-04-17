@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,700&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap&family=Space+Mono:wght@400;700&display=swap");
 body {
   background-color: #ffaeda;
   font-family: "Space Mono", monospace;
@@ -7,6 +7,8 @@ body {
   text-transform: uppercase;
   padding: 2em 1.5em;
   margin: 0 auto;
+  font-size: 110%;
+  cursor: none;
 }
 @media (min-width: 1024px) {
   body {
@@ -18,10 +20,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #154314;
-  font-family: "Rubik", sans-serif;
 }
 
-.landing-svg, .landing-svg img {
+.landing-page__container__image, .landing-page__container__image img {
   width: 100%;
   max-height: 500px;
 }
@@ -38,6 +39,12 @@ footer a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "Rubik One";
+  src: url("../fontfiles/RubikOne-Regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 .button {
   font-size: 0.8em;
   font-weight: 400;
@@ -54,7 +61,7 @@ footer a {
 .button--primary {
   background-color: #154314;
   border-color: #154314;
-  color: #ebb840;
+  color: #ffc757;
 }
 .button--primary:hover {
   background-color: #091c08;
@@ -87,11 +94,11 @@ footer a {
 }
 .button span {
   display: inline-block;
-  margin-left: 6px;
+  margin-left: 0.35em;
   transition: margin-left 0.4s ease; /* Smooth transition for the left property */
 }
 .button:hover span {
-  margin-left: 12px;
+  margin-left: 0.75em;
 }
 
 .nav-container {
@@ -104,16 +111,20 @@ footer a {
   margin: 0 0 2em;
   flex-direction: column;
   display: none;
+  font-family: "Rubik One", sans-serif;
   font-weight: 700;
 }
 .nav-container li a {
   color: #154314;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 1.1em;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #9d0b0b;
+  transition: all 0.3s ease;
 }
 .nav-container li a:hover {
-  text-decoration: underline;
-  color: #e10a0a;
+  color: #9d0b0b;
+  text-decoration-color: #154314;
 }
 .nav-container .menu-icon {
   position: relative;
@@ -160,29 +171,37 @@ footer a {
     display: inline-block;
     margin-right: 2.75em;
     margin-bottom: 0.5em;
-    text-decoration: none;
   }
 }
 
 .pagetitle {
   font-size: 2.5em;
+  font-weight: 700;
   white-space: pre-wrap;
   line-height: 0.9;
-  margin: 0;
+  margin: 1em 0 0 -2px;
+  font-family: "Rubik One", sans-serif;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .pagetitle {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-left: -4px;
   }
 }
-@media (min-width: 1024px) {
-  .pagetitle {
-    font-size: 4em;
-  }
+
+.pagesubtitle {
+  font-size: 0.81em;
+  font-weight: 400;
+  margin: 0 0 2em 0;
+  opacity: 0;
+  font-family: "Space Mono", monospace;
+  background-color: #ffc757;
+  width: fit-content;
+  padding: 0.15em 0.25em;
 }
 
-.landing-page__container {
+.landing-page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,10 +210,23 @@ footer a {
   width: fit-content;
 }
 @media (min-width: 1024px) {
-  .landing-page__container {
+  .landing-page-container {
     flex-direction: row;
     column-gap: 2em;
   }
+}
+
+#animatedCursor {
+  width: 2.9em;
+  height: 2.9em;
+  border-radius: 50%;
+  background-color: #fff; /* White background */
+  border: 5px solid #000; /* Contrasting outline */
+  mix-blend-mode: difference; /* Enhances visibility against varying backgrounds */
+  position: absolute;
+  pointer-events: none;
+  display: none; /* Start hidden */
+  z-index: 10000; /* Ensure it's above other elements */
 }
 
 /*# sourceMappingURL=main.css.map */
