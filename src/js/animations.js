@@ -2,13 +2,26 @@ import anime from "../lib/anime.es.js";
 
 // This is a simple example of how to use the anime.js library
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM loaded, animations.js');
-    const genericDivSelector = document.querySelector('.pagetitle');
+    const pageTitle = document.querySelector('.pagetitle');
+    const pageSubtitle = document.querySelector('.pagesubtitle');
 
     anime({
-        targets: genericDivSelector,
+        targets: pageTitle,
+        translateY: -15,
+        easing: 'easeInOutExpo',
+        opacity: 1,
+        duration: 1000,
+        delay: 50
+    });
+
+    anime({
+        targets: pageSubtitle,
+        startY: 100,
         translateY: -10,
-        easing: 'easeInOutExpo'
+        easing: 'easeInOutExpo',
+        opacity: 1,
+        duration: 1000,
+        delay: 400
     });
 });
 
@@ -21,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const iconClosed = document.querySelector('.menu-closed');
     iconOpen.style.opacity = '0';
     iconOpen.style.visibility = 'hidden';
-    console.log('DOM loaded, animations.js')
 
     menuIcon.addEventListener('click', () => {
         if (navLinks.style.display === 'flex') { // Assuming this part checks if the menu is open
@@ -64,11 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
             easing: 'easeInOutExpo',
             duration: 1000, // Slow down the animation
             delay: anime.stagger(100), // Stagger the animation of each item
-            begin: function(anim) {
+            begin: function (anim) {
                 navLinks.style.display = 'flex';
                 navLinks.style.flexDirection = 'column';
             },
-            complete: function(anim) {
+            complete: function (anim) {
                 if (isMenuOpen) {
                     navLinks.style.display = 'none';
                 }
@@ -77,3 +89,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// animation for nav items on load on desktop
+document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('.nav-container ul li');
+
+    anime({
+        targets: navItems,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: anime.stagger(120)
+    });
+});
+
+// cursor animation
+document.addEventListener('DOMContentLoaded', () => {
+    let cursor = document.querySelector('#animatedCursor');
+
+    // Function to move the cursor to the mouse position
+    function moveCursor(e) {
+        cursor.style.display = 'block'; // Ensure cursor is visible
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    }
+
+    // Track cursor movement
+    document.addEventListener('mousemove', moveCursor);
+});
