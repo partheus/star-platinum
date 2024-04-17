@@ -1,0 +1,80 @@
+.nav-container {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2em;
+    flex-direction: column;
+    display: none; // hides the menu initially on mobile
+    font-weight: 700;
+  }
+
+  li a {
+    color: $color--primary;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: $color--tertiary;
+    }
+  }
+
+  .menu-icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.75em;
+    margin-bottom: 1em;
+    color: $color--primary;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+  }
+
+  small {
+    margin-left: 2.5em;
+    font-size: 0.5em;
+    margin-top: 0.4em;
+  }
+
+  .menu-open, .menu-closed {
+    width: fit-content;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    position: absolute; // Positioning absolutely to take out of document flow.
+    left: 0; // Adjust as per your layout
+  }
+
+  /* Initially hide the .menu-open icon completely */
+  .menu-open {
+    opacity: 0;
+    visibility: hidden;
+    display: none; // Ensures it doesn’t take up space before being toggled.
+  }
+
+  /* .menu-closed is visible initially */
+  .menu-closed {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  // Mobile settings
+  @include media-query(md) {
+    .menu-icon {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li a {
+        display: inline-block;
+        margin-right: 2.75em;
+        margin-bottom: 0.5em;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.pagetitle {
+  font-size: 2.5em;
+  white-space: pre-wrap;
+  line-height: 0.9;
+  margin: 0;
+
+  @include media-query('md') {
+    font-size: 3em;
+    margin-left: -4px;
+  }
+
+  @include media-query('lg') {
+    font-size: 4em;
+  }
+}
+
+.landing-page__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+
+  @include media-query('lg') {
+    flex-direction: row;
+    column-gap: 2em;
+  }
+}

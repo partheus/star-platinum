@@ -1,0 +1,20 @@
+// media breakpoints using media-query mixin
+
+ $breakpoints: (
+   xs: 320px,
+   sm: 480px,
+   md: 768px,
+   lg: 1024px,
+   xl: 1200px,
+   xxl: 1600px
+ );
+
+@mixin media-query($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}.";
+  }
+}
