@@ -13,23 +13,22 @@
         <span class="menu-open">&#10754;</span>
         <small>menu</small>
     </div>
-    <ul>
-        <li><a href="/" class="link">Home</a></li>
-        <li><a href="/projects" class="link">Projects</a></li>
-        <li><a href="/personal" class="link">Personal Work</a></li>
-        <li><a href="/colophon" class="link">Colophon</a></li>
+
+    <ul class="nav-links">
+        <li><a href="/" class="link {{ 'active' if '/' == currentPageUrl }}">Home</a></li>
+        <li><a href="/projects" class="link {{ 'active' if '/projects' in page.url }}">Projects</a></li>
+        <li><a href="/personal" class="link {{ 'active' if '/personal' in page.url }}">Personal</a></li>
+        <li><a href="/colophon" class="link {{ 'active' if '/colophon' in page.url }}">Colophon</a></li>
     </ul>
 </nav>
 <h1 class="pagetitle">{{ pageTitle }}</h1>
 <h2 class="pagesubtitle">{{ pageSubtitle }}</h2>
 <div class="content">
-    {{ content }}
+    {{ content | safe }}
 </div>
 <div id="animatedCursor"></div>
 
-<footer>
-    <a href="https://parth.ninja" class="link">Parth Shiralkar, 2024 and forever</a>
-</footer>
-<script type="module" src="/js/animations.js"></script>
+{% include './footer.liquid' %}
+
 </body>
 </html>

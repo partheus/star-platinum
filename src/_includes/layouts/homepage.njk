@@ -7,9 +7,6 @@
     <title>{{ pageTitle }}</title>
 </head>
 <body>
-<div id="starfield">
-    <!-- Stars will be added here using JavaScript -->
-</div>
 <div class="landing-page-container">
     <div class="landing-page-container__content">
         <h1 class="pagetitle">P<span class="art-word">ART</span>H SHIRALKAR</h1>
@@ -17,13 +14,15 @@
         {{ content | safe }}
     </div>
     <div class="landing-page__container__image">
-        <img src="/img/rose-vines.svg" alt="Main SVG"/>
+        <img src="/img/rose-vines.svg" alt="Main SVG" id="landingSvg"/>
+{#        <svg id="svgStar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="300" height="300">#}
+{#            <path d="M50,1 L63,38 H99 L69,59 L82,96 L50,76 L18,96 L31,59 L1,38 H37 Z" fill="none" stroke="black" stroke-width="2"/>#}
+{#        </svg>#}
     </div>
 </div>
 <div id="animatedCursor"></div>
-<footer>
-    <a href="https://parth.ninja" class="link">Parth Shiralkar, 2024 and forever</a>
-</footer>
-<script type="module" src="/js/animations.js"></script>
+
+{% include './footer.liquid' %}
+
 </body>
 </html>
