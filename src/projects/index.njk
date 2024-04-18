@@ -1,0 +1,12 @@
+---
+layout: layouts/layout
+pageTitle: Projects
+pageSubtitle: A collection of my work (How I be For Real)
+---
+{% from "components/projectDisplay.njk" import projectCard %}
+
+<div class="projects-container">
+    {% for project in projects %}
+    {{ projectCard(project, projects.length) }}
+    {% endfor %}
+</div>
