@@ -11,17 +11,13 @@ body {
   text-transform: uppercase;
   padding: 2em 1.5em;
   margin: 0 auto;
-  font-size: 110%;
+  font-size: 111%;
 }
 @media (min-width: 1024px) {
   body {
-    padding: 1em 5em;
-  }
-}
-@media (min-width: 1024px) {
-  body {
-    max-width: 1300px;
+    max-width: 1400px;
     font-size: 150%;
+    padding: 1em 5em;
   }
 }
 
@@ -88,6 +84,49 @@ footer a {
   color: #9d0b0b;
   background: #ffc757;
   border-radius: 50%;
+}
+
+.project-card {
+  background: #154314;
+  color: #ffc757;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.project-card .project-number {
+  color: #9d0b0b;
+}
+.project-card .project-title,
+.project-card .project-subtitle {
+  line-height: 1;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.project-card .project-title {
+  font-size: 1.5em;
+  color: #9d0b0b;
+}
+.project-card .project-more-link,
+.project-card .project-live-link {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #154314;
+  background-color: #ffc757;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.project-card .project-more-link:hover,
+.project-card .project-live-link:hover {
+  background-color: #ffb624;
+}
+.project-card img.project-image {
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 1024px) {
+  .project-card {
+    margin: 20px auto;
+  }
 }
 
 .button {
@@ -266,6 +305,24 @@ footer a {
   flex-wrap: wrap;
   gap: 0.7em;
   justify-content: flex-start;
+}
+
+.colophon ul {
+  list-style: lower-greek;
+  padding: 0;
+  margin: 0;
+  gap: 0.5em;
+}
+.colophon li {
+  margin-left: 2em;
+}
+.colophon a {
+  color: #9d0b0b;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.colophon a:hover {
+  color: #154314;
 }
 
 /*# sourceMappingURL=main.css.map */
