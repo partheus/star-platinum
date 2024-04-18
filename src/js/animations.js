@@ -172,6 +172,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// project cards animation on load
+document.addEventListener('DOMContentLoaded', () => {
+    const projectCards = document.querySelectorAll('.project-card');
+    // Animate the project cards contents
+    const projectCardContents = document.querySelectorAll('.project-card__content');
+
+    anime({
+        targets: projectCards,
+        translateY: [-50, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1600,
+        delay: anime.stagger(600, { start: 1200 })
+    });
+
+    anime({
+        targets: projectCardContents,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1400,
+        delay: anime.stagger(500, { start: 2000 })
+    });
+});
+
 // cursor animation
 document.addEventListener('DOMContentLoaded', () => {
     let cursor = document.querySelector('#animatedCursor');
@@ -181,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function moveCursor(e) {
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 1024) {
             cursor.style.display = 'none'; // Hide cursor on mobile
             return;
         }
