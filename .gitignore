@@ -1,3 +1,10 @@
 node_modules
 _site
-css/main.css
+/css
+/.idea/.gitignore
+/css/main.css.map
+/.idea/modules.xml
+/package-lock.json
+/.idea/php.xml
+/.idea/star-platinum.iml
+/.idea/vcs.xml
