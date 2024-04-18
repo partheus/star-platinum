@@ -1,11 +1,14 @@
 {# src/_includes/components/projectDisplay.njk #}
 {% macro projectCard(project, totalProjects) %}
     <div class="project-card">
-        <div class="project-number">Project {{ project.id }} of {{ totalProjects }}</div>
+        <div class="project-number">0{{ project.id }} / 0{{ totalProjects }}</div>
         <img src="{{ project.image }}" alt="{{ project.title }}" class="project-image">
-        <h2 class="project-title">{{ project.title }}</h2>
-        <p class="project-subtitle">{{ project.subtitle }}</p>
-        <a href="{{ project.link }}" class="project-more-link">Learn More</a>
-        <a href="{{ project.liveSite }}" class="project-live-link">View Live Site</a>
+        <div class="project-card__content"><h2 class="project-title">{{ project.title }}</h2>
+            <p class="project-subtitle">{{ project.subtitle }}</p>
+            <div class="button__container">
+                <a href="{{ project.link }}" class="button button--secondary">View more<span>&#8594;</span></a>
+                <a href="{{ project.link }}" class="button button--secondary">View live site<span>&#8599;</span></a>
+            </div>
+        </div>
     </div>
 {% endmacro %}
