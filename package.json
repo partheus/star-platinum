@@ -16,5 +16,8 @@
     "@11ty/eleventy": "^0.12.1",
     "concurrently": "^8.2.2",
     "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0"
   }
 }
