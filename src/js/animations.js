@@ -16,12 +16,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     anime({
         targets: pageSubtitle,
-        startY: 100,
-        translateY: -10,
+        translateX: [-40, 0],
+        opacity: [0, 1],
         easing: 'easeInOutExpo',
-        opacity: 1,
-        duration: 1000,
-        delay: 400
+        duration: 2000,
+        delay: 10
+    });
+});
+
+// homepage svg animation
+document.addEventListener('DOMContentLoaded', () => {
+    const landingSvg = document.querySelector('#landingSvg');
+    anime({
+        targets: landingSvg,
+        translateY: [50, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: 100
+    });
+});
+
+// homepage buttons animation
+document.addEventListener('DOMContentLoaded', function() {
+    anime({
+        targets: '.homepage__button__container .button',
+        translateX: [anime.stagger('0', {start: -50}), 0], // Start from -50px to 0
+        opacity: [0, 1], // Fade from 0 to 1 opacity
+        delay: anime.stagger(250, {start: 1800}), // Delay each button animation by 250ms, starting after 1800ms
+        duration: 750, // Duration of 750ms for each button animation
+        easing: 'easeOutExpo', // Use an easing for a smooth effect
     });
 });
 
@@ -49,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
         delay: anime.stagger(300, { start: 400 })
     });
 });
-
 
 // animation for menubar navigation on click on mobile
 document.addEventListener('DOMContentLoaded', () => {
@@ -115,9 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// animation for nav items on load on desktop
+// animation for nav items on load on desktop, colophon page links
 document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-container ul li');
+    const colophonLinks = document.querySelectorAll('.colophon ul li');
+    const colophonHeader = document.querySelector('.colophon h2');
 
     anime({
         targets: navItems,
@@ -126,6 +151,24 @@ document.addEventListener('DOMContentLoaded', () => {
         easing: 'easeInOutExpo',
         duration: 2000,
         delay: anime.stagger(120)
+    });
+
+    anime({
+        targets: colophonLinks,
+        translateY: [-40, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: anime.stagger(120, { start: 900 })
+    });
+
+    anime({
+        targets: colophonHeader,
+        translateX: [-40, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: 800
     });
 });
 
@@ -154,9 +197,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mouseenter', (e) => {
         anime({
             targets: '#animatedCursor',
-            scale: 1.5, // Increase size
+            scale: 1.1, // Increase size
             backgroundColor: '#f00', // Change color
-            duration: 300,
+            duration: 200,
             easing: 'easeInOutSine'
         });
     });
@@ -165,48 +208,24 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mouseleave', (e) => {
         anime({
             targets: '#animatedCursor',
-            scale: 1,
+            scale: 0.8, // Decrease size
             backgroundColor: '#000', // Back to original color
-            duration: 300,
+            duration: 200,
             easing: 'easeInOutSine'
         });
     });
 });
 
-
-// animate stars on load
+// animation for the footer on load
 document.addEventListener('DOMContentLoaded', () => {
-    // Function to generate stars
-    function generateStars(numberOfStars) {
-        const starField = document.getElementById('starfield');
+    const footer = document.querySelector('footer');
 
-        for (let i = 0; i < numberOfStars; i++) {
-            let star = document.createElement('div');
-            star.className = 'star';
-
-            // Randomize the position of the star
-            let xy = Math.random() * 100;
-            let duration = Math.random() * 3000 + 3000;  // Between 3 and 6 seconds
-            star.style.left = `${Math.random() * 100}%`;
-            star.style.top = `${Math.random() * 100}%`;
-
-            starField.appendChild(star);
-
-            // Animate the star
-            anime({
-                targets: star,
-                scale: [
-                    {value: .1, easing: 'easeOutSine', duration: duration},
-                    {value: 1, easing: 'easeInOutQuad', duration: duration}
-                ],
-                delay: anime.stagger(50, {start: 1000}),
-                loop: true,
-                easing: 'easeInOutSine',
-                duration: duration,
-            });
-        }
-    }
-
-// Generate 50 stars
-    generateStars(50);
+    anime({
+        targets: footer,
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        delay: 2000
+    });
 });
