@@ -1,6 +1,5 @@
 node_modules
 _site
-/css
 /.idea/.gitignore
 /css/main.css.map
 /.idea/modules.xml
