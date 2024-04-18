@@ -1,0 +1,18 @@
+---
+layout: layouts/layout
+pageTitle: Colophon
+pageSubtitle: This site and its workings
+templateEngineOverride: njk, md, html
+---
+<div class="colophon external-link-container">
+{{- "
+
+- [Eleventy](https://www.11ty.dev/)
+- [CloudFlare](https://www.cloudflare.com/)
+- [Canva](https://www.canva.com/)
+- [Unsplash](https://unsplash.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [OpenClipArt](https://openclipart.org/)
+
+" | markdownify | safe }}
+</div>
