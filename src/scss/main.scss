@@ -1,9 +1,12 @@
 @import "_base.scss";
-@import "_fonts.scss";
-@import "_variables.scss";
-@import "_buttons.scss";
+@import "_z-index.scss";
 @import "_mixins.scss";
+@import "_animations.scss";
+@import "_fonts.scss";
+
+@import "_variables.scss";
+
+@import "_modules.scss";
+@import "_buttons.scss";
 @import "_header.scss";
 @import "_page.scss";
-@import "_animations.scss";
-@import "_modules.scss";
