@@ -12,14 +12,12 @@ body {
   text-transform: uppercase;
   padding: 2em 1.5em;
   margin: 0 auto;
-  font-size: 110%;
+  font-size: 111%;
 
   @include media-query('lg') {
-    padding: 1em 5em;
-  }
-  @include media-query('lg') {
-    max-width: 1300px;
+    max-width: 1400px;
     font-size: 150%;
+    padding: 1em 5em;
   }
 }
 

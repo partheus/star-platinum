@@ -47,3 +47,27 @@
   gap: 0.7em;
   justify-content: flex-start;
 }
+
+.colophon {
+
+  ul {
+    list-style: lower-greek;
+    padding: 0;
+    margin: 0;
+    gap: 0.5em;
+  }
+
+  li {
+    margin-left: 2em;
+  }
+
+  a {
+    color: $color--tertiary;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $color--primary;
+    }
+  }
+}

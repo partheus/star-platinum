@@ -3,3 +3,50 @@
   background: $color--secondary;
   border-radius: 50%;
 }
+
+.project-card {
+  background: $color--primary;
+  color: $color--secondary;
+  padding: 1em;
+  margin-bottom: 1em;
+
+  .project-number {
+    color: $color--tertiary;
+  }
+
+  .project-title,
+  .project-subtitle {
+    line-height: 1;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+    color: $color--tertiary;
+  }
+
+  .project-more-link,
+  .project-live-link {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: $color--primary;
+    background-color: $color--secondary;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: darken($color--secondary, 10%);
+    }
+  }
+
+  img.project-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include media-query(lg) {
+    margin: 20px auto;
+  }
+}
