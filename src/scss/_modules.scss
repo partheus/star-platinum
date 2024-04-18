@@ -4,14 +4,20 @@
   border-radius: 50%;
 }
 
+// project card module
 .project-card {
   background: $color--primary;
   color: $color--secondary;
   padding: 1em;
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 
   .project-number {
-    color: $color--tertiary;
+    color: $color--secondary;
+    font-variant: all-small-caps;
+    word-break: normal;
   }
 
   .project-title,
@@ -28,16 +34,16 @@
 
   .project-more-link,
   .project-live-link {
-    display: inline-block;
-    margin-right: 10px;
     text-decoration: none;
     color: $color--primary;
     background-color: $color--secondary;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 0.5em;
+    font-size: 0.8em;
+    border-radius: 1em;
+    transition: all 0.3s ease;
 
     &:hover {
-      background-color: darken($color--secondary, 10%);
+      filter: brightness(1.2) contrast(1.2);
     }
   }
 
@@ -47,6 +53,7 @@
   }
 
   @include media-query(lg) {
-    margin: 20px auto;
+    margin: 2em 0;
+    flex-direction: row;
   }
 }

@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #ffa1d0;
+  background-color: #ffadd4;
   font-family: "Space Mono", monospace;
   height: 100%;
   font-weight: 400;
@@ -16,7 +16,7 @@ body {
   padding: 2em 1.5em;
   margin: 0 auto;
   font-size: 135%;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.014rem;
 }
 @media (min-width: 1024px) {
   body {
@@ -28,7 +28,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #1b4f1a;
-  letter-spacing: 0.18rem;
+  letter-spacing: 0.14rem;
 }
 
 .landing-page__container__image, .landing-page__container__image img {
@@ -46,10 +46,10 @@ footer {
   padding: 3em 0 0;
   text-align: center;
   width: 100%;
-  font-size: 0.72em;
+  font-size: 0.54em;
 }
 footer a {
-  color: #ff0884;
+  color: #c7005e;
   text-decoration: none;
 }
 
@@ -72,7 +72,7 @@ footer a {
 }
 
 .link.active {
-  background-color: #ffa6d3;
+  background-color: #ffb2d7;
   cursor: default;
 }
 
@@ -110,9 +110,14 @@ footer a {
   color: #ffc757;
   padding: 1em;
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 .project-card .project-number {
-  color: #9d0b0b;
+  color: #ffc757;
+  font-variant: all-small-caps;
+  word-break: normal;
 }
 .project-card .project-title,
 .project-card .project-subtitle {
@@ -126,17 +131,17 @@ footer a {
 }
 .project-card .project-more-link,
 .project-card .project-live-link {
-  display: inline-block;
-  margin-right: 10px;
   text-decoration: none;
   color: #1b4f1a;
   background-color: #ffc757;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 0.8em;
+  border-radius: 1em;
+  transition: all 0.3s ease;
 }
 .project-card .project-more-link:hover,
 .project-card .project-live-link:hover {
-  background-color: #ffb624;
+  filter: brightness(1.2) contrast(1.2);
 }
 .project-card img.project-image {
   max-width: 100%;
@@ -144,7 +149,8 @@ footer a {
 }
 @media (min-width: 1024px) {
   .project-card {
-    margin: 20px auto;
+    margin: 2em 0;
+    flex-direction: row;
   }
 }
 
@@ -208,7 +214,7 @@ footer a {
   font-weight: 700;
   row-gap: 1em;
   letter-spacing: 0.05em;
-  background: #ff97cb;
+  background: #ffa3cf;
 }
 @media (min-width: 768px) {
   .nav-container ul {
@@ -220,14 +226,14 @@ footer a {
   filter: hue-rotate(180deg);
   font-size: 1.3em;
   transition: all 0.3s ease;
-  border-bottom: 2px solid #ff55aa;
+  border-bottom: 2px solid #ff61ac;
 }
 .nav-container li a:hover {
   filter: hue-rotate(0);
 }
 @media (min-width: 768px) {
   .nav-container li a {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 .nav-container .menu-icon {
@@ -297,8 +303,8 @@ footer a {
 }
 
 .pagesubtitle {
-  font-size: 0.81em;
-  font-weight: 400;
+  font-size: 0.63em;
+  font-weight: 600;
   margin: -5px 0 2em 0;
   opacity: 0;
   filter: contrast(1.1);
@@ -338,7 +344,7 @@ footer a {
 }
 .colophon li {
   margin-left: 2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.35em;
 }
 .colophon a {
   color: #9d0b0b;
