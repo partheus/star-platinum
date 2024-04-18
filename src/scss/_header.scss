@@ -8,6 +8,7 @@
     font-family: 'Rubik One', sans-serif;
     font-weight: 700;
     row-gap: 1em;
+    letter-spacing: 0.05em;
     background: darken($color--background, 2%);
 
     @include media-query(md) {
@@ -16,16 +17,18 @@
   }
 
   li a {
-    color: $color--primary;
-    font-size: 1.2em;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: $color--tertiary;
+    color: $color--tertiary;
+    filter: hue-rotate(180deg);
+    font-size: 1.3em;
     transition: all 0.3s ease;
+    border-bottom: 2px solid darken($color--background, 15%);
 
     &:hover {
-      color: $color--tertiary;
-      text-decoration-color: $color--primary;
+      filter: hue-rotate(0);
+    }
+
+    @include media-query(md) {
+      font-size: 1.1em;
     }
   }
 

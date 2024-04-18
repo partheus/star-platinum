@@ -18,7 +18,7 @@
 .pagesubtitle {
   font-size: 0.81em;
   font-weight: 400;
-  margin: 0 0 2em 0;
+  margin: -5px 0 2em 0;
   opacity: 0;
   filter: contrast(1.1);
   font-family: 'Space Mono', monospace;
@@ -34,6 +34,7 @@
   justify-content: center;
   margin: 0 auto;
   width: fit-content;
+  row-gap: 1em;
 
   @include media-query('lg') {
     flex-direction: row;
@@ -49,25 +50,41 @@
 }
 
 .colophon {
-
   ul {
     list-style: lower-greek;
     padding: 0;
     margin: 0;
-    gap: 0.5em;
   }
 
   li {
     margin-left: 2em;
+    margin-bottom: 0.5em;
   }
 
   a {
     color: $color--tertiary;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease, font-weight 0.3s ease;
+    font-weight: normal;
+    text-transform: lowercase;
+    border-bottom: 2px solid transparent;
 
     &:hover {
+      font-weight: bold;
       color: $color--primary;
+      border-bottom: 2px solid $color--primary;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 0.15em;
+      transition: margin-left 0.4s ease; /* Smooth transition for the left property */
+    }
+
+    &:hover {
+      span {
+        margin-left: 0.45em;
+      }
     }
   }
 }
