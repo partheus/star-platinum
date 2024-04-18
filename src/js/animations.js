@@ -149,4 +149,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Track cursor movement
     document.addEventListener('mousemove', moveCursor);
+
+    // Example of cursor animation on mouse enter
+    document.addEventListener('mouseenter', (e) => {
+        anime({
+            targets: '#animatedCursor',
+            scale: 1.5, // Increase size
+            backgroundColor: '#f00', // Change color
+            duration: 300,
+            easing: 'easeInOutSine'
+        });
+    });
+
+    // Reverse animation on mouse leave
+    document.addEventListener('mouseleave', (e) => {
+        anime({
+            targets: '#animatedCursor',
+            scale: 1,
+            backgroundColor: '#000', // Back to original color
+            duration: 300,
+            easing: 'easeInOutSine'
+        });
+    });
+});
+
+
+// animate stars on load
+document.addEventListener('DOMContentLoaded', () => {
+    // Function to generate stars
+    function generateStars(numberOfStars) {
+        const starField = document.getElementById('starfield');
+
+        for (let i = 0; i < numberOfStars; i++) {
+            let star = document.createElement('div');
+            star.className = 'star';
+
+            // Randomize the position of the star
+            let xy = Math.random() * 100;
+            let duration = Math.random() * 3000 + 3000;  // Between 3 and 6 seconds
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.top = `${Math.random() * 100}%`;
+
+            starField.appendChild(star);
+
+            // Animate the star
+            anime({
+                targets: star,
+                scale: [
+                    {value: .1, easing: 'easeOutSine', duration: duration},
+                    {value: 1, easing: 'easeInOutQuad', duration: duration}
+                ],
+                delay: anime.stagger(50, {start: 1000}),
+                loop: true,
+                easing: 'easeInOutSine',
+                duration: duration,
+            });
+        }
+    }
+
+// Generate 50 stars
+    generateStars(50);
 });

@@ -10,3 +10,22 @@
   display: none; /* Start hidden */
   z-index: 10000; /* Ensure it's above other elements */
 }
+
+// starfield
+#starfield {
+  width: calc(100vw - (100vw - 100%));
+  height: calc(100vh - (100vh - 100%));
+  overflow: hidden;
+  position: fixed; /* Change to fixed to stick it to the viewport */
+  top: 0;
+  left: 0;
+  z-index: $z-index--starfield;
+}
+
+.star {
+  width: 5px;
+  height: 5px;
+  background-color: lighten($color--primary, 10%);
+  border-radius: 50%;
+  position: absolute;
+}
