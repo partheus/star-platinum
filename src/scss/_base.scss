@@ -1,5 +1,9 @@
 @import "variables", "mixins";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: $color--background;
   font-family: 'Space Mono', monospace;
@@ -12,7 +16,9 @@ body {
 
   @include media-query('lg') {
     padding: 1em 5em;
-    max-width: 1200px;
+  }
+  @include media-query('lg') {
+    max-width: 1300px;
     font-size: 150%;
   }
 }
@@ -32,6 +38,7 @@ footer {
   padding: 3em 0 0;
   text-align: center;
   width: 100%;
+  font-size: 0.72em;
 
   a {
     color: $color--primary;

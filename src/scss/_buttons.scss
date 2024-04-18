@@ -24,26 +24,13 @@
   }
 
   &--secondary {
-    background-color: #6c757d;
-    border-color: #6c757d;
-    color: #fff;
+    background-color: $color--secondary;
+    border-color: $color--secondary;
+    color: $color--primary;
 
     &:hover {
-      background-color: #545b62;
-      border-color: #4e555b;
-    }
-  }
-
-  //tertiary button
-  &--tertiary {
-    background-color: #fff;
-    border-color: #6c757d;
-    color: #6c757d;
-
-    &:hover {
-      background-color: #f8f9fa;
-      border-color: #6c757d;
-      color: #6c757d;
+      background-color: darken($color--secondary, 10%);
+      border-color: darken($color--secondary, 10%);
     }
   }
 

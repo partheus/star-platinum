@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap&family=Space+Mono:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffaeda;
   font-family: "Space Mono", monospace;
@@ -12,7 +16,11 @@ body {
 @media (min-width: 1024px) {
   body {
     padding: 1em 5em;
-    max-width: 1200px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    max-width: 1300px;
     font-size: 150%;
   }
 }
@@ -32,10 +40,42 @@ footer {
   padding: 3em 0 0;
   text-align: center;
   width: 100%;
+  font-size: 0.72em;
 }
 footer a {
   color: #154314;
   text-decoration: none;
+}
+
+#animatedCursor {
+  width: 2.9em;
+  height: 2.9em;
+  border-radius: 50%;
+  background-color: #fff; /* White background */
+  border: 5px solid #000; /* Contrasting outline */
+  mix-blend-mode: difference; /* Enhances visibility against varying backgrounds */
+  position: absolute;
+  pointer-events: none;
+  display: none; /* Start hidden */
+  z-index: 10000; /* Ensure it's above other elements */
+}
+
+#starfield {
+  width: calc(100vw - (100vw - 100%));
+  height: calc(100vh - (100vh - 100%));
+  overflow: hidden;
+  position: fixed; /* Change to fixed to stick it to the viewport */
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.star {
+  width: 5px;
+  height: 5px;
+  background-color: #216a20;
+  border-radius: 50%;
+  position: absolute;
 }
 
 @font-face {
@@ -44,6 +84,12 @@ footer a {
   font-weight: 700;
   font-style: normal;
 }
+.art-word {
+  color: #9d0b0b;
+  background: #ffc757;
+  border-radius: 50%;
+}
+
 .button {
   font-size: 0.8em;
   font-weight: 400;
@@ -67,23 +113,13 @@ footer a {
   border-color: #091c08;
 }
 .button--secondary {
-  background-color: #6c757d;
-  border-color: #6c757d;
-  color: #fff;
+  background-color: #ffc757;
+  border-color: #ffc757;
+  color: #154314;
 }
 .button--secondary:hover {
-  background-color: #545b62;
-  border-color: #4e555b;
-}
-.button--tertiary {
-  background-color: #fff;
-  border-color: #6c757d;
-  color: #6c757d;
-}
-.button--tertiary:hover {
-  background-color: #f8f9fa;
-  border-color: #6c757d;
-  color: #6c757d;
+  background-color: #ffb624;
+  border-color: #ffb624;
 }
 .button__container {
   display: flex;
@@ -225,22 +261,11 @@ footer a {
   }
 }
 
-#animatedCursor {
-  width: 2.9em;
-  height: 2.9em;
-  border-radius: 50%;
-  background-color: #fff; /* White background */
-  border: 5px solid #000; /* Contrasting outline */
-  mix-blend-mode: difference; /* Enhances visibility against varying backgrounds */
-  position: absolute;
-  pointer-events: none;
-  display: none; /* Start hidden */
-  z-index: 10000; /* Ensure it's above other elements */
-}
-
-.art-word {
-  color: #9d0b0b;
-  background: #ffc757;
+.homepage__button__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  justify-content: flex-start;
 }
 
 /*# sourceMappingURL=main.css.map */
