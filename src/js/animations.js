@@ -139,12 +139,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function moveCursor(e) {
         if (window.innerWidth <= 768) {
-            return;
             cursor.style.display = 'none'; // Hide cursor on mobile
+            return;
         }
-        cursor.style.display = 'block'; // Ensure cursor is visible
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
+        cursor.style.display = 'block';
+        cursor.style.left = e.pageX + 'px'; // Use pageX instead of clientX
+        cursor.style.top = e.pageY + 'px'; // Use pageY instead of clientY
     }
 
     // Track cursor movement
