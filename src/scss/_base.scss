@@ -14,7 +14,7 @@ body {
   height: 100%;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 2em 1.5em;
+  padding: 1em;
   margin: 0 auto;
   font-size: 135%;
   letter-spacing: 0.014rem;
@@ -29,6 +29,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: $color--primary;
   letter-spacing: 0.14rem;
+}
+
+p {
+  color: $color--secondary;
+  line-height: 1.5;
+  font-size: 1em;
 }
 
 .landing-page__container__image, .landing-page__container__image img {

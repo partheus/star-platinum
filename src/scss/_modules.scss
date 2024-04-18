@@ -8,16 +8,17 @@
 .project-card {
   background: $color--primary;
   color: $color--secondary;
-  padding: 1em;
+  padding: 1rem;
   margin-bottom: 1em;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.5em;
+  opacity: 0;
 
   .project-number {
     color: $color--secondary;
-    font-variant: all-small-caps;
     word-break: normal;
+    font-size: 0.7em;
   }
 
   .project-title,
@@ -41,6 +42,7 @@
     font-size: 0.8em;
     border-radius: 1em;
     transition: all 0.3s ease;
+    word-break: break-word;
 
     &:hover {
       filter: brightness(1.2) contrast(1.2);
@@ -48,12 +50,16 @@
   }
 
   img.project-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    max-width: 500px;
   }
 
-  @include media-query(lg) {
+  @include media-query(md) {
     margin: 2em 0;
     flex-direction: row;
+    gap: 1rem;
+    overflow: hidden;
+    padding: 1em;
   }
 }
