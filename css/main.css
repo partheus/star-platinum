@@ -166,6 +166,41 @@ footer a {
   }
 }
 
+.glider-contain {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.glider-prev, .glider-next {
+  background-color: #1b4f1a;
+  color: #ffc757;
+  border: none;
+  padding: 2em;
+  font-size: 2em;
+}
+
+.glider-slide {
+  margin-right: 1em;
+  display: flex;
+  gap: 1em;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  min-width: 100%;
+}
+@media (min-width: 768px) {
+  .glider-slide {
+    min-width: 100% !important;
+    overflow: hidden;
+  }
+}
+
+.dots > button {
+  background-color: #ffc757;
+  width: 1em;
+  height: 1em;
+}
+
 .button {
   font-size: 0.8em;
   font-weight: 400;

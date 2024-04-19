@@ -5,8 +5,16 @@ pageSubtitle: A collection of my work (How I be For Real)
 ---
 {% from "components/projectDisplay.njk" import projectCard %}
 
-<div class="projects-container">
-    {% for project in projects %}
-    {{ projectCard(project, projects.length) }}
-    {% endfor %}
+<div class="glider-contain">
+    <div class="glider">
+        {% for project in projects %}
+            {{ projectCard(project, projects.length) }}
+        {% endfor %}
+    </div>
+    <button role="button" class="glider-prev">&laquo;</button>
+    <button role="button" class="glider-next">&raquo;</button>
+    <div role="tablist" class="dots"></div>
 </div>
+
+<script type="module" src="/js/carousel.js"></script>
+
