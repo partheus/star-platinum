@@ -4,8 +4,7 @@
   width: 3.6em;
   height: 3.6em;
   border-radius: 50%;
-  background-color: #f00; /* White background */
-  border: 5px solid #000; /* Contrasting outline */
+  background-color:$color--tertiary;
   mix-blend-mode: difference; /* Enhances visibility against varying backgrounds */
   position: absolute;
   pointer-events: none;

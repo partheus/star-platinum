@@ -14,6 +14,10 @@
   flex-direction: column;
   gap: 0.5em;
   opacity: 0;
+  align-items: flex-start;
+  justify-content: center; // adjust from space-evenly for consistent snapping behavior
+  min-width: 100%; // Consistency in width across breakpoints
+  transition: transform 0.5s ease, opacity 0.5s ease; // For smooth fading in/out animation
 
   .project-number {
     color: $color--secondary;
@@ -61,6 +65,7 @@
     gap: 1rem;
     overflow: hidden;
     padding: 1em;
+    justify-content: flex-start;
   }
 }
 
@@ -71,18 +76,17 @@
   margin-right: auto;
 }
 
-.glider-prev, .glider-next {
-  background-color: $color--primary;
-  color: $color--secondary;
-  border: none;
-  padding: 2em;
-  font-size: 2em;
+.glider {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
 }
 
 .glider-slide {
-  margin-right: 1em;
   display: flex;
   gap: 1em;
+  scroll-snap-align: start;
+  flex-shrink: 0;
   align-items: flex-start;
   justify-content: space-evenly;
   min-width: 100%;
