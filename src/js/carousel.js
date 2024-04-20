@@ -1,35 +1,25 @@
-// animation for carousel but using slider.js
 document.addEventListener('DOMContentLoaded', function () {
-    new Glider(document.querySelector('.glider'), {
-        slidesToShow: 1,
-        dots: '#gliderDots',
-        draggable: true,
-        arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next'
-        },
-        scrollLock: true, // Lock the scroll to a slide perfectly.
-        responsive: [
-            {
-                // screens greater than >= 775px
-                breakpoint: 775,
-                settings: {
-                    // Set to `auto` and provide item width to adjust to viewport
-                    slidesToShow: 'auto',
-                    slidesToScroll: 'auto',
-                    itemWidth: 150,
-                    duration: 0.25
-                }
-            }, {
-                // screens greater than >= 1024px
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 'auto',
-                    itemWidth: 150,
-                    duration: 0.25
-                }
-            }
-        ]
-    });
+    const slidesContainer = document.getElementById('carouselSlides');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    let slideIndex = 0; // Starting index
+
+    function moveToSlide(n) {
+        const slides = document.querySelectorAll('.project-card');
+        const totalSlides = slides.length;
+
+        slideIndex += n;
+
+        // Loop back to the opposite end if out of bounds
+        if (slideIndex >= totalSlides) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = totalSlides - 1;
+
+        // Calculate new position and apply
+        const newSlidePosition = -slideIndex * 100; // Assuming 100% width per slide
+        slidesContainer.style.transform = `translateX(${newSlidePosition}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => moveToSlide(-1));
+    nextBtn.addEventListener('click', () => moveToSlide(1));
 });
