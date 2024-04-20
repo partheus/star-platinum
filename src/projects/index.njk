@@ -2,24 +2,22 @@
 layout: layouts/layout
 pageTitle: Projects
 pageSubtitle: A collection of my work (How I be For Real)
+templateOverrideEngine: njk, md
 ---
 {% from "components/projectDisplay.njk" import projectCard %}
 
-{#<div class="glider-contain">#}
-{#    <div class="glider">#}
-{#        {% for project in projects %}#}
-{#            {{ projectCard(project, projects.length) }}#}
-{#        {% endfor %}#}
-{#    </div>#}
-{#    <button role="button" class="glider-prev">&lAarr;</button>#}
-{#    <button role="button" class="glider-next">&rAarr;</button>#}
-{#    <div role="tablist" id="sliderDots"></div>#}
-{#</div>#}
-
-{#<script type="module" src="/js/carousel.js"></script>#}
-
-<div class="project-container">
-    {% for project in projects %}
-        {{ projectCard(project, projects.length) }}
-    {% endfor %}
+<div id="carouselContainer" class="carousel-container">
+    <div id="carouselSlides" class="carousel-slides">
+        <!-- inserting project cards here -->
+        {% for project in projects %}
+            {{ projectCard(project, projects.length) }}
+        {% endfor %}
+    </div>
 </div>
+<div class="carousel-btn__container">
+    <button id="prevBtn" class="carousel-btn prev-btn">&lt;</button>
+    <button id="nextBtn" class="carousel-btn next-btn">&gt;</button>
+</div>
+
+{# Include the carousel script #}
+<script type="module" src="/js/carousel.js"></script>
