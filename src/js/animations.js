@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // homepage buttons animation
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     anime({
         targets: '.homepage__button__container .button',
         translateX: [anime.stagger('0', {start: -50}), 0], // Start from -50px to 0
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity: [0, 1],
         easing: 'easeInOutExpo',
         duration: 1000,
-        delay: anime.stagger(300, { start: 400 })
+        delay: anime.stagger(300, {start: 400})
     });
 });
 
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity: [0, 1],
         easing: 'easeInOutExpo',
         duration: 2000,
-        delay: anime.stagger(120, { start: 900 })
+        delay: anime.stagger(120, {start: 900})
     });
 
     anime({
@@ -183,17 +183,17 @@ document.addEventListener('DOMContentLoaded', () => {
         translateY: [-50, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 1600,
-        delay: anime.stagger(600, { start: 1200 })
+        duration: 1200,
+        delay: anime.stagger(600, {start: 1000})
     });
 
     anime({
         targets: projectCardContents,
-        translateY: [-20, 0],
+        translateX: [-40, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 1400,
-        delay: anime.stagger(500, { start: 2000 })
+        duration: 1200,
+        delay: anime.stagger(500, {start: 2000})
     });
 });
 
