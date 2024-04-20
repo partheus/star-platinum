@@ -49,14 +49,14 @@ p {
 
 footer {
   color: #1b4f1a;
-  padding: 3em 0 0;
+  margin: 5em 0 0;
   text-align: center;
   width: 100%;
-  font-size: 0.54em;
 }
 footer a {
   color: #c7005e;
   text-decoration: none;
+  font-size: 0.54em;
 }
 
 .link {
@@ -123,6 +123,8 @@ footer a {
   justify-content: center;
   min-width: 100%;
   transition: transform 0.5s ease, opacity 0.5s ease;
+  flex: 0 0 100%; /* Ensure each card takes full container width */
+  max-width: 100%;
 }
 .project-card .project-number {
   color: #ffc757;
@@ -170,38 +172,46 @@ footer a {
   }
 }
 
-.glider-contain {
+.carousel-container {
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
 }
 
-.glider {
+.carousel-slides {
   display: flex;
-  scroll-snap-type: x mandatory;
-  overflow-x: auto;
+  transition: transform 0.5s ease;
+  scroll-snap-align: start;
 }
 
-.glider-slide {
+.carousel-btn__container {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 1em;
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  min-width: 100%;
 }
-@media (min-width: 768px) {
-  .glider-slide {
-    min-width: 100% !important;
-    overflow: hidden;
+@media (min-width: 480px) {
+  .carousel-btn__container {
+    bottom: 0em;
   }
 }
 
-.dots > button {
-  background-color: #ffc757;
-  width: 1em;
-  height: 1em;
+.next-btn, .prev-btn {
+  background: #ffc757;
+  color: #1b4f1a;
+  border: none;
+  padding: 0.74em 1em;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: Rubik, sans-serif;
+}
+.next-btn:hover, .prev-btn:hover {
+  background: #9d0b0b;
+  color: #ffc757;
 }
 
 .button {

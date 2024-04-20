@@ -48,14 +48,14 @@ p {
 
 footer {
   color: $color--primary;
-  padding: 3em 0 0;
+  margin: 5em 0 0;
   text-align: center;
   width: 100%;
-  font-size: 0.54em;
 
   a {
     color: darken($color--background, 45%);
     text-decoration: none;
+    font-size: 0.54em;
   }
 }
 

@@ -18,6 +18,8 @@
   justify-content: center; // adjust from space-evenly for consistent snapping behavior
   min-width: 100%; // Consistency in width across breakpoints
   transition: transform 0.5s ease, opacity 0.5s ease; // For smooth fading in/out animation
+  flex: 0 0 100%; /* Ensure each card takes full container width */
+  max-width: 100%;
 
   .project-number {
     color: $color--secondary;
@@ -69,36 +71,46 @@
   }
 }
 
-// glider.js modules
-.glider-contain {
+// carousel module
+.carousel-container {
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
 }
 
-.glider {
+.carousel-slides {
   display: flex;
-  scroll-snap-type: x mandatory;
-  overflow-x: auto;
+  transition: transform 0.5s ease;
+  scroll-snap-align: start;
 }
 
-.glider-slide {
+.carousel-btn__container {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 1em;
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  min-width: 100%;
 
-  @include media-query(md) {
-    min-width: 100% !important;
-    overflow: hidden;
+  @include media-query(sm) {
+    bottom: 0em;
   }
+
 }
 
-.dots > button {
-  background-color: $color--secondary;
-  width: 1em;
-  height: 1em;
+.next-btn, .prev-btn {
+  background: $color--secondary;
+  color: $color--primary;
+  border: none;
+  padding: 0.74em 1em;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: Rubik, sans-serif;
+
+  &:hover {
+    background: $color--tertiary;
+    color: $color--secondary;
+  }
 }
