@@ -1,16 +1,29 @@
 {
-  "name": "parth-eleventy-starter",
+  "name": "parth-shiralkar-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"eleventy --serve\" \"sass --watch src/scss:css\"",
     "build": "eleventy",
     "sass": "sass src/scss:css"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "portfolio",
+    "eleventy",
+    "sass",
+    "parth-shiralkar",
+    "parth",
+    "shiralkar",
+    "parthshiralkar",
+    "parth-shiralkar-portfolio",
+    "parthshiralkarportfolio",
+    "personal-website",
+    "personal-portfolio",
+    "personal-website-portfolio"
+  ],
+  "author": "Parth Shiralkar",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
