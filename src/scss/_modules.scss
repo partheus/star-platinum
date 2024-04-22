@@ -62,7 +62,7 @@
   }
 
   @include media-query(md) {
-    margin: 2em 0;
+    margin: 0 0 2em 0;
     flex-direction: row;
     gap: 1rem;
     overflow: hidden;
@@ -84,12 +84,10 @@
 }
 
 .carousel-btn__container {
-  position: absolute;
-  bottom: 1em;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   display: flex;
   gap: 1em;
+  justify-content: center;
 
   @include media-query(sm) {
     bottom: 0em;
