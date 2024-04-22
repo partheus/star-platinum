@@ -1,0 +1,22 @@
+---
+layout: layouts/project.njk
+pagination:
+    data: projects
+    size: 1
+    alias: project
+permalink: "/{{ project.link }}/"
+---
+{% extends "layouts/layout.njk" %}
+{% block content %}
+    <article>
+        <h1>{{ project.title }}</h1>
+        <p>{{ project.subtitle }}</p>
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+        <ul>
+            {% for tech in project.tech %}
+                <li>{{ tech }}</li>
+            {% endfor %}
+        </ul>
+        <a href="{{ project.liveSite }}">View Live Site</a>
+    </article>
+{% endblock %}

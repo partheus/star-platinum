@@ -1,15 +1,19 @@
 ---
 layout: layouts/layout.njk
-pagination:
-  data: projects
-  size: 1
-  alias: project
-permalink: "/projects/{{ project.name | slugify }}/"
+templateOverrideEngine: njk, md
 ---
-<article>
-    <h1>{{ title }}</h1>
-    <p>{{ subtitle }}</p>
-    <img src="{{ image }}" alt="{{ title }}">
-    <p>Technologies Used: {{ tech | join: ', ' }}</p>
-    <a target="_blank" href="{{ liveSite }}">Visit Live Site</a>
-</article>
+<h1>{{ project.title }}</h1>
+<h2>{{ project.year }}</h2>
+
+{% block content %}
+  <article>
+    <img src="{{ project.image }}" alt="{{ project.title }}">
+    <ul>
+      {% for tech in project.tech %}
+        <li>{{ tech }}</li>
+      {% endfor %}
+    </ul>
+    <a href="{{ project.liveSite }}">View Live Site</a>
+    <p>Year: {{ project.year }}</p>
+  </article>
+{% endblock %}

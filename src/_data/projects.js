@@ -7,7 +7,8 @@ module.exports = [
         image: "https://placehold.co/500x400/000000/FFF",
         tech: ["HTML", "CSS", "JavaScript"],
         link: "/projects/project-one",
-        liveSite: "https://example.com/project-one"
+        liveSite: "https://example.com/project-one",
+        year: 2020
     },
     {
         id: 2,
@@ -16,7 +17,8 @@ module.exports = [
         image: "https://placehold.co/500x400/000000/FFF",
         tech: ["Node.js", "Express", "MongoDB"],
         link: "/projects/project-two",
-        liveSite: "https://example.com/project-two"
+        liveSite: "https://example.com/project-two",
+        year: 2021
     },
     {
         id: 3,
@@ -25,7 +27,8 @@ module.exports = [
         image: "https://placehold.co/500x400/000000/FFF",
         tech: ["React", "Redux", "Firebase"],
         link: "/projects/project-three",
-        liveSite: "https://example.com/project-three"
+        liveSite: "https://example.com/project-three",
+        year: 2022
     },
     {
         id: 4,
@@ -34,7 +37,8 @@ module.exports = [
         image: "https://placehold.co/500x400/000000/FFF",
         tech: ["Vue", "Vuex", "MongoDB"],
         link: "/projects/project-four",
-        liveSite: "https://example.com/project-four"
+        liveSite: "https://example.com/project-four",
+        year: 2023
     },
     {
         id: 5,
@@ -43,7 +47,8 @@ module.exports = [
         image: "https://placehold.co/500x400/000000/FFF",
         tech: ["Angular", "NgRx", "Firebase"],
         link: "/projects/project-five",
-        liveSite: "https://example.com/project-five"
+        liveSite: "https://example.com/project-five",
+        year: 2024
     }
 
     // Add more projects as needed
