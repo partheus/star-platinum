@@ -39,16 +39,13 @@ p {
 
 .landing-page__container__image, .landing-page__container__image img {
   width: 100%;
-  max-height: 500px;
-
-  @include media-query('lg') {
-    margin-top: 1em;
-  }
+  max-height: 375px;
+  margin-top: 1em;
 }
 
 footer {
   color: $color--primary;
-  margin: 5em 0 0;
+  margin: 7em 0 0;
   text-align: center;
   width: 100%;
 

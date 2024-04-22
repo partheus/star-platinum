@@ -39,17 +39,13 @@ p {
 
 .landing-page__container__image, .landing-page__container__image img {
   width: 100%;
-  max-height: 500px;
-}
-@media (min-width: 1024px) {
-  .landing-page__container__image, .landing-page__container__image img {
-    margin-top: 1em;
-  }
+  max-height: 375px;
+  margin-top: 1em;
 }
 
 footer {
   color: #1b4f1a;
-  margin: 5em 0 0;
+  margin: 7em 0 0;
   text-align: center;
   width: 100%;
 }
@@ -113,8 +109,7 @@ footer a {
 .project-card {
   background: #1b4f1a;
   color: #ffc757;
-  padding: 1rem;
-  margin-bottom: 1em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -163,7 +158,6 @@ footer a {
 }
 @media (min-width: 768px) {
   .project-card {
-    margin: 2em 0;
     flex-direction: row;
     gap: 1rem;
     overflow: hidden;
@@ -175,6 +169,7 @@ footer a {
 .carousel-container {
   overflow: hidden;
   position: relative;
+  margin-bottom: 1em;
 }
 
 .carousel-slides {
@@ -185,16 +180,11 @@ footer a {
 
 .carousel-btn__container {
   position: absolute;
-  bottom: 1em;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   gap: 1em;
-}
-@media (min-width: 480px) {
-  .carousel-btn__container {
-    bottom: 0em;
-  }
+  justify-self: center;
+  background-color: #1b4f1a;
+  padding: 0.5em;
 }
 
 .next-btn, .prev-btn {
