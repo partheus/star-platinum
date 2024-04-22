@@ -7,20 +7,8 @@
     <title>{{ pageTitle }} - Parth Shiralkar</title>
 </head>
 <body>
-<nav class="nav-container">
-    <div class="menu-icon">
-        <span class="menu-closed">&#10753; <!-- This is the ☰ character --></span>
-        <span class="menu-open">&#10754;</span>
-        <small>menu</small>
-    </div>
 
-    <ul class="nav-links">
-        <li><a href="/" class="link {{ 'active' if '/' == currentPageUrl }}">Home</a></li>
-        <li><a href="/projects" class="link {{ 'active' if '/projects' in page.url }}">Projects</a></li>
-        <li><a href="/personal" class="link {{ 'active' if '/personal' in page.url }}">Personal</a></li>
-        <li><a href="/colophon" class="link {{ 'active' if '/colophon' in page.url }}">Colophon</a></li>
-    </ul>
-</nav>
+{% include './navbar.liquid' %}
 <h1 class="pagetitle">{{ pageTitle }}</h1>
 <h2 class="pagesubtitle">{{ pageSubtitle }}</h2>
 <div class="content">
