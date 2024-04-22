@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  opacity: 0;
+  //opacity: 0;
   align-items: flex-start;
   justify-content: center; // adjust from space-evenly for consistent snapping behavior
   min-width: 100%; // Consistency in width across breakpoints
@@ -38,6 +38,22 @@
     color: $color--tertiary;
   }
 
+  .project-link {
+    text-decoration: none;
+    color: $color--primary;
+    background-color: $color--secondary;
+    word-break: break-word;
+    font-size: 0.7em;
+    opacity: 0;
+  }
+
+  .project-button__container {
+    display: flex;
+    gap: 1em;
+    margin: 1em 0 0 0;
+    justify-content: flex-start;
+  }
+
   .project-more-link,
   .project-live-link {
     text-decoration: none;
@@ -58,6 +74,7 @@
     width: 100%;
     height: auto;
     max-width: 500px;
+    opacity: 0;
   }
 
   @include media-query(md) {
@@ -82,29 +99,33 @@
   scroll-snap-align: start;
 }
 
-.carousel-btn__container {
-  position: absolute;
-  display: flex;
-  gap: 1em;
-  justify-self: center;
-  background-color: $color--primary;
-  padding: 0.5em;
-}
-
-.next-btn, .prev-btn {
+.carousel-btn {
   background: $color--secondary;
   color: $color--primary;
-  border: none;
   padding: 0.74em 1em;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.4s ease;
-  font-size: 1em;
+  border: none;
+  font-size: 0.8em;
   font-weight: 700;
   font-family: Rubik, sans-serif;
 
-  &:hover {
-    background: $color--tertiary;
-    color: $color--secondary;
+    &:hover {
+      background: $color--tertiary;
+      color: $color--secondary;
+    }
+}
+
+.carousel-btn__container {
+  position: absolute;
+  display: flex;
+  gap: 0.75em;
+  justify-self: center;
+  background-color: $color--primary;
+  padding: 0.5em;
+
+  @include media-query(md) {
+    gap: 1em;
   }
 }
