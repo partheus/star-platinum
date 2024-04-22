@@ -44,12 +44,13 @@
     justify-content: flex-start;
     align-items: center;
     width: fit-content;
+    transition: all 0.3s ease;
   }
 
   small {
     margin-left: 2.5em;
-    font-size: 0.5em;
-    margin-top: 0.4em;
+    font-size: 0.75em;
+    margin-top: 0.24em;
   }
 
   .menu-open, .menu-closed {

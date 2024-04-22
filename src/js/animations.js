@@ -123,8 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
             translateY: isMenuOpen ? [-10, 0] : [0, -10],
             opacity: isMenuOpen ? [1, 0] : [0, 1],
             easing: 'easeInOutExpo',
-            duration: 1000, // Slow down the animation
-            delay: anime.stagger(100), // Stagger the animation of each item
+            duration: 1100, // Slow down the animation
+            delay: anime.stagger(110), // Stagger the animation of each item
             begin: function (anim) {
                 navLinks.style.display = 'flex';
                 navLinks.style.flexDirection = 'column';
@@ -172,28 +172,118 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// project cards animation on load
+// animate: project-number, project-title, project-subtitle, project-link on load
 document.addEventListener('DOMContentLoaded', () => {
-    const projectCards = document.querySelectorAll('.project-card');
-    // Animate the project cards contents
-    const projectCardContents = document.querySelectorAll('.project-card__content');
+    const projectNumber = document.querySelector('.project-number');
+    const projectTitle = document.querySelector('.project-title');
+    const projectSubtitle = document.querySelector('.project-subtitle');
+    const projectLink = document.querySelectorAll('.project-link');
+    const projectCard = document.querySelector('.project-card');
+    // button container for the carousel
+    const carouselButtonContainer = document.querySelector('.carousel-btn__container');
+    //carousel buttons
+    const carouselButton = document.querySelectorAll('.carousel-btn');
+    const projectImage = document.querySelectorAll('.project-image');
 
     anime({
-        targets: projectCards,
-        translateY: [-50, 0],
+        targets: projectNumber,
+        translateX: [-50, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 1200,
-        delay: anime.stagger(600, {start: 1000})
+        duration: 2000,
+        delay: 1400
+    });
+
+    // carousel button container animation
+    anime({
+        targets: carouselButtonContainer,
+        translateX: [50, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: 2200
+    });
+
+    // carousel button animation
+    anime({
+        targets: carouselButton,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        delay: anime.stagger(200, {start: 3000})
     });
 
     anime({
-        targets: projectCardContents,
-        translateX: [-40, 0],
+        targets: projectTitle,
+        translateY: [-20, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 1200,
-        delay: anime.stagger(500, {start: 2000})
+        duration: 2000,
+        delay: 1300
+    });
+
+    anime({
+        targets: projectSubtitle,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: 1200
+    });
+
+    // stagger the animation of each project link
+    anime({
+        targets: projectLink,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        delay: anime.stagger(200, {start: 2800})
+    });
+
+    // slide in from left the first project card on load
+    anime({
+        targets: projectCard,
+        translateX: [-200, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 400,
+        delay: 500
+    });
+
+    // snazzy animation for the project image
+    anime({
+        targets: projectImage,
+        translateY: [-50, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: 2000
+    });
+});
+
+// animate the project card on loading when clicked onto the next project
+document.addEventListener('DOMContentLoaded', () => {
+    const projectCard = document.querySelector('.project-card');
+    const projectImage = document.querySelectorAll('.project-image');
+
+    anime({
+        targets: projectCard,
+        translateX: [-200, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 400,
+        delay: 500
+    });
+
+    anime({
+        targets: projectImage,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: 2000
     });
 });
 

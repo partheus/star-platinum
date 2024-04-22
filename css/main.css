@@ -113,7 +113,6 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  opacity: 0;
   align-items: flex-start;
   justify-content: center;
   min-width: 100%;
@@ -136,6 +135,20 @@ footer a {
   font-size: 1.5em;
   color: #9d0b0b;
 }
+.project-card .project-link {
+  text-decoration: none;
+  color: #1b4f1a;
+  background-color: #ffc757;
+  word-break: break-word;
+  font-size: 0.7em;
+  opacity: 0;
+}
+.project-card .project-button__container {
+  display: flex;
+  gap: 1em;
+  margin: 1em 0 0 0;
+  justify-content: flex-start;
+}
 .project-card .project-more-link,
 .project-card .project-live-link {
   text-decoration: none;
@@ -155,6 +168,7 @@ footer a {
   width: 100%;
   height: auto;
   max-width: 500px;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .project-card {
@@ -178,30 +192,35 @@ footer a {
   scroll-snap-align: start;
 }
 
-.carousel-btn__container {
-  position: absolute;
-  display: flex;
-  gap: 1em;
-  justify-self: center;
-  background-color: #1b4f1a;
-  padding: 0.5em;
-}
-
-.next-btn, .prev-btn {
+.carousel-btn {
   background: #ffc757;
   color: #1b4f1a;
-  border: none;
   padding: 0.74em 1em;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.4s ease;
-  font-size: 1em;
+  border: none;
+  font-size: 0.8em;
   font-weight: 700;
   font-family: Rubik, sans-serif;
 }
-.next-btn:hover, .prev-btn:hover {
+.carousel-btn:hover {
   background: #9d0b0b;
   color: #ffc757;
+}
+
+.carousel-btn__container {
+  position: absolute;
+  display: flex;
+  gap: 0.75em;
+  justify-self: center;
+  background-color: #1b4f1a;
+  padding: 0.5em;
+}
+@media (min-width: 768px) {
+  .carousel-btn__container {
+    gap: 1em;
+  }
 }
 
 .button {
@@ -298,11 +317,12 @@ footer a {
   justify-content: flex-start;
   align-items: center;
   width: fit-content;
+  transition: all 0.3s ease;
 }
 .nav-container small {
   margin-left: 2.5em;
-  font-size: 0.5em;
-  margin-top: 0.4em;
+  font-size: 0.75em;
+  margin-top: 0.24em;
 }
 .nav-container .menu-open, .nav-container .menu-closed {
   width: fit-content;
