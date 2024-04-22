@@ -1,5 +1,10 @@
 ---
-layout: layouts/layout
+layout: layouts/layout.njk
+pagination:
+  data: projects
+  size: 1
+  alias: project
+permalink: "/projects/{{ project.name | slugify }}/"
 ---
 <article>
     <h1>{{ title }}</h1>
