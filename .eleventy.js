@@ -14,10 +14,6 @@ module.exports = function (eleventyConfig) {
         return markdown.render(value);
     });
 
-
-    // Include script to generate pages from data
-    // eleventyConfig.addPlugin(require('src/js/generate-pages.js'));
-
     eleventyConfig.addJavaScriptFunction("generatePages", function() {
     const projects = require('/src/_data/projects.js');
 
@@ -29,16 +25,14 @@ module.exports = function (eleventyConfig) {
                 tech: project.tech,
                 liveSite: project.liveSite
             };
-
             const slug = project.link;
-
             // Add the project page to the collection
-            collection.addItem(`projects/${slug}/`, projectData);
-
-            return projectData;
+            return {
+                template: "project.liquid",
+                data: projectData,
+                slug: slug
+            };
         });
-
-
     });
 
     return {
