@@ -1,4 +1,10 @@
 ---
 layout: layouts/layout
 ---
-This is how a project page looks like.
+<article>
+    <h1>{{ title }}</h1>
+    <p>{{ subtitle }}</p>
+    <img src="{{ image }}" alt="{{ title }}">
+    <p>Technologies Used: {{ tech | join: ', ' }}</p>
+    <a target="_blank" href="{{ liveSite }}">Visit Live Site</a>
+</article>
