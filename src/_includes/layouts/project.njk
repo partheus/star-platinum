@@ -15,11 +15,11 @@ eleventyComputed:
                 {% endfor %}
             </ul>
             <p class="">More info: {{ project.description }}</p>
-            <a href="{{ project.liveSite }}" class="button button--secondary">View Live Site</a>
+            <a href="{{ project.liveSite }}" class="button button--tertiary">View Live Site<span>&rightarrow;</span></a>
         </div>
     </article>
     <br>
-    <a href="/projects" class="button button--primary">Back to Projects</a>
+    <a href="/projects" class="back-to-home button button--primary">Back to Projects<span>&leftarrow;</span></a>
 {% endblock %}
 
 
