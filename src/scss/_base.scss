@@ -16,8 +16,9 @@ body {
   text-transform: uppercase;
   padding: 1em;
   margin: 0 auto;
-  font-size: 135%;
+  font-size: 20px;
   letter-spacing: 0.014rem;
+  min-width: 360px;
 
   @include media-query('lg') {
     max-width: 1400px;
