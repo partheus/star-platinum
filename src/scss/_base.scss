@@ -26,6 +26,11 @@ body {
   }
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: $color--primary;
   letter-spacing: 0.14rem;
@@ -37,10 +42,19 @@ p {
   font-size: 1em;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-color: $color--tertiary;
+  margin: 1em 0;
+  max-width: 35ch;
+  width: 100%;
+}
+
 .landing-page__container__image, .landing-page__container__image img {
   width: 100%;
-  max-height: 375px;
-  margin-top: 1em;
+  max-height: 475px;
+  margin-top: 1.5em;
 }
 
 footer {
