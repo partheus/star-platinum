@@ -1,19 +1,25 @@
 ---
 layout: layouts/layout.njk
 templateOverrideEngine: njk, md
+eleventyComputed:
+  pageTitle: "{{ project.title }}"
+  pageSubtitle: "{{ project.year }}"
 ---
-<h1>{{ project.title }}</h1>
-<h2>{{ project.year }}</h2>
-
 {% block content %}
-  <article>
-    <img src="{{ project.image }}" alt="{{ project.title }}">
-    <ul>
-      {% for tech in project.tech %}
-        <li>{{ tech }}</li>
-      {% endfor %}
-    </ul>
-    <a href="{{ project.liveSite }}">View Live Site</a>
-    <p>Year: {{ project.year }}</p>
-  </article>
+    <article class="project-section">
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+        <div>
+            <ul class="project-tech-stack">
+                {% for tech in project.tech %}
+                    <li>{{ tech }}</li>
+                {% endfor %}
+            </ul>
+            <p class="">More info: {{ project.description }}</p>
+            <a href="{{ project.liveSite }}" class="button button--secondary">View Live Site</a>
+        </div>
+    </article>
+    <br>
+    <a href="/projects" class="button button--primary">Back to Projects</a>
 {% endblock %}
+
+
