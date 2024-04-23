@@ -10,6 +10,7 @@
   pointer-events: none;
   display: none; /* Start hidden */
   z-index: 10000; /* Ensure it's above other elements */
+  opacity: 0.5;
 }
 
 // animated buttons

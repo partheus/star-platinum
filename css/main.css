@@ -15,8 +15,9 @@ body {
   text-transform: uppercase;
   padding: 1em;
   margin: 0 auto;
-  font-size: 135%;
+  font-size: 20px;
   letter-spacing: 0.014rem;
+  min-width: 360px;
 }
 @media (min-width: 1024px) {
   body {
@@ -102,6 +103,7 @@ footer a {
   pointer-events: none;
   display: none; /* Start hidden */
   z-index: 10000; /* Ensure it's above other elements */
+  opacity: 0.5;
 }
 
 .homepage__button__container .button {
@@ -474,6 +476,9 @@ footer a {
   list-style: lower-greek;
   padding: 0;
   margin: 0;
+}
+.colophon hr {
+  opacity: 0;
 }
 .colophon li {
   margin-left: 2em;
