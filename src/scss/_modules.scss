@@ -51,7 +51,7 @@
 .project-card {
   background: $color--primary;
   color: $color--secondary;
-  padding: 1em;
+  padding: 0.8em;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -65,8 +65,11 @@
 
   .project-number {
     color: $color--secondary;
-    word-break: normal;
-    font-size: 0.7em;
+
+    @include media-query(md) {
+      word-break: break-word;
+      max-width: 1ch;
+    }
   }
 
   .project-title,
@@ -74,6 +77,12 @@
     line-height: 1;
     margin-bottom: 1rem;
     margin-top: 0;
+  }
+
+  .project-title {
+    background-color: $color--secondary;
+    padding: 0.2em;
+    width: fit-content;
   }
 
   .project-title {
@@ -97,34 +106,29 @@
     justify-content: flex-start;
   }
 
-  .project-more-link,
-  .project-live-link {
-    text-decoration: none;
-    color: $color--primary;
-    background-color: $color--secondary;
-    padding: 0.5em;
-    font-size: 0.8em;
-    border-radius: 1em;
-    transition: all 0.3s ease;
-    word-break: break-word;
-
-    &:hover {
-      filter: brightness(1.2) contrast(1.2);
-    }
-  }
-
-  img.project-image {
+  .project-image {
     width: 100%;
     height: auto;
-    max-width: 500px;
     opacity: 0;
+    margin-bottom: 0.5em;
+
+    @include media-query(md) {
+      margin-bottom: 0;
+      height: 400px;
+      object-fit: cover;
+      max-width: 500px;
+    }
+
+    @include media-query(xl) {
+      max-width: 700px;
+    }
   }
 
   @include media-query(md) {
     flex-direction: row;
     gap: 1rem;
     overflow: hidden;
-    padding: 1em;
+    padding: 0.8em;
     justify-content: flex-start;
   }
 }
@@ -145,7 +149,7 @@
 .carousel-btn {
   background: $color--secondary;
   color: $color--primary;
-  padding: 0.9em 1em;
+  padding: 0.5em 0.6em;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -161,13 +165,14 @@
 }
 
 .carousel-btn__container {
-  position: absolute;
   display: flex;
-  gap: 0.75em;
-  justify-self: center;
-  align-self: center;
-
-  @include media-query(md) {
-    gap: 1em;
-  }
+  gap: 2em;
+  background: lighten($color--primary, 5%);
+  padding: 0.5em;
+  border-radius: 2em;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
 }

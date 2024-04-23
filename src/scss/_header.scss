@@ -7,7 +7,7 @@
     display: none; // hides the menu initially on mobile
     font-family: 'Rubik One', sans-serif;
     font-weight: 700;
-    row-gap: 1em;
+    row-gap: 0.35em;
     letter-spacing: 0.05em;
     background: darken($color--background, 2%);
 
@@ -16,15 +16,15 @@
     }
   }
 
-  li a {
+  li > a {
     color: $color--tertiary;
-    filter: hue-rotate(180deg);
+    filter: hue-rotate(333deg);
     font-size: 1.3em;
     transition: all 0.3s ease;
-    border-bottom: 2px solid darken($color--background, 15%);
+    border-bottom: 2px solid darken($color--background, 18%);
 
     &:hover {
-      filter: hue-rotate(0);
+      color: $color--primary;
     }
 
     @include media-query(md) {

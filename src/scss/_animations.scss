@@ -1,8 +1,8 @@
 @import "z-index";
 
 #animatedCursor {
-  width: 3.6em;
-  height: 3.6em;
+  width: 1.8em;
+  height: 1.8em;
   border-radius: 50%;
   background-color:$color--tertiary;
   mix-blend-mode: difference; /* Enhances visibility against varying backgrounds */
@@ -15,6 +15,10 @@
 
 // animated buttons
 .homepage__button__container .button {
+  opacity: 0;
+}
+
+.menu-icon {
   opacity: 0;
 }
 
