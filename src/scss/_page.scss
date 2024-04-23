@@ -50,6 +50,8 @@
 }
 
 .colophon {
+  font-size: inherit;
+
   ul {
     list-style: lower-greek;
     padding: 0;
@@ -87,5 +89,29 @@
         margin-left: 0.45em;
       }
     }
+  }
+}
+
+.page-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.8em;
+
+  img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    margin-top: -2.5em;
+
+    @include media-query('md') {
+      max-width: 28ch;
+    }
+  }
+
+  p {
+    margin: 0;
+    color: $color--primary;
   }
 }
