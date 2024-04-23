@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', function () {
     anime({
         targets: '.homepage__button__container .button',
-        translateX: [anime.stagger('0', {start: -50}), 0], // Start from -50px to 0
+        translateX: [anime.stagger('0', {start: -20}), 0], // Start from -20px to 0
         opacity: [0, 1], // Fade from 0 to 1 opacity
-        delay: anime.stagger(250, {start: 1800}), // Delay each button animation by 250ms, starting after 1800ms
-        duration: 750, // Duration of 750ms for each button animation
+        delay: anime.stagger(150, {start: 1800}), // Delay each button animation by 150ms, starting after 1800ms
+        duration: 450, // Duration of 450ms for each button animation
         easing: 'easeOutExpo', // Use an easing for a smooth effect
     });
 });
@@ -136,6 +136,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    anime({ // Animate the menu icon
+        targets: menuIcon,
+        translateY: [15, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 200,
+        delay: 800
+    });
 });
 
 // animation for nav items on load on desktop, colophon page links
@@ -178,7 +187,21 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity: [0, 1],
         easing: 'easeInOutExpo',
         duration: 2400,
-        delay: 1100
+        delay: 2100
+    });
+});
+
+// animate .content on load
+document.addEventListener('DOMContentLoaded', () => {
+    const content = document.querySelector('.content');
+
+    anime({
+        targets: content,
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: 100
     });
 });
 
@@ -200,8 +223,8 @@ document.addEventListener('DOMContentLoaded', () => {
         translateX: [-50, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 2000,
-        delay: 1400
+        duration: 1000,
+        delay: 3400
     });
 
     // carousel button container animation
@@ -220,8 +243,8 @@ document.addEventListener('DOMContentLoaded', () => {
         translateY: [-20, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 1000,
-        delay: anime.stagger(200, {start: 3000})
+        duration: 400,
+        delay: 3000
     });
 
     anime({
@@ -248,28 +271,28 @@ document.addEventListener('DOMContentLoaded', () => {
         translateY: [-20, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 1000,
-        delay: anime.stagger(200, {start: 2800})
+        duration: 800,
+        delay: 1000
     });
 
     // slide in from left the first project card on load
     anime({
         targets: projectCard,
-        translateX: [-200, 0],
+        translateX: [-100, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 400,
-        delay: 500
+        duration: 300,
+        delay: 300
     });
 
     // snazzy animation for the project image
     anime({
         targets: projectImage,
-        translateY: [-50, 0],
+        translateY: [-100, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 2000,
-        delay: 2000
+        duration: 1000,
+        delay: 1000
     });
 });
 
@@ -300,6 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // animate project-section on load
 document.addEventListener('DOMContentLoaded', () => {
     const projectSection = document.querySelector('.project-section');
+    const backToHome = document.querySelector('.back-to-home');
 
     anime({
         targets: projectSection,
@@ -308,6 +332,15 @@ document.addEventListener('DOMContentLoaded', () => {
         easing: 'easeInOutExpo',
         duration: 2000,
         delay: 100
+    });
+
+    anime({
+        targets: backToHome,
+        translateX: [-40, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 400,
+        delay: 1000
     });
 });
 
