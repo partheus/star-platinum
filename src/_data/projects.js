@@ -8,7 +8,8 @@ module.exports = [
         tech: ["HTML", "CSS", "JavaScript"],
         link: "/projects/project-one",
         liveSite: "https://example.com/project-one",
-        year: 2020
+        year: 2020,
+        description: "This is a description of the project."
     },
     {
         id: 2,
@@ -18,7 +19,8 @@ module.exports = [
         tech: ["Node.js", "Express", "MongoDB"],
         link: "/projects/project-two",
         liveSite: "https://example.com/project-two",
-        year: 2021
+        year: 2021,
+        description: "This is a description of the project."
     },
     {
         id: 3,
@@ -28,7 +30,8 @@ module.exports = [
         tech: ["React", "Redux", "Firebase"],
         link: "/projects/project-three",
         liveSite: "https://example.com/project-three",
-        year: 2022
+        year: 2022,
+        description: "This is a description of the project."
     },
     {
         id: 4,
@@ -38,7 +41,8 @@ module.exports = [
         tech: ["Vue", "Vuex", "MongoDB"],
         link: "/projects/project-four",
         liveSite: "https://example.com/project-four",
-        year: 2023
+        year: 2023,
+        description: "This is a description of the project."
     },
     {
         id: 5,
@@ -48,7 +52,8 @@ module.exports = [
         tech: ["Angular", "NgRx", "Firebase"],
         link: "/projects/project-five",
         liveSite: "https://example.com/project-five",
-        year: 2024
+        year: 2024,
+        description: "This is a description of the project."
     }
 
     // Add more projects as needed
