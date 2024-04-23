@@ -287,6 +287,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// animate project-section on load
+document.addEventListener('DOMContentLoaded', () => {
+    const projectSection = document.querySelector('.project-section');
+
+    anime({
+        targets: projectSection,
+        translateY: [50, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: 100
+    });
+});
+
+
 // cursor animation
 document.addEventListener('DOMContentLoaded', () => {
     let cursor = document.querySelector('#animatedCursor');
