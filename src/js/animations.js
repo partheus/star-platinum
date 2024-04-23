@@ -143,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-container ul li');
     const colophonLinks = document.querySelectorAll('.colophon ul li');
     const colophonHeader = document.querySelector('.colophon h2');
+    const horizontalRule = document.querySelector('hr');
 
     anime({
         targets: navItems,
@@ -169,6 +170,15 @@ document.addEventListener('DOMContentLoaded', () => {
         easing: 'easeInOutExpo',
         duration: 2000,
         delay: 800
+    });
+
+    anime({
+        targets: horizontalRule,
+        translateX: [-80, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2400,
+        delay: 1100
     });
 });
 
