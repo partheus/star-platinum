@@ -5,7 +5,7 @@
   height: 3.6em;
   border-radius: 50%;
   background-color:$color--tertiary;
-  //mix-blend-mode: difference; /* Enhances visibility against varying backgrounds */
+  mix-blend-mode: difference; /* Enhances visibility against varying backgrounds */
   position: absolute;
   pointer-events: none;
   display: none; /* Start hidden */
