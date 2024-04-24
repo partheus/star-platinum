@@ -16,15 +16,19 @@
     }
   }
 
+  li {
+    font-size: 1.5rem;
+  }
+
   li > a {
     color: $color--tertiary;
-    filter: hue-rotate(333deg);
-    font-size: 1.3em;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid darken($color--background, 18%);
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid darken($color--background, 21%);
+    text-decoration: none;
 
     &:hover {
       color: $color--primary;
+        border-bottom: 2px solid darken($color--background, 3%);
     }
 
     @include media-query(md) {

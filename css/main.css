@@ -4,7 +4,7 @@
 }
 
 html {
-  filter: contrast(1.26);
+  filter: contrast(1.17);
 }
 
 body {
@@ -15,14 +15,12 @@ body {
   text-transform: uppercase;
   padding: 1em;
   margin: 0 auto;
-  font-size: 135%;
   letter-spacing: 0.014rem;
   min-width: 360px;
 }
 @media (min-width: 1024px) {
   body {
     max-width: 1400px;
-    font-size: 150%;
     padding: 1em 5em;
   }
 }
@@ -37,10 +35,23 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.14rem;
 }
 
-p {
+p, ul li {
   color: #ffc757;
   line-height: 1.5;
   font-size: 1em;
+}
+
+li > a {
+  color: #9d0b0b;
+  text-decoration: none;
+  transition: all 0.3s ease, font-weight 0.3s ease;
+  font-weight: normal;
+  border-bottom: 2px solid transparent;
+}
+li > a:hover {
+  font-weight: bold;
+  color: #1b4f1a;
+  border-bottom: 2px solid #1b4f1a;
 }
 
 ul {
@@ -51,7 +62,7 @@ ul {
 
 ul li {
   color: #143c14;
-  font-size: 0.9em;
+  font-size: 1rem;
   line-height: 1.8;
 }
 
@@ -79,38 +90,12 @@ footer {
 footer a {
   color: #c7005e;
   text-decoration: none;
-  font-size: 0.54em;
+  font-size: 0.9rem;
 }
 
-.link {
-  color: #9d0b0b;
-  text-decoration: none;
-  transition: all 0.3s ease, font-weight 0.3s ease;
-  font-weight: normal;
-  border-bottom: 2px solid transparent;
-}
-.link:hover {
-  font-weight: bold;
-  color: #1b4f1a;
-  border-bottom: 2px solid #1b4f1a;
-}
-
-.nolink {
+.nolink, .nolink:hover, .nolink a, .nolink a:hover {
   text-decoration: none;
   font-weight: normal;
-}
-
-a:not(.button) {
-  color: #9d0b0b;
-  text-decoration: none;
-  transition: all 0.3s ease, font-weight 0.3s ease;
-  font-weight: normal;
-  border-bottom: 2px solid transparent;
-}
-a:not(.button):hover {
-  font-weight: bold;
-  color: #1b4f1a;
-  border-bottom: 2px solid #1b4f1a;
 }
 
 .link.active {
@@ -121,8 +106,8 @@ a:not(.button):hover {
 }
 
 #animatedCursor {
-  width: 1.8em;
-  height: 1.8em;
+  width: 2.1em;
+  height: 2.1em;
   border-radius: 50%;
   background-color: #9d0b0b;
   mix-blend-mode: difference; /* Enhances visibility against varying backgrounds */
@@ -157,6 +142,8 @@ a:not(.button):hover {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+  background-color: #1b4f1a;
+  padding: 0.8em;
 }
 .project-section .project-tech-stack {
   display: flex;
@@ -166,7 +153,6 @@ a:not(.button):hover {
   padding: 0;
   justify-content: flex-start;
   align-content: flex-start;
-  color: #9d0b0b;
   margin: 0;
 }
 .project-section .project-tech-stack li {
@@ -177,7 +163,7 @@ a:not(.button):hover {
   font-size: 0.8em;
 }
 .project-section p {
-  color: #9d0b0b;
+  color: #cd0e0e;
   font-size: 0.8em;
 }
 .project-section img {
@@ -315,7 +301,7 @@ a:not(.button):hover {
 }
 
 .button {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.5;
   padding: 0.45em 1.25em;
@@ -390,15 +376,18 @@ a:not(.button):hover {
     background: initial;
   }
 }
+.nav-container li {
+  font-size: 1.5rem;
+}
 .nav-container li > a {
   color: #9d0b0b;
-  filter: hue-rotate(333deg);
-  font-size: 1.3em;
-  transition: all 0.3s ease;
-  border-bottom: 2px solid #ff51a4;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid #ff429c;
+  text-decoration: none;
 }
 .nav-container li > a:hover {
   color: #1b4f1a;
+  border-bottom: 2px solid #ff9ecc;
 }
 @media (min-width: 768px) {
   .nav-container li > a {
@@ -455,7 +444,7 @@ a:not(.button):hover {
 }
 
 .pagetitle {
-  font-size: 2.5em;
+  font-size: 3rem;
   font-weight: 700;
   white-space: pre-wrap;
   overflow: hidden;
@@ -463,17 +452,16 @@ a:not(.button):hover {
   margin: 1em 0 0 -2px;
   font-family: "Rubik One", sans-serif;
   opacity: 0;
-  filter: contrast(1.1);
 }
 @media (min-width: 768px) {
   .pagetitle {
-    font-size: 3.5em;
+    font-size: 4.5rem;
     margin-left: -4px;
   }
 }
 
 .pagesubtitle {
-  font-size: 0.63em;
+  font-size: 0.63rem;
   font-weight: 600;
   margin: -5px 0 2em 0;
   opacity: 0;
@@ -507,9 +495,6 @@ a:not(.button):hover {
   justify-content: flex-start;
 }
 
-.colophon {
-  font-size: inherit;
-}
 .colophon ul {
   list-style: lower-greek;
   padding: 0;

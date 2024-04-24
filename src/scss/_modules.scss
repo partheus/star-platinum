@@ -9,6 +9,8 @@
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+  background-color: $color--primary;
+  padding: 0.8em;
 
   .project-tech-stack {
     display: flex;
@@ -18,7 +20,6 @@
     padding: 0;
     justify-content: flex-start;
     align-content: flex-start;
-    color: $color--tertiary;
     margin: 0;
 
     li {
@@ -32,7 +33,7 @@
   }
 
   p {
-    color: $color--tertiary;
+    color: lighten($color--tertiary, 10%);
     font-size: 0.8em;
   }
 

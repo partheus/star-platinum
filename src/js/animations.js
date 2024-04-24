@@ -220,11 +220,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     anime({
         targets: projectNumber,
-        translateX: [-50, 0],
+        translateX: [-30, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
         duration: 1000,
-        delay: 3400
+        delay: 1400
     });
 
     // carousel button container animation
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity: [0, 1],
         easing: 'easeInOutExpo',
         duration: 2000,
-        delay: 2200
+        delay: 600
     });
 
     // carousel button animation
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity: [0, 1],
         easing: 'easeInOutExpo',
         duration: 400,
-        delay: 3000
+        delay: 1500
     });
 
     anime({
@@ -312,11 +312,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     anime({
         targets: projectImage,
-        translateY: [-20, 0],
+        translateY: [-40, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 2000,
-        delay: 2000
+        duration: 1500,
+        delay: 1000
     });
 });
 

@@ -5,7 +5,7 @@
 }
 
 html {
-  filter: contrast(1.26);
+  filter: contrast(1.17);
 }
 
 body {
@@ -16,13 +16,11 @@ body {
   text-transform: uppercase;
   padding: 1em;
   margin: 0 auto;
-  font-size: 135%;
   letter-spacing: 0.014rem;
   min-width: 360px;
 
   @include media-query('lg') {
     max-width: 1400px;
-    font-size: 150%;
     padding: 1em 5em;
   }
 }
@@ -37,10 +35,24 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.14rem;
 }
 
-p {
+p, ul li {
   color: $color--secondary;
   line-height: 1.5;
   font-size: 1em;
+}
+
+li > a {
+  color: $color--tertiary;
+  text-decoration: none;
+  transition: all 0.3s ease, font-weight 0.3s ease;
+  font-weight: normal;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    font-weight: bold;
+    color: $color--primary;
+    border-bottom: 2px solid $color--primary;
+  }
 }
 
 ul {
@@ -51,7 +63,7 @@ ul {
 
 ul li {
   color: darken($color--primary, 5%);
-  font-size: 0.9em;
+  font-size: 1rem;
   line-height: 1.8;
 }
 
@@ -79,41 +91,13 @@ footer {
   a {
     color: darken($color--background, 45%);
     text-decoration: none;
-    font-size: 0.54em;
+    font-size: 0.9rem;
   }
 }
 
-.link {
-  color: $color--tertiary;
-  text-decoration: none;
-  transition: all 0.3s ease, font-weight 0.3s ease;
-  font-weight: normal;
-  border-bottom: 2px solid transparent;
-
-  &:hover {
-    font-weight: bold;
-    color: $color--primary;
-    border-bottom: 2px solid $color--primary;
-  }
-}
-
-.nolink {
+.nolink, .nolink:hover, .nolink a, .nolink a:hover {
   text-decoration: none;
   font-weight: normal;
-}
-
-a:not(.button) {
-  color: $color--tertiary;
-  text-decoration: none;
-  transition: all 0.3s ease, font-weight 0.3s ease;
-  font-weight: normal;
-  border-bottom: 2px solid transparent;
-
-  &:hover {
-    font-weight: bold;
-    color: $color--primary;
-    border-bottom: 2px solid $color--primary;
-  }
 }
 
 // active link

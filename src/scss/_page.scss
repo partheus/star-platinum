@@ -1,5 +1,5 @@
 .pagetitle {
-  font-size: 2.5em;
+  font-size: 3rem;
   font-weight: 700;
   white-space: pre-wrap;
   overflow: hidden;
@@ -7,16 +7,15 @@
   margin: 1em 0 0 -2px;
   font-family: 'Rubik One', sans-serif;
   opacity: 0;
-  filter: contrast(1.1);
 
   @include media-query('md') {
-    font-size: 3.5em;
+    font-size: 4.5rem;
     margin-left: -4px;
   }
 }
 
 .pagesubtitle {
-  font-size: 0.63em;
+  font-size: 0.63rem;
   font-weight: 600;
   margin: -5px 0 2em 0;
   opacity: 0;
@@ -50,8 +49,6 @@
 }
 
 .colophon {
-  font-size: inherit;
-
   ul {
     list-style: lower-greek;
     padding: 0;
