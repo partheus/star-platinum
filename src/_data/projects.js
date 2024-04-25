@@ -9,7 +9,7 @@ module.exports = [
         link: "/projects/project-one",
         liveSite: "https://example.com/project-one",
         year: 2020,
-        description: "This is a description of the project. Hipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies aliquam."
+        description: "This is a description of the project. Hipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies aliquam. Nullam nec purus nec nunc ultricies aliquam. Nullam nec purus nec nunc ultricies aliquam."
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ module.exports = [
         link: "/projects/project-two",
         liveSite: "https://example.com/project-two",
         year: 2021,
-        description: "This is a description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies aliquam. Nullam nec purus nec nunc ultricies aliquam."
+        description: "This is a description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies aliquam. Nullam nec purus nec nunc ultricies aliquam. Nullam nec purus nec nunc ultricies aliquam."
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ module.exports = [
         link: "/projects/project-three",
         liveSite: "https://example.com/project-three",
         year: 2022,
-        description: "This is a description of the project. Consec tetur adipiscing elit. Nullam nec purus nec nunc ultricies aliquam."
+        description: "This is a description of the project. Consec tetur adipiscing elit. Nullam nec purus nec nunc ultricies aliquam. Nullam nec purus nec nunc ultricies aliquam."
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ module.exports = [
         link: "/projects/project-four",
         liveSite: "https://example.com/project-four",
         year: 2023,
-        description: "This is a description of the project. Dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies aliquam."
+        description: "This is a description of the project. Dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies aliquam. Nullam nec purus nec nunc ultricies aliquam."
     },
     {
         id: 5,
