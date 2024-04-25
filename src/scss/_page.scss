@@ -1,21 +1,13 @@
 .pagetitle {
-  font-size: 3em;
   font-weight: 700;
   white-space: pre-wrap;
   overflow: hidden;
   line-height: 0.9;
-  margin: 1em 0 0 -2px;
   font-family: 'Rubik One', sans-serif;
   opacity: 0;
-
-  @include media-query('md') {
-    font-size: 4.5em;
-    margin-left: -4px;
-  }
 }
 
 .pagesubtitle {
-  font-size: 0.81em;
   font-weight: 600;
   margin: -5px 0 2em 0;
   opacity: 0;

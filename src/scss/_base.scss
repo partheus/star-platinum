@@ -13,7 +13,6 @@ body {
   font-family: 'Space Mono', monospace;
   height: 100%;
   font-weight: 400;
-  font-size: 1em;
   text-transform: uppercase;
   padding: 1em;
   margin: 0 auto;
@@ -39,7 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 p, ul li {
   color: $color--secondary;
   line-height: 1.5;
-  font-size: 1em;
 }
 
 li > a {
@@ -64,7 +62,6 @@ ul {
 
 ul li {
   color: darken($color--primary, 5%);
-  font-size: 1em;
   line-height: 1.8;
 }
 

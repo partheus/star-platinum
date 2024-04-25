@@ -16,10 +16,6 @@
     }
   }
 
-  li {
-    font-size: 1.5em;
-  }
-
   li > a {
     color: $color--tertiary;
     transition: all 0.3s ease-in-out;
@@ -31,15 +27,11 @@
         border-bottom: 2px solid darken($color--background, 3%);
     }
 
-    @include media-query(md) {
-      font-size: 1em;
-    }
   }
 
   .menu-icon {
     position: relative;
     cursor: pointer;
-    font-size: 1.75em;
     margin-bottom: 1.5em;
     color: $color--primary;
     display: flex;
@@ -53,7 +45,6 @@
 
   small {
     margin-left: 2.5em;
-    font-size: 0.75em;
     margin-top: 0.24em;
   }
 

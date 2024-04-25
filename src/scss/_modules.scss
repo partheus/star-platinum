@@ -27,14 +27,12 @@
       color: $color--secondary;
       padding: 0.35em 0.5em;
       border-radius: 0.5em;
-      font-size: 0.8em;
     }
 
   }
 
   p {
     color: lighten($color--secondary, 10%);
-    font-size: 0.8em;
   }
 
   img {
@@ -87,7 +85,6 @@
   }
 
   .project-title {
-    font-size: 1.5em;
     color: $color--tertiary;
   }
 
@@ -96,7 +93,6 @@
     color: $color--primary;
     background-color: $color--secondary;
     word-break: break-word;
-    font-size: 0.7em;
     opacity: 0;
   }
 
@@ -155,7 +151,6 @@
   cursor: pointer;
   transition: all 0.4s ease;
   border: none;
-  font-size: 1em;
   font-weight: 700;
   font-family: Rubik, sans-serif;
 
