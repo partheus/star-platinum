@@ -76,7 +76,7 @@
   .project-title,
   .project-subtitle {
     line-height: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     margin-top: 0;
   }
 
@@ -127,7 +127,7 @@
 
   @include media-query(md) {
     flex-direction: row;
-    gap: 1rem;
+    gap: 1em;
     overflow: hidden;
     padding: 0.8em;
     justify-content: flex-start;

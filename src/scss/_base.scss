@@ -13,11 +13,11 @@ body {
   font-family: 'Space Mono', monospace;
   height: 100%;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1em;
   text-transform: uppercase;
   padding: 1em;
   margin: 0 auto;
-  letter-spacing: 0.014rem;
+  letter-spacing: 0.014em;
   min-width: 360px;
 
   @include media-query('lg') {
@@ -33,7 +33,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   color: $color--primary;
-  letter-spacing: 0.14rem;
+  letter-spacing: 0.14em;
 }
 
 p, ul li {
@@ -64,7 +64,7 @@ ul {
 
 ul li {
   color: darken($color--primary, 5%);
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1.8;
 }
 
@@ -92,7 +92,6 @@ footer {
   a {
     color: darken($color--background, 45%);
     text-decoration: none;
-    font-size: 0.9rem;
   }
 }
 

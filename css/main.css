@@ -12,11 +12,11 @@ body {
   font-family: "Space Mono", monospace;
   height: 100%;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1em;
   text-transform: uppercase;
   padding: 1em;
   margin: 0 auto;
-  letter-spacing: 0.014rem;
+  letter-spacing: 0.014em;
   min-width: 360px;
 }
 @media (min-width: 1024px) {
@@ -33,7 +33,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   color: #1b4f1a;
-  letter-spacing: 0.14rem;
+  letter-spacing: 0.14em;
 }
 
 p, ul li {
@@ -63,7 +63,7 @@ ul {
 
 ul li {
   color: #143c14;
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1.8;
 }
 
@@ -91,7 +91,6 @@ footer {
 footer a {
   color: #c7005e;
   text-decoration: none;
-  font-size: 0.9rem;
 }
 
 .nolink, .nolink:hover, .nolink a, .nolink a:hover {
@@ -132,16 +131,16 @@ footer a {
     background: #ffadd4;
   }
   20% {
-    background: #fa7bb9;
+    background: #fac1da;
   }
   40% {
-    background: #fa5fa5;
+    background: #ffdfec;
   }
   60% {
-    background: #fc7bb2;
+    background: #fdc9e2;
   }
   80% {
-    background: #ffeaf3;
+    background: #ffadd4;
   }
   100% {
     background: #ffadd4;
@@ -229,7 +228,7 @@ body {
 .project-card .project-title,
 .project-card .project-subtitle {
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   margin-top: 0;
 }
 .project-card .project-title {
@@ -277,7 +276,7 @@ body {
 @media (min-width: 768px) {
   .project-card {
     flex-direction: row;
-    gap: 1rem;
+    gap: 1em;
     overflow: hidden;
     padding: 0.8em;
     justify-content: flex-start;
@@ -327,7 +326,7 @@ body {
 }
 
 .button {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-weight: 400;
   line-height: 1.5;
   padding: 0.45em 1.25em;
@@ -403,7 +402,7 @@ body {
   }
 }
 .nav-container li {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .nav-container li > a {
   color: #9d0b0b;
@@ -470,7 +469,7 @@ body {
 }
 
 .pagetitle {
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 700;
   white-space: pre-wrap;
   overflow: hidden;
@@ -481,13 +480,13 @@ body {
 }
 @media (min-width: 768px) {
   .pagetitle {
-    font-size: 4.5rem;
+    font-size: 4.5em;
     margin-left: -4px;
   }
 }
 
 .pagesubtitle {
-  font-size: 0.63rem;
+  font-size: 0.81em;
   font-weight: 600;
   margin: -5px 0 2em 0;
   opacity: 0;

@@ -1,5 +1,5 @@
 .pagetitle {
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 700;
   white-space: pre-wrap;
   overflow: hidden;
@@ -9,13 +9,13 @@
   opacity: 0;
 
   @include media-query('md') {
-    font-size: 4.5rem;
+    font-size: 4.5em;
     margin-left: -4px;
   }
 }
 
 .pagesubtitle {
-  font-size: 0.63rem;
+  font-size: 0.81em;
   font-weight: 600;
   margin: -5px 0 2em 0;
   opacity: 0;
