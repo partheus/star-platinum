@@ -16,7 +16,6 @@ body {
   text-transform: uppercase;
   padding: 1em;
   margin: 0 auto;
-  letter-spacing: 0.014em;
   min-width: 360px;
 
   @include media-query('lg') {
@@ -32,7 +31,6 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   color: $color--primary;
-  letter-spacing: 0.14em;
 }
 
 p, ul li {

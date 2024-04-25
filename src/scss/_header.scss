@@ -8,7 +8,6 @@
     font-family: 'Rubik One', sans-serif;
     font-weight: 700;
     row-gap: 0.35em;
-    letter-spacing: 0.05em;
     background: darken($color--background, 2%);
 
     @include media-query(md) {

@@ -8,14 +8,13 @@ html {
 }
 
 body {
-  background-color: #ffadd4;
+  background-color: #ffb8da;
   font-family: "Space Mono", monospace;
   height: 100%;
   font-weight: 400;
   text-transform: uppercase;
   padding: 1em;
   margin: 0 auto;
-  letter-spacing: 0.014em;
   min-width: 360px;
 }
 @media (min-width: 1024px) {
@@ -32,7 +31,6 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   color: #1b4f1a;
-  letter-spacing: 0.14em;
 }
 
 p, ul li {
@@ -86,7 +84,7 @@ footer {
   width: 100%;
 }
 footer a {
-  color: #c7005e;
+  color: #d20064;
   text-decoration: none;
 }
 
@@ -96,7 +94,7 @@ footer a {
 }
 
 .link.active {
-  background-color: #ffc1df;
+  background-color: #ffcce5;
   cursor: default;
   transition: all 0.3s ease;
   filter: contrast(1.1);
@@ -143,11 +141,6 @@ footer a {
     background: #ffadd4;
   }
 }
-body {
-  background: #ffadd4; /* Fallback */
-  animation: bgColorAnim 9s infinite linear;
-}
-
 @font-face {
   font-family: "Rubik One";
   src: url("../fontfiles/RubikOne-Regular.ttf") format("truetype");
@@ -384,8 +377,7 @@ body {
   font-family: "Rubik One", sans-serif;
   font-weight: 700;
   row-gap: 0.35em;
-  letter-spacing: 0.05em;
-  background: #ffa3cf;
+  background: #ffaed5;
 }
 @media (min-width: 768px) {
   .nav-container ul {
@@ -395,12 +387,12 @@ body {
 .nav-container li > a {
   color: #9d0b0b;
   transition: all 0.3s ease-in-out;
-  border-bottom: 2px solid #ff429c;
+  border-bottom: 2px solid #ff4da2;
   text-decoration: none;
 }
 .nav-container li > a:hover {
   color: #1b4f1a;
-  border-bottom: 2px solid #ff9ecc;
+  border-bottom: 2px solid #ffa9d2;
 }
 .nav-container .menu-icon {
   position: relative;
