@@ -127,6 +127,31 @@ footer a {
   opacity: 0;
 }
 
+@keyframes bgColorAnim {
+  0% {
+    background: #ffadd4;
+  }
+  20% {
+    background: #fa7bb9;
+  }
+  40% {
+    background: #fa5fa5;
+  }
+  60% {
+    background: #fc7bb2;
+  }
+  80% {
+    background: #ffeaf3;
+  }
+  100% {
+    background: #ffadd4;
+  }
+}
+body {
+  background: #ffadd4; /* Fallback */
+  animation: bgColorAnim 9s infinite linear;
+}
+
 @font-face {
   font-family: "Rubik One";
   src: url("../fontfiles/RubikOne-Regular.ttf") format("truetype");
