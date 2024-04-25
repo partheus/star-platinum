@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -290,7 +290,6 @@ footer a {
   transition: all 0.4s ease;
   border: none;
   font-weight: 700;
-  font-family: Rubik, sans-serif;
 }
 .carousel-btn:hover {
   background: #9d0b0b;
@@ -446,7 +445,6 @@ footer a {
   white-space: pre-wrap;
   overflow: hidden;
   line-height: 0.9;
-  font-family: "Rubik One", sans-serif;
   opacity: 0;
 }
 
