@@ -20,19 +20,5 @@
 
 .menu-icon {
   opacity: 0;
+  font-size: 1.8rem;
 }
-
-// background animation
-@keyframes bgColorAnim {
-  0%   { background: #ffadd4; }
-  20%  { background: #fac1da; }
-  40%  { background: #ffdfec; }
-  60%  { background: #fdc9e2; }
-  80%  { background: #ffadd4; }
-  100% { background: #ffadd4; }
-}
-
-//body {
-//  background: #ffadd4; /* Fallback */
-//  animation: bgColorAnim 9s infinite linear;
-//}
