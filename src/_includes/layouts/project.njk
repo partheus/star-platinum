@@ -2,21 +2,53 @@
 layout: layouts/layout.njk
 templateOverrideEngine: njk, md
 eleventyComputed:
-  pageTitle: "{{ project.title }}"
-  pageSubtitle: "{{ project.year }}"
+    pageTitle: "{{ project.title }}"
+    pageSubtitle: "{{ project.year }}"
 ---
 {% block content %}
     <article class="project-section">
-        <img src="{{ project.image }}" alt="{{ project.title }}">
-        <div>
-            <ul class="project-tech-stack">
-                {% for tech in project.tech %}
-                    <li>{{ tech }}</li>
-                {% endfor %}
-            </ul>
-            <p class="">More info: {{ project.description }}</p>
-            <a href="{{ project.liveSite }}" class="button button--tertiary">View Live Site<span>&rightarrow;</span></a>
+        <div class="project-section__intro">
+            <img src="{{ project.image }}" alt="{{ project.title }}">
+            <div>
+                <ul class="project-tech-stack">
+                    {% for tech in project.tech %}
+                        <li>{{ tech }}</li>
+                    {% endfor %}
+                </ul>
+                <p class="">More info: {{ project.description }}</p>
+                <a href="{{ project.liveSite }}" class="button button--tertiary">View Live Site<span>&rightarrow;</span></a>
+            </div>
         </div>
+        <div class="project-section__main">
+            <div>
+                <h2>Typography</h2>
+                <p>{{ project.typography }}</p>
+            </div>
+            <div>
+            <h2>Color Palette</h2>
+            <div class="color-palette">
+                {% for color in project.colors %}
+                    <div class="color-palette__color" style="background-color: {{ color }};"></div>
+                {% endfor %}
+            </div>
+            </div>
+            {% if project.designDetails %}
+            <div>
+                <h2>Design Details</h2>
+                <p>{{ project.designDetails }}</p>
+            </div>
+            {% endif %}
+        </div>
+        {% if project.awards %}
+            <div class="project-section__awards">
+                <h2>Awards!</h2>
+                <ul>
+                    {% for award in project.awards %}
+                        <li>{{ award }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
     </article>
     <br>
     <a href="/projects" class="back-to-home button button--primary">Back to Projects<span>&curvearrowleft;</span></a>
