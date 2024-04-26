@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // homepage svg animation
 document.addEventListener('DOMContentLoaded', () => {
-    const landingSvg = document.querySelector('#landingSvg');
+    const landingAsset = document.querySelector('#landingAsset');
     anime({
-        targets: landingSvg,
+        targets: landingAsset,
         translateY: [-30, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
@@ -212,6 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectSubtitle = document.querySelector('.project-subtitle');
     const projectLink = document.querySelectorAll('.project-link');
     const projectCard = document.querySelector('.project-card');
+    const projectSection = document.querySelector('.project-section');
     // button container for the carousel
     const carouselButtonContainer = document.querySelector('.carousel-btn__container');
     //carousel buttons
@@ -324,14 +325,16 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const projectSection = document.querySelector('.project-section');
     const backToHome = document.querySelector('.back-to-home');
+    const projectSectionHeaders = document.querySelectorAll('.project-section h2');
+    const projectSectionParagraphs = document.querySelectorAll('.project-section p');
 
     anime({
         targets: projectSection,
-        translateY: [50, 0],
+        translateX: [-50, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 2000,
-        delay: 100
+        duration: 1000,
+        delay: 500
     });
 
     anime({
@@ -341,6 +344,24 @@ document.addEventListener('DOMContentLoaded', () => {
         easing: 'easeInOutExpo',
         duration: 400,
         delay: 1000
+    });
+
+    anime({
+        targets: projectSectionHeaders,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        delay: anime.stagger(300, {start: 800})
+    });
+
+    anime({
+        targets: projectSectionParagraphs,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        delay: anime.stagger(300, {start: 800})
     });
 });
 
@@ -392,6 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // animation for the footer on load
 document.addEventListener('DOMContentLoaded', () => {
     const footerItems = document.querySelectorAll('footer p');
+    const footerIcon = document.querySelectorAll('.footer-icon');
 
     anime({
         targets: footerItems,
@@ -400,6 +422,15 @@ document.addEventListener('DOMContentLoaded', () => {
         easing: 'easeInOutExpo',
         duration: 1000,
         delay: anime.stagger(400, {start: 1000})
+    });
+
+    anime({
+        targets: footerIcon,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        delay: 1400
     });
 });
 
