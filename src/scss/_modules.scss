@@ -31,8 +31,12 @@
 
   }
 
-  p {
-    color: lighten($color--secondary, 10%);
+  p, h2 {
+    color: lighten($color--secondary, 1%);
+  }
+
+  h2 {
+    margin-top: 0.5rem;
   }
 
   img {
@@ -44,8 +48,111 @@
   }
 
   @include media-query(md) {
-    flex-direction: row;
     padding: 1.35rem;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+
+    @include media-query(md) {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+
+  &__main {
+    // auto grid layout with minmax for consistent card width
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 1rem;
+
+    h2 {
+      font-size: 1.75rem;
+      border-top: 2px solid $color--tertiary;
+      width: fit-content;
+      margin-bottom: 0;
+
+        @include media-query(md) {
+            font-size: 2.5rem;
+        }
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 0.4rem;
+
+        @include media-query(md) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .color-palette {
+      display: flex;
+      margin: 0.5em 0;
+      border: 2px solid lighten($color--primary, 50%);
+      width: fit-content;
+      position: relative;
+    }
+
+    .color-palette__color {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      margin-right: -1rem;
+
+      &-name {
+        top: 4rem;
+        left: 0;
+      }
+    }
+
+    @include media-query(md) {
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__awards {
+    transition: all 0.5s ease;
+
+    h2 {
+      font-size: 3.5rem;
+      border-top: 2px solid $color--background;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 1.8rem;
+      color: $color--secondary;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      width: fit-content;
+      gap: 1em;
+      flex-direction: column;
+
+      @include media-query(md) {
+        flex-direction: row;
+      }
+    }
+
+    ul li {
+      font-size: 1.5rem;
+      color: $color--secondary;
+      background: $color--tertiary;
+      padding: 0.5em 1em;
+      border-radius: 1.5em;
+      width: fit-content;
+      list-style: none;
+    }
   }
 }
 
