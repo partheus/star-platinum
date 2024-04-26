@@ -10,7 +10,7 @@
   flex-direction: column;
   gap: 1.5em;
   background-color: $color--primary;
-  padding: 0.8em;
+  padding: 1rem;
 
   .project-tech-stack {
     display: flex;
@@ -36,13 +36,16 @@
   }
 
   img {
-    width: 100%;
     height: auto;
-    max-width: 500px;
+
+    @include media-query(md) {
+      max-width: 500px;
+    }
   }
 
   @include media-query(md) {
     flex-direction: row;
+    padding: 1.35rem;
   }
 }
 
@@ -64,7 +67,7 @@
 
   .project-number {
     color: $color--secondary;
-    font-size: 2rem;
+    font-size: 1.6rem;
 
     @include media-query(md) {
       word-break: break-word;
@@ -83,10 +86,13 @@
     background-color: $color--secondary;
     padding: 0.2em;
     width: fit-content;
+    color: $color--tertiary;
+    font-size: 1.5rem;
   }
 
-  .project-title {
-    color: $color--tertiary;
+  .project-subtitle {
+    color: $color--secondary;
+    font-size: 1.2rem;
   }
 
   .project-link {
@@ -142,7 +148,7 @@
 .carousel-btn {
   background: $color--secondary;
   color: $color--primary;
-  padding: 0.5em 0.6em;
+  padding: 1rem 1rem 0.8rem 1rem;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -153,14 +159,19 @@
     background: $color--tertiary;
     color: $color--secondary;
   }
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .carousel-btn__container {
   display: flex;
-  gap: 2em;
+  gap: 2rem;
   background: lighten($color--primary, 5%);
-  padding: 0.5em;
-  border-radius: 2em;
+  padding: 0.5rem;
+  border-radius: 4rem;
   opacity: 0;
   align-items: center;
   justify-content: center;

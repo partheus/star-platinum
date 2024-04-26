@@ -5,7 +5,7 @@
 }
 
 html {
-  filter: contrast(1.17);
+  //filter: contrast(1.17);
   font-size: 100%;
 }
 
@@ -18,7 +18,7 @@ body {
   padding: 1em;
   margin: 0 auto;
   min-width: 360px;
-  letter-spacing: 1px;
+  letter-spacing: 0.018rem;
 
   @include media-query('lg') {
     max-width: 1400px;
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul li {
-  color: $color--secondary;
+  color: $color--primary;
   line-height: 1.5;
   font-size: 1.2rem;
 }
@@ -78,21 +78,27 @@ hr {
 .landing-page__container__image, .landing-page__container__image img {
   width: 100%;
   max-height: 575px;
-  margin-top: 1.5em;
+  max-width: 275px;
+  margin-top: 2rem;
 
-  @include media-query('md') {
-    max-width: 50ch;
+  @include media-query('lg') {
+    max-height: 600px;
+    max-width: 350px;
   }
 }
 
 footer {
   color: $color--primary;
-  margin: 3em 0 0;
+  margin: 5rem 0 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 0.85rem;
+
+  p {
+    margin: 0 0 0.5em;
+  }
 
   a {
     color: darken($color--background, 45%);

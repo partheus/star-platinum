@@ -10,6 +10,7 @@
   text-decoration: none;
   white-space: nowrap;
   transition: all 0.4s ease;
+  font-size: 1.2rem;
 
   &--primary {
     background-color: $color--primary;
@@ -55,13 +56,13 @@
   // svg span for button icons
   span {
     display: inline-block;
-    margin-left: 0.35em;
+    margin-left: 0.54rem;
     transition: margin-left 0.4s ease; /* Smooth transition for the left property */
   }
 
   &:hover {
     span {
-      margin-left: 0.75em;
+      margin-left: 0.9rem;
     }
   }
 }
