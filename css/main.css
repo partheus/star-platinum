@@ -16,6 +16,8 @@ body {
   padding: 1em;
   margin: 0 auto;
   min-width: 360px;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 @media (min-width: 1024px) {
   body {
@@ -36,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 p, ul li {
   color: #ffc757;
   line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 li > a {
@@ -67,7 +70,7 @@ hr {
   height: 1px;
   background-color: #9d0b0b;
   margin: 1em 0;
-  max-width: 35ch;
+  max-width: 32ch;
   width: 100%;
 }
 
@@ -75,6 +78,11 @@ hr {
   width: 100%;
   max-height: 575px;
   margin-top: 1.5em;
+}
+@media (min-width: 768px) {
+  .landing-page__container__image, .landing-page__container__image img {
+    max-width: 50ch;
+  }
 }
 
 footer {
@@ -193,7 +201,7 @@ footer a {
 .project-card {
   background: #1b4f1a;
   color: #ffc757;
-  padding: 0.8em;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -206,6 +214,7 @@ footer a {
 }
 .project-card .project-number {
   color: #ffc757;
+  font-size: 2rem;
 }
 @media (min-width: 768px) {
   .project-card .project-number {
@@ -241,22 +250,16 @@ footer a {
   justify-content: flex-start;
 }
 .project-card .project-image {
-  width: 100%;
   height: auto;
   opacity: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
   .project-card .project-image {
     margin-bottom: 0;
-    height: 400px;
     object-fit: cover;
-    max-width: 500px;
-  }
-}
-@media (min-width: 1200px) {
-  .project-card .project-image {
-    max-width: 700px;
+    max-height: 450px;
+    max-width: 600px;
   }
 }
 @media (min-width: 768px) {
@@ -264,7 +267,7 @@ footer a {
     flex-direction: row;
     gap: 1em;
     overflow: hidden;
-    padding: 0.8em;
+    padding: 1.35rem;
     justify-content: flex-start;
   }
 }
@@ -388,6 +391,7 @@ footer a {
   transition: all 0.3s ease-in-out;
   border-bottom: 2px solid #ff4da2;
   text-decoration: none;
+  font-size: 1.35rem;
 }
 .nav-container li > a:hover {
   color: #1b4f1a;
@@ -443,15 +447,25 @@ footer a {
 .pagetitle {
   font-weight: 700;
   white-space: pre-wrap;
+  word-break: break-word;
   overflow: hidden;
   line-height: 0.9;
+  font-family: "Rubik One", sans-serif;
   opacity: 0;
+  margin-bottom: 0;
+  font-size: 2.9rem;
+}
+@media (min-width: 768px) {
+  .pagetitle {
+    font-size: 4.5rem;
+  }
 }
 
 .pagesubtitle {
   font-weight: 600;
   margin: -5px 0 2em 0;
   opacity: 0;
+  font-size: 1rem;
   filter: contrast(1.1);
   font-family: "Space Mono", monospace;
   background-color: #ffc757;
@@ -472,6 +486,7 @@ footer a {
   .landing-page-container {
     flex-direction: row;
     column-gap: 2em;
+    max-width: 100ch;
   }
 }
 
@@ -480,6 +495,7 @@ footer a {
   flex-wrap: wrap;
   gap: 0.7em;
   justify-content: flex-start;
+  max-width: 32ch;
 }
 
 .colophon ul {

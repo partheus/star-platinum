@@ -1,16 +1,24 @@
 .pagetitle {
   font-weight: 700;
   white-space: pre-wrap;
+  word-break: break-word;
   overflow: hidden;
   line-height: 0.9;
-  //font-family: 'Rubik One', sans-serif;
+  font-family: 'Rubik One', sans-serif;
   opacity: 0;
+  margin-bottom: 0;
+  font-size: 2.9rem;
+
+    @include media-query('md') {
+        font-size: 4.5rem;
+    }
 }
 
 .pagesubtitle {
   font-weight: 600;
   margin: -5px 0 2em 0;
   opacity: 0;
+  font-size: 1rem;
   filter: contrast(1.1);
   font-family: 'Space Mono', monospace;
   background-color: $color--secondary;
@@ -30,6 +38,7 @@
   @include media-query('lg') {
     flex-direction: row;
     column-gap: 2em;
+    max-width: 100ch;
   }
 }
 
@@ -38,6 +47,7 @@
   flex-wrap: wrap;
   gap: 0.7em;
   justify-content: flex-start;
+  max-width: 32ch;
 }
 
 .colophon {

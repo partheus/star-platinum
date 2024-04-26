@@ -17,6 +17,8 @@ body {
   padding: 1em;
   margin: 0 auto;
   min-width: 360px;
+  font-size: 16px;
+  letter-spacing: 1px;
 
   @include media-query('lg') {
     max-width: 1400px;
@@ -36,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 p, ul li {
   color: $color--secondary;
   line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 li > a {
@@ -68,7 +71,7 @@ hr {
   height: 1px;
   background-color: $color--tertiary;
   margin: 1em 0;
-  max-width: 35ch;
+  max-width: 32ch;
   width: 100%;
 }
 
@@ -76,6 +79,10 @@ hr {
   width: 100%;
   max-height: 575px;
   margin-top: 1.5em;
+
+    @include media-query('md') {
+        max-width: 50ch;
+    }
 }
 
 footer {

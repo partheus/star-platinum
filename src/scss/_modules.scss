@@ -50,7 +50,7 @@
 .project-card {
   background: $color--primary;
   color: $color--secondary;
-  padding: 0.8em;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -64,6 +64,7 @@
 
   .project-number {
     color: $color--secondary;
+    font-size: 2rem;
 
     @include media-query(md) {
       word-break: break-word;
@@ -104,20 +105,15 @@
   }
 
   .project-image {
-    width: 100%;
     height: auto;
     opacity: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
 
     @include media-query(md) {
       margin-bottom: 0;
-      height: 400px;
       object-fit: cover;
-      max-width: 500px;
-    }
-
-    @include media-query(xl) {
-      max-width: 700px;
+      max-height: 450px;
+      max-width: 600px;
     }
   }
 
@@ -125,7 +121,7 @@
     flex-direction: row;
     gap: 1em;
     overflow: hidden;
-    padding: 0.8em;
+    padding: 1.35rem;
     justify-content: flex-start;
   }
 }
