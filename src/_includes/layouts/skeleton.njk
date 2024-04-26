@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <title>{{ pageTitle }} - Parth Shiralkar</title>
+</head>
+<body>
+
+<h1 class="pagetitle">{{ pageTitle }}</h1>
+<h2 class="pagesubtitle">{{ pageSubtitle }}</h2>
+<div class="content">
+    {{ content | safe }}
+</div>
+<div id="animatedCursor"></div>
+
+{% include './footer.njk' %}
+
+</body>
+</html>
