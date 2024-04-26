@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const landingSvg = document.querySelector('#landingSvg');
     anime({
         targets: landingSvg,
-        translateY: [50, 0],
+        translateY: [-30, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 2000,
-        delay: 100
+        duration: 1600,
+        delay: 1200
     });
 });
 
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // animation for nav items on load on desktop, colophon page links
 document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-container ul li');
-    const colophonLinks = document.querySelectorAll('.colophon ul li');
+    const colophonLinks = document.querySelectorAll('.content ul li');
     const colophonHeader = document.querySelector('.colophon h2');
     const horizontalRule = document.querySelector('hr');
 
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     anime({
         targets: horizontalRule,
-        translateX: [-80, 0],
+        translateX: [-30, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
         duration: 2400,
@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function moveCursor(e) {
-        if (window.innerWidth <= 1024) {
+        if (window.innerWidth <= 1111) {
             cursor.style.display = 'none'; // Hide cursor on mobile
             return;
         }
@@ -391,15 +391,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // animation for the footer on load
 document.addEventListener('DOMContentLoaded', () => {
-    const footer = document.querySelector('footer');
+    const footerItems = document.querySelectorAll('footer p');
 
     anime({
-        targets: footer,
+        targets: footerItems,
         translateY: [20, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
         duration: 1000,
-        delay: 2000
+        delay: anime.stagger(400, {start: 1000})
     });
 });
 
