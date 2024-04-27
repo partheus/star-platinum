@@ -212,7 +212,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectSubtitle = document.querySelector('.project-subtitle');
     const projectLink = document.querySelectorAll('.project-link');
     const projectCard = document.querySelector('.project-card');
-    const projectSection = document.querySelector('.project-section');
     // button container for the carousel
     const carouselButtonContainer = document.querySelector('.carousel-btn__container');
     //carousel buttons
@@ -292,32 +291,50 @@ document.addEventListener('DOMContentLoaded', () => {
         translateY: [-100, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 1000,
+        duration: 2000,
         delay: 1000
     });
 });
 
-// animate the project card on loading when clicked onto the next project
+// on clicking next or previous project, animate the project card based on .carousel-btn
 document.addEventListener('DOMContentLoaded', () => {
-    const projectCard = document.querySelector('.project-card');
-    const projectImage = document.querySelectorAll('.project-image');
+    const carouselButton = document.querySelectorAll('.carousel-btn');
 
-    anime({
-        targets: projectCard,
-        translateX: [-200, 0],
-        opacity: [0, 1],
-        easing: 'easeInOutExpo',
-        duration: 400,
-        delay: 500
-    });
+    carouselButton.forEach((button) => {
+        button.addEventListener('click', () => {
+            const projectNumber = document.querySelectorAll('.project-number');
+            const projectImage = document.querySelectorAll('.project-image');
+            const projectCardContent = document.querySelectorAll('.project-card__content');
 
-    anime({
-        targets: projectImage,
-        translateY: [-40, 0],
-        opacity: [0, 1],
-        easing: 'easeInOutExpo',
-        duration: 1500,
-        delay: 1000
+            anime({
+                targets: projectNumber,
+                translateX: [-30, 0],
+                opacity: [0, 1],
+                easing: 'easeInOutExpo',
+                duration: 1000,
+                delay: 400
+            });
+
+            // snazzy animation for the project image
+            anime({
+                targets: projectImage,
+                translateY: [-20, 0],
+                opacity: [0, 1],
+                easing: 'easeInOutExpo',
+                duration: 1200,
+                delay: 300
+            });
+
+            // snazzy animation for the project card content
+            anime({
+                targets: projectCardContent,
+                translateX: [10, 0],
+                opacity: [0, 1],
+                easing: 'easeInOutExpo',
+                duration: 1400,
+                delay: 800
+            });
+        });
     });
 });
 
@@ -364,7 +381,6 @@ document.addEventListener('DOMContentLoaded', () => {
         delay: anime.stagger(300, {start: 800})
     });
 });
-
 
 // cursor animation
 document.addEventListener('DOMContentLoaded', () => {
