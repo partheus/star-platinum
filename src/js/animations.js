@@ -445,8 +445,8 @@ document.addEventListener('DOMContentLoaded', () => {
         translateY: [-20, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 1000,
-        delay: 1400
+        duration: 600,
+        delay: 1200
     });
 });
 

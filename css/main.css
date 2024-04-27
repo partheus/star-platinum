@@ -74,14 +74,14 @@ hr {
 
 .landing-page__container__image, .landing-page__container__image img {
   width: 100%;
-  max-height: 575px;
-  max-width: 275px;
-  margin-top: 2rem;
+  max-width: 175px;
+  margin-top: 0.4rem;
 }
 @media (min-width: 1024px) {
   .landing-page__container__image, .landing-page__container__image img {
     max-height: 600px;
-    max-width: 350px;
+    max-width: 300px;
+    margin-top: 3rem;
   }
 }
 
@@ -624,7 +624,7 @@ footer .footer-icon:hover {
   }
 }
 .landing-page-container__content {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .homepage__button__container {

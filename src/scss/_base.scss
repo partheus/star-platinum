@@ -77,13 +77,13 @@ hr {
 
 .landing-page__container__image, .landing-page__container__image img {
   width: 100%;
-  max-height: 575px;
-  max-width: 275px;
-  margin-top: 2rem;
+  max-width: 175px;
+  margin-top: 0.4rem;
 
   @include media-query('lg') {
     max-height: 600px;
-    max-width: 350px;
+    max-width: 300px;
+    margin-top: 3rem;
   }
 }
 
