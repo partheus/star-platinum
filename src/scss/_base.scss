@@ -15,7 +15,7 @@ body {
   height: 100%;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 1em;
+  padding: 0.81rem;
   margin: 0 auto;
   min-width: 360px;
   letter-spacing: 0.018rem;
@@ -37,8 +37,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul li {
   color: $color--primary;
-  line-height: 1.5;
-  font-size: 1.2rem;
+  line-height: 1.35;
+  font-size: 1.1rem;
 }
 
 li > a {
@@ -114,6 +114,7 @@ footer {
     transition: all 0.5s ease;
     opacity: 0.45;
     margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
 
     &:hover {
       box-shadow: 0 0 0 0.1rem rgb(0 0 0 / 10%);

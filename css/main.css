@@ -12,7 +12,7 @@ body {
   height: 100%;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 1em;
+  padding: 0.81rem;
   margin: 0 auto;
   min-width: 360px;
   letter-spacing: 0.018rem;
@@ -35,8 +35,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul li {
   color: #092c6c;
-  line-height: 1.5;
-  font-size: 1.2rem;
+  line-height: 1.35;
+  font-size: 1.1rem;
 }
 
 li > a {
@@ -110,6 +110,7 @@ footer .footer-icon {
   transition: all 0.5s ease;
   opacity: 0.45;
   margin-top: 0.7rem;
+  margin-bottom: 0.5rem;
 }
 footer .footer-icon:hover {
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
@@ -285,6 +286,7 @@ footer .footer-icon:hover {
   font-size: 3.5rem;
   border-top: 2px solid #cbeaff;
   margin-bottom: 0;
+  margin-top: 5rem;
 }
 .project-section__awards p {
   font-size: 1.8rem;
@@ -340,7 +342,7 @@ footer .footer-icon:hover {
 .project-card .project-title,
 .project-card .project-subtitle {
   line-height: 1;
-  margin-bottom: 1em;
+  margin-bottom: 1.5rem;
   margin-top: 0;
 }
 .project-card .project-title {
@@ -348,7 +350,7 @@ footer .footer-icon:hover {
   padding: 0.2em;
   width: fit-content;
   color: #9d0b0b;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .project-card .project-subtitle {
   color: #f8c35e;
@@ -370,7 +372,7 @@ footer .footer-icon:hover {
 .project-card .project-image {
   height: auto;
   opacity: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 768px) {
   .project-card .project-image {
@@ -578,7 +580,7 @@ footer .footer-icon:hover {
   font-family: "Rubik One", sans-serif;
   opacity: 0;
   margin-bottom: 0;
-  font-size: 2.9rem;
+  font-size: 3rem;
   margin-left: -2px;
 }
 @media (min-width: 768px) {
@@ -590,15 +592,15 @@ footer .footer-icon:hover {
 
 .pagesubtitle {
   font-weight: 600;
-  margin: -8px 0 3rem 0;
+  margin: -8px 0 1.5rem 0;
   opacity: 0;
-  font-size: 1rem;
+  font-size: 0.85rem;
   filter: contrast(1.1);
   font-family: "Space Mono", monospace;
   background-color: #f8c35e;
   width: fit-content;
-  padding: 0.15em 0.25em;
-  word-break: break-all;
+  padding: 0.15rem;
+  word-break: normal;
 }
 
 .pagetitle, .pagesubtitle {
@@ -620,6 +622,9 @@ footer .footer-icon:hover {
     column-gap: 2em;
     max-width: 100ch;
   }
+}
+.landing-page-container__content {
+  margin-top: 1rem;
 }
 
 .homepage__button__container {

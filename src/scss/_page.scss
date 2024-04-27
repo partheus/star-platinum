@@ -6,7 +6,7 @@
   font-family: 'Rubik One', sans-serif;
   opacity: 0;
   margin-bottom: 0;
-  font-size: 2.9rem;
+  font-size: 3rem;
   margin-left: -2px;
 
   @include media-query('md') {
@@ -17,15 +17,15 @@
 
 .pagesubtitle {
   font-weight: 600;
-  margin: -8px 0 3rem 0;
+  margin: -8px 0 1.5rem 0;
   opacity: 0;
-  font-size: 1rem;
+  font-size: 0.85rem;
   filter: contrast(1.1);
   font-family: 'Space Mono', monospace;
   background-color: $color--secondary;
   width: fit-content;
-  padding: 0.15em 0.25em;
-  word-break: break-all;
+  padding: 0.15rem;
+  word-break: normal;
 }
 
 .pagetitle, .pagesubtitle {
@@ -45,6 +45,10 @@
     flex-direction: row;
     column-gap: 2em;
     max-width: 100ch;
+  }
+
+  &__content {
+    margin-top: 1rem;
   }
 }
 
