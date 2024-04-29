@@ -288,10 +288,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // snazzy animation for the project image
     anime({
         targets: projectImage,
-        translateY: [-100, 0],
+        translateY: [-50, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 2000,
+        duration: 1800,
         delay: 1000
     });
 });
@@ -305,6 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const projectNumber = document.querySelectorAll('.project-number');
             const projectImage = document.querySelectorAll('.project-image');
             const projectCardContent = document.querySelectorAll('.project-card__content');
+            const projectCard = document.querySelectorAll('.project-card');
 
             anime({
                 targets: projectNumber,
@@ -312,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
                 duration: 1000,
-                delay: 400
+                delay: 800
             });
 
             // snazzy animation for the project image
@@ -322,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
                 duration: 1200,
-                delay: 300
+                delay: 600
             });
 
             // snazzy animation for the project card content
@@ -332,7 +333,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
                 duration: 1400,
-                delay: 800
+                delay: 700
+            });
+
+            // slide in from left the first project card on load
+            anime({
+                targets: projectCard,
+                translateX: [-200, 0],
+                opacity: [0, 1],
+                easing: 'easeInOutExpo',
+                duration: 450,
+                delay: 0
             });
         });
     });
