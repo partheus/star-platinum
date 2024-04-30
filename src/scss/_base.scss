@@ -121,6 +121,13 @@ footer {
       opacity: 0.63;
     }
   }
+
+  .footer-icon__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
 }
 
 .nolink, .nolink:hover, .nolink a, .nolink a:hover {

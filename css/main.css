@@ -116,6 +116,12 @@ footer .footer-icon:hover {
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
   opacity: 0.63;
 }
+footer .footer-icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
 
 .nolink, .nolink:hover, .nolink a, .nolink a:hover {
   text-decoration: none;
@@ -390,6 +396,10 @@ footer .footer-icon:hover {
     padding: 1.35rem;
     justify-content: flex-start;
   }
+}
+.project-card img {
+  scale: 1.32;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.7);
 }
 
 .carousel-container {
