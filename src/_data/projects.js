@@ -56,7 +56,7 @@ module.exports = [
         typography: "Tenon + Work Sans",
         colors: ["#ffc300", "#007B5A", "#fbf4f2", "#2e50fF", "#ff376b"],
         designDetails: "Elegant and sophisticated design",
-        awards: ["Webby Award"]
+        awards: ["Webby Award for Best User Interface"]
     },
     {
         id: 5,
