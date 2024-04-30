@@ -1,7 +1,7 @@
 {# src/_includes/components/projectDisplay.njk #}
 {% macro projectCard(project, totalProjects) %}
     <div class="project-card">
-        <div class="project-number">0{{ project.id }} / 0{{ totalProjects }}</div>
+        <div class="project-number">00{{ project.id }} / 0{{ totalProjects }}</div>
         <img src="{{ project.image }}" alt="{{ project.title }}" class="project-image">
         <div class="project-card__content"><h4 class="project-title">{{ project.title }}</h4>
             <p class="project-subtitle">{{ project.year }}</p>
