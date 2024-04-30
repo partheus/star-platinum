@@ -316,16 +316,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 delay: 300
             });
 
-            // snazzy animation for the project image
-            anime({
-                targets: projectImage,
-                translateY: [-20, 0],
-                opacity: [0, 1],
-                easing: 'easeInOutExpo',
-                duration: 1200,
-                delay: 400
-            });
-
             // snazzy animation for the project card content
             anime({
                 targets: projectCardContent,
@@ -342,8 +332,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 translateX: [-110, 0],
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
-                duration: 20,
-                delay: 0
+                duration: 120,
+                delay: 100
             });
         });
     });
