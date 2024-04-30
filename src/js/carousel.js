@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const slidesContainer = document.getElementById('carouselSlides');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
+    const backToStartBtn = document.getElementById('backToStartBtn');
 
     let slideIndex = 0; // Starting index
 
@@ -22,4 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     prevBtn.addEventListener('click', () => moveToSlide(-1));
     nextBtn.addEventListener('click', () => moveToSlide(1));
+
+    // Event listener for the new button to go back to the first slide
+    backToStartBtn.addEventListener('click', () => {
+        slideIndex = 0;
+        slidesContainer.style.transform = 'translateX(0%)'; // Move back to the first slide position
+    });
 });
