@@ -355,7 +355,7 @@ footer .footer-icon__container {
 .project-card .project-title,
 .project-card .project-subtitle {
   line-height: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-top: 0;
 }
 .project-card .project-title {
@@ -458,8 +458,10 @@ footer .footer-icon__container {
 }
 
 #backToStartBtn {
-  margin-bottom: 1em;
+  margin-bottom: 0;
   font-size: 0.9rem;
+  border-radius: 0;
+  text-decoration: underline;
 }
 
 .button {
