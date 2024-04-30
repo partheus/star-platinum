@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
                 duration: 1000,
-                delay: 800
+                delay: 300
             });
 
             // snazzy animation for the project image
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
                 duration: 1200,
-                delay: 600
+                delay: 400
             });
 
             // snazzy animation for the project card content
@@ -333,16 +333,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
                 duration: 1400,
-                delay: 700
+                delay: 200
             });
 
             // slide in from left the first project card on load
             anime({
                 targets: projectCard,
-                translateX: [-200, 0],
+                translateX: [-110, 0],
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
-                duration: 450,
+                duration: 20,
                 delay: 0
             });
         });
