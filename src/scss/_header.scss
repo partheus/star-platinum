@@ -1,6 +1,4 @@
 .nav-container {
-  margin-top: 1rem;
-
   ul {
     list-style: none;
     padding: 0;
@@ -22,7 +20,7 @@
     transition: all 0.3s ease-in-out;
     border-bottom: 2px solid darken($color--background, 21%);
     text-decoration: none;
-    font-size: 1.75rem;
+    font-size: 1.35rem;
     letter-spacing: 0.045rem;
     line-height: 1.35;
 
