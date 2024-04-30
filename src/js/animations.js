@@ -288,11 +288,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // snazzy animation for the project image
     anime({
         targets: projectImage,
-        translateY: [-50, 0],
+        translateY: [-20, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 1800,
-        delay: 1000
+        duration: 1000,
+        delay: 300
     });
 });
 
