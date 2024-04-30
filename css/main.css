@@ -184,13 +184,13 @@ footer .footer-icon__container {
 .project-section {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1rem;
   background-color: #092c6c;
   padding: 1rem;
 }
 .project-section .project-tech-stack {
   display: flex;
-  gap: 0.5em;
+  gap: 1rem;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
@@ -212,11 +212,17 @@ footer .footer-icon__container {
 }
 .project-section img {
   height: auto;
+  scale: 1.32;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.2rem;
 }
 @media (min-width: 768px) {
   .project-section img {
-    max-width: 500px;
+    max-width: 580px;
   }
+}
+.project-section img:hover {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
 }
 @media (min-width: 768px) {
   .project-section {
@@ -234,7 +240,7 @@ footer .footer-icon__container {
 @media (min-width: 768px) {
   .project-section__intro {
     flex-direction: row;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 }
 .project-section__main {
@@ -268,6 +274,7 @@ footer .footer-icon__container {
   border: 2px solid #80a9f4;
   width: fit-content;
   position: relative;
+  background-blend-mode: multiply;
 }
 .project-section__main .color-palette__color {
   width: 4rem;
@@ -399,7 +406,11 @@ footer .footer-icon__container {
 }
 .project-card img {
   scale: 1.32;
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.7);
+  transition: all 0.4s ease-in-out;
+  filter: saturate(0.8) hue-rotate(45deg);
+}
+.project-card img:hover {
+  filter: saturate(1.2) hue-rotate(0deg);
 }
 
 .carousel-container {
@@ -444,6 +455,11 @@ footer .footer-icon__container {
   justify-content: center;
   width: fit-content;
   margin: 0 auto;
+}
+
+#backToStartBtn {
+  margin-bottom: 1em;
+  font-size: 0.9rem;
 }
 
 .button {
@@ -640,7 +656,7 @@ footer .footer-icon__container {
 .homepage__button__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7em;
+  gap: 1rem;
   justify-content: flex-start;
 }
 

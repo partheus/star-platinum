@@ -8,13 +8,13 @@
 .project-section {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1rem;
   background-color: $color--primary;
   padding: 1rem;
 
   .project-tech-stack {
     display: flex;
-    gap: 0.5em;
+    gap: 1rem;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
@@ -41,9 +41,16 @@
 
   img {
     height: auto;
+    scale: 1.32;
+    transition: all .5s ease-in-out;
+    border-radius: 0.2rem;
 
     @include media-query(md) {
-      max-width: 500px;
+      max-width: 580px;
+    }
+
+    &:hover {
+      box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
     }
   }
 
@@ -61,7 +68,7 @@
 
     @include media-query(md) {
       flex-direction: row;
-      gap: 2rem;
+      gap: 2.5rem;
     }
   }
 
@@ -77,18 +84,18 @@
       width: fit-content;
       margin-bottom: 0;
 
-        @include media-query(md) {
-            font-size: 2.5rem;
-        }
+      @include media-query(md) {
+        font-size: 2.5rem;
+      }
     }
 
     p {
       font-size: 1rem;
       margin-top: 0.4rem;
 
-        @include media-query(md) {
-            font-size: 1.5rem;
-        }
+      @include media-query(md) {
+        font-size: 1.5rem;
+      }
     }
 
     .color-palette {
@@ -97,6 +104,7 @@
       border: 2px solid lighten($color--primary, 50%);
       width: fit-content;
       position: relative;
+      background-blend-mode: multiply;
     }
 
     .color-palette__color {
@@ -241,7 +249,12 @@
 
   img {
     scale: 1.32;
-    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.7);
+    transition: all 0.4s ease-in-out;
+    filter: saturate(0.8) hue-rotate(45deg);
+
+    &:hover {
+      filter: saturate(1.2) hue-rotate(0deg);
+    }
   }
 }
 
@@ -290,4 +303,10 @@
   justify-content: center;
   width: fit-content;
   margin: 0 auto;
+}
+
+// back to start button for carousel
+#backToStartBtn {
+  margin-bottom: 1em;
+  font-size: 0.9rem;
 }
