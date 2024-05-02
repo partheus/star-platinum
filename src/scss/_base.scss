@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul li {
   color: $color--primary;
-  line-height: 1.35;
+  line-height: 1.65;
   font-size: 1.1rem;
 }
 
@@ -63,7 +63,6 @@ ul {
 
 ul li {
   color: darken($color--primary, 5%);
-  line-height: 1.8;
 }
 
 hr {
@@ -119,6 +118,13 @@ footer {
     &:hover {
       box-shadow: 0 0 0 0.1rem rgb(0 0 0 / 10%);
       opacity: 0.63;
+    }
+
+    svg {
+      path {
+        fill: lighten($color--tertiary, 40%);
+        fill-opacity: 70%;
+      }
     }
   }
 
