@@ -302,19 +302,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     carouselButton.forEach((button) => {
         button.addEventListener('click', () => {
-            const projectNumber = document.querySelectorAll('.project-number');
-            const projectImage = document.querySelectorAll('.project-image');
-            const projectCardContent = document.querySelectorAll('.project-card__content');
+            // const projectCardContent = document.querySelectorAll('.project-card__content');
             const projectCard = document.querySelectorAll('.project-card');
-
-            anime({
-                targets: projectNumber,
-                translateX: [-30, 0],
-                opacity: [0, 1],
-                easing: 'easeInOutExpo',
-                duration: 1000,
-                delay: 300
-            });
+            const projectCardContent = document.querySelectorAll('.project-card__content > *');
 
             // snazzy animation for the project card content
             anime({
