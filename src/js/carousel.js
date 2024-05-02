@@ -29,4 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
         slideIndex = 0;
         slidesContainer.style.transform = 'translateX(0%)'; // Move back to the first slide position
     });
+
+    // only display the backToStartBtn when the user is not on the first slide
+    slidesContainer.addEventListener('transitionend', () => {
+        if (slideIndex === 0) {
+            backToStartBtn.style.opacity = '0';
+        } else {
+            backToStartBtn.style.opacity = '1';
+
+        }
+    });
 });
