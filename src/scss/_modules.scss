@@ -23,8 +23,8 @@
     margin: 0;
 
     li {
-      background: $color--tertiary;
-      color: $color--secondary;
+      background: lighten($color--primary, 20%);
+      color: lighten($color--secondary, 10%);
       padding: 0.35em 0.5em;
       border-radius: 0.5em;
     }
@@ -43,18 +43,13 @@
 
   img {
     height: auto;
-    scale: 1.32;
     transition: all .5s ease-in-out;
     border-radius: 0.2rem;
+    scale: 1.02;
 
     @include media-query(md) {
-      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
       max-width: 580px;
       transition: all .3s ease-in-out;
-
-      &:hover {
-        box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.6);
-      }
     }
   }
 
@@ -69,7 +64,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
-    margin-bottom: 1rem;
 
     .project-button__live {
       margin-bottom: 1rem;
@@ -78,7 +72,14 @@
 
     @include media-query(md) {
       flex-direction: row;
-      gap: 3.5rem;
+      gap: 2.5rem;
+    }
+  }
+
+  &__main--about{
+    @include media-query(md) {
+      border-left: 1rem solid lighten($color--tertiary, 50%);
+      padding-left: 1rem;
     }
   }
 
@@ -86,31 +87,29 @@
     // auto grid layout with minmax for consistent card width
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-    gap: 1rem;
+    gap: 1.2rem;
 
     h2 {
       font-size: 1.75rem;
       border-top: 2px solid $color--tertiary;
       width: fit-content;
-      margin-bottom: 0;
+      margin-bottom: -5px;
+      padding: 0.5rem 0.5rem 0.5rem 0;
+      line-height: 1.1;
 
       @include media-query(md) {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
 
     p {
       font-size: 1rem;
-      margin-top: -0.7rem;
-
-      @include media-query(md) {
-        font-size: 1.5rem;
-      }
+      margin-top: 0rem;
+      margin-bottom: 0;
     }
 
     .color-palette {
       display: flex;
-      margin: 0.5em 0;
       border: 2px solid lighten($color--primary, 50%);
       width: fit-content;
       position: relative;
@@ -120,8 +119,9 @@
     .color-palette__color {
       width: 4rem;
       height: 4rem;
-      border-radius: 50%;
+      border-radius: 30%;
       margin-right: -1rem;
+      box-shadow: -2px 2px 1px 1px rgba(0, 0, 0, 0.2);
 
       &-name {
         top: 4rem;
@@ -132,17 +132,20 @@
 
   &__awards {
     transition: all 0.5s ease;
+    border: 2px solid $color--background;
+    padding: 1rem;
+    margin-top: 1rem;
 
     h2 {
-      font-size: 3.5rem;
-      border-top: 2px solid $color--background;
-      margin-bottom: 0;
-      margin-top: 1rem;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      margin-top: 0;
+      line-height: 1;
+      filter: contrast(1.1) brightness(1.5);
     }
 
-    p {
-      font-size: 1.8rem;
-      color: $color--secondary;
+    a {
+      text-decoration: none;
     }
 
     ul {
@@ -192,12 +195,11 @@
 
   .project-number {
     color: $color--secondary;
-    font-size: 1.6rem;
+    font-size: 1.44rem;
 
     @include media-query(md) {
       word-break: break-word;
       max-width: 1ch;
-      margin-top: auto;
     }
   }
 
@@ -212,13 +214,14 @@
     padding: 0.2em;
     width: fit-content;
     color: $color--tertiary;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.1;
   }
 
   .project-subtitle {
     color: $color--secondary;
-    font-size: 1.2rem;
     line-height: 1.35;
+    font-size: 1rem;
   }
 
   .project-link {
@@ -242,7 +245,7 @@
   .project-image {
     height: auto;
     opacity: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 
     @include media-query(md) {
       margin-bottom: 0;
@@ -254,20 +257,16 @@
 
   @include media-query(md) {
     flex-direction: row;
-    gap: 1em;
+    gap: 1.5rem;
     overflow: hidden;
     padding: 1.35rem;
     justify-content: flex-start;
   }
 
   img {
-    scale: 1.34;
     transition: all 0.4s ease-in-out;
-    filter: saturate(0.8) hue-rotate(45deg);
-
-    &:hover {
-      filter: saturate(1.2) hue-rotate(0deg);
-    }
+    filter: contrast(1.1);
+    scale: 1.02;
   }
 }
 
@@ -320,8 +319,8 @@
 
 // back to start button for carousel
 #backToStartBtn {
-  margin-bottom: 0;
-  font-size: 0.9rem;
+  margin-bottom: -1px;
+  font-size: 0.7rem;
   border-radius: 0;
   text-decoration: underline;
 }

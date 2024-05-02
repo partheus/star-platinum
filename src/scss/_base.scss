@@ -21,7 +21,11 @@ body {
   letter-spacing: 0.018rem;
 
   @include media-query('lg') {
-    max-width: 1400px;
+    max-width: 960px;
+  }
+
+  @include media-query('xl') {
+    max-width: 1200px;
     padding: 1em 5em;
   }
 }
@@ -121,8 +125,9 @@ footer {
     }
 
     svg {
+      scale: 0.8;
       path {
-        fill: lighten($color--tertiary, 40%);
+        fill: lighten($color--tertiary, 30%);
         fill-opacity: 70%;
       }
     }

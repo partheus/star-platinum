@@ -19,7 +19,12 @@ body {
 }
 @media (min-width: 1024px) {
   body {
-    max-width: 1400px;
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    max-width: 1200px;
     padding: 1em 5em;
   }
 }
@@ -115,8 +120,11 @@ footer .footer-icon:hover {
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
   opacity: 0.63;
 }
+footer .footer-icon svg {
+  scale: 0.8;
+}
 footer .footer-icon svg path {
-  fill: #f67e7e;
+  fill: #f34e4e;
   fill-opacity: 70%;
 }
 footer .footer-icon__container {
@@ -202,8 +210,8 @@ footer .footer-icon__container {
   margin: 0;
 }
 .project-section .project-tech-stack li {
-  background: #9d0b0b;
-  color: #f8c35e;
+  background: #1152ca;
+  color: #fad58f;
   padding: 0.35em 0.5em;
   border-radius: 0.5em;
 }
@@ -217,18 +225,14 @@ footer .footer-icon__container {
 }
 .project-section img {
   height: auto;
-  scale: 1.32;
   transition: all 0.5s ease-in-out;
   border-radius: 0.2rem;
+  scale: 1.02;
 }
 @media (min-width: 768px) {
   .project-section img {
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     max-width: 580px;
     transition: all 0.3s ease-in-out;
-  }
-  .project-section img:hover {
-    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.6);
   }
 }
 @media (min-width: 768px) {
@@ -243,7 +247,6 @@ footer .footer-icon__container {
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  margin-bottom: 1rem;
 }
 .project-section__intro .project-button__live {
   margin-bottom: 1rem;
@@ -252,37 +255,40 @@ footer .footer-icon__container {
 @media (min-width: 768px) {
   .project-section__intro {
     flex-direction: row;
-    gap: 3.5rem;
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .project-section__main--about {
+    border-left: 1rem solid #f9aeae;
+    padding-left: 1rem;
   }
 }
 .project-section__main, .project-section__design {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-  gap: 1rem;
+  gap: 1.2rem;
 }
 .project-section__main h2, .project-section__design h2 {
   font-size: 1.75rem;
   border-top: 2px solid #9d0b0b;
   width: fit-content;
-  margin-bottom: 0;
+  margin-bottom: -5px;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  line-height: 1.1;
 }
 @media (min-width: 768px) {
   .project-section__main h2, .project-section__design h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 .project-section__main p, .project-section__design p {
   font-size: 1rem;
-  margin-top: -0.7rem;
-}
-@media (min-width: 768px) {
-  .project-section__main p, .project-section__design p {
-    font-size: 1.5rem;
-  }
+  margin-top: 0rem;
+  margin-bottom: 0;
 }
 .project-section__main .color-palette, .project-section__design .color-palette {
   display: flex;
-  margin: 0.5em 0;
   border: 2px solid #80a9f4;
   width: fit-content;
   position: relative;
@@ -291,8 +297,9 @@ footer .footer-icon__container {
 .project-section__main .color-palette__color, .project-section__design .color-palette__color {
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
+  border-radius: 30%;
   margin-right: -1rem;
+  box-shadow: -2px 2px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .project-section__main .color-palette__color-name, .project-section__design .color-palette__color-name {
   top: 4rem;
@@ -300,16 +307,19 @@ footer .footer-icon__container {
 }
 .project-section__awards {
   transition: all 0.5s ease;
-}
-.project-section__awards h2 {
-  font-size: 3.5rem;
-  border-top: 2px solid #cbeaff;
-  margin-bottom: 0;
+  border: 2px solid #cbeaff;
+  padding: 1rem;
   margin-top: 1rem;
 }
-.project-section__awards p {
-  font-size: 1.8rem;
-  color: #f8c35e;
+.project-section__awards h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  line-height: 1;
+  filter: contrast(1.1) brightness(1.5);
+}
+.project-section__awards a {
+  text-decoration: none;
 }
 .project-section__awards ul {
   padding: 0;
@@ -353,13 +363,12 @@ footer .footer-icon__container {
 }
 .project-card .project-number {
   color: #f8c35e;
-  font-size: 1.6rem;
+  font-size: 1.44rem;
 }
 @media (min-width: 768px) {
   .project-card .project-number {
     word-break: break-word;
     max-width: 1ch;
-    margin-top: auto;
   }
 }
 .project-card .project-title,
@@ -372,12 +381,13 @@ footer .footer-icon__container {
   padding: 0.2em;
   width: fit-content;
   color: #9d0b0b;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.1;
 }
 .project-card .project-subtitle {
   color: #f8c35e;
-  font-size: 1.2rem;
   line-height: 1.35;
+  font-size: 1rem;
 }
 .project-card .project-link {
   text-decoration: none;
@@ -398,7 +408,7 @@ footer .footer-icon__container {
 .project-card .project-image {
   height: auto;
   opacity: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
   .project-card .project-image {
@@ -411,19 +421,16 @@ footer .footer-icon__container {
 @media (min-width: 768px) {
   .project-card {
     flex-direction: row;
-    gap: 1em;
+    gap: 1.5rem;
     overflow: hidden;
     padding: 1.35rem;
     justify-content: flex-start;
   }
 }
 .project-card img {
-  scale: 1.34;
   transition: all 0.4s ease-in-out;
-  filter: saturate(0.8) hue-rotate(45deg);
-}
-.project-card img:hover {
-  filter: saturate(1.2) hue-rotate(0deg);
+  filter: contrast(1.1);
+  scale: 1.02;
 }
 
 .carousel-container {
@@ -471,8 +478,8 @@ footer .footer-icon__container {
 }
 
 #backToStartBtn {
-  margin-bottom: 0;
-  font-size: 0.9rem;
+  margin-bottom: -1px;
+  font-size: 0.7rem;
   border-radius: 0;
   text-decoration: underline;
 }
@@ -539,7 +546,7 @@ footer .footer-icon__container {
 .nav-container ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 3rem;
+  margin: 0;
   flex-direction: column;
   display: none;
   font-family: "Rubik One", sans-serif;
@@ -622,20 +629,20 @@ footer .footer-icon__container {
   margin-bottom: 0;
   font-size: 3rem;
   margin-left: -2px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 @media (min-width: 768px) {
   .pagetitle {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-left: -4px;
   }
 }
 
 .pagesubtitle {
   font-weight: 600;
-  margin: -8px 0 1.5rem 0;
+  margin: -8px 0 1rem 0;
   opacity: 0;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   filter: contrast(1.1);
   font-family: "Space Mono", monospace;
   background-color: #f8c35e;

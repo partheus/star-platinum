@@ -8,19 +8,19 @@
   margin-bottom: 0;
   font-size: 3rem;
   margin-left: -2px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 
   @include media-query('md') {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-left: -4px;
   }
 }
 
 .pagesubtitle {
   font-weight: 600;
-  margin: -8px 0 1.5rem 0;
+  margin: -8px 0 1rem 0;
   opacity: 0;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   filter: contrast(1.1);
   font-family: 'Space Mono', monospace;
   background-color: $color--secondary;
