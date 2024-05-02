@@ -4,10 +4,10 @@
         <div class="project-number">00{{ project.id }} / 0{{ totalProjects }}</div>
         <img src="{{ project.image }}" alt="{{ project.title }}" class="project-image">
         <div class="project-card__content"><h4 class="project-title">{{ project.title }}</h4>
-            <p class="project-subtitle">{{ project.year }}</p>
+            <p class="project-subtitle"><i>{{ project.type }}</i> | {{ project.subtitle }}</p>
             <div class="project-button__container button__container">
-                <a href="{{ project.link }}" class="project-link button button--secondary">View more<span>&#8594;</span></a>
-                <a href="{{ project.link }}" class="project-link button button--secondary">View live site<span>&#8599;</span></a>
+                <a href="{{ project.title | slug }}" class="project-link button button--secondary">View more<span>&#8594;</span></a>
+                <a href="{{ project.liveSite }}" target="_blank" title="{{ project.title }}" class="project-link button button--secondary">View live site<span>&#8599;</span></a>
             </div>
         </div>
     </div>

@@ -8,43 +8,46 @@ eleventyComputed:
 {% block content %}
     <article class="project-section">
         <div class="project-section__intro">
-            <img src="{{ project.image }}" alt="{{ project.title }}">
-            <div>
+            <div style="display: grid;">
+                <a href="{{ project.liveSite }}" target="_blank" title="{{ project.title }}" class="project-button__live button button--tertiary">View Live Site<span>&#8599;</span></a>
+                <img src="{{ project.image }}" alt="{{ project.title }}">
+            </div>
+            <div class="project-section__main">
                 <ul class="project-tech-stack">
                     {% for tech in project.tech %}
                         <li>{{ tech }}</li>
                     {% endfor %}
                 </ul>
-                <p class="">More info: {{ project.description }}</p>
-                <a href="{{ project.liveSite }}" class="button button--tertiary">View Live Site<span>&rightarrow;</span></a>
+                <div>
+                    <h2>Typography</h2>
+                    <p>{{ project.typography }}</p>
+                </div>
+                <div>
+                    <h2>Color Palette</h2>
+                    <div class="color-palette">
+                        {% for color in project.colors %}
+                            <div class="color-palette__color" style="background-color: {{ color }};"></div>
+                        {% endfor %}
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="project-section__main">
-            <div>
-                <h2>Typography</h2>
-                <p>{{ project.typography }}</p>
-            </div>
-            <div>
-            <h2>Color Palette</h2>
-            <div class="color-palette">
-                {% for color in project.colors %}
-                    <div class="color-palette__color" style="background-color: {{ color }};"></div>
-                {% endfor %}
-            </div>
-            </div>
-            {% if project.designDetails %}
-            <div>
-                <h2>Design Details</h2>
-                <p>{{ project.designDetails }}</p>
-            </div>
-            {% endif %}
+            <p class="">More info: {{ project.description }}</p>
+{#            {% if project.designDetails %}#}
+{#                <div class="project-section__design">#}
+{#                    <h2>Design Details</h2>#}
+{#                    <p>{{ project.designDetails }}</p>#}
+{#                </div>#}
+{#            {% endif %}#}
         </div>
         {% if project.awards %}
             <div class="project-section__awards">
                 <h2>Awards!</h2>
                 <ul>
                     {% for award in project.awards %}
-                        <li>{{ award }}</li>
+                    {% for link in project.awardsLinks %}<a target="_blank" href="{{ link }}"><li>{{ award }} <span>&#8599;</span></li></a>{% endfor %}
                     {% endfor %}
                 </ul>
             </div>
