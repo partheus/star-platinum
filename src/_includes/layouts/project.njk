@@ -9,7 +9,9 @@ eleventyComputed:
     <article class="project-section">
         <div class="project-section__intro">
             <div style="display: grid;">
+                {% if project.liveSite %}
                 <a href="{{ project.liveSite }}" target="_blank" title="{{ project.title }}" class="project-button__live button button--tertiary">View Live Site<span>&#8599;</span></a>
+                {% endif %}
                 <img src="{{ project.image }}" alt="{{ project.title }}">
             </div>
             <div class="project-section__main">
@@ -30,24 +32,24 @@ eleventyComputed:
                         {% endfor %}
                     </div>
                 </div>
-
+                {% if project.designDetails %}
+                    <div>
+                        <h2>Contribution</h2>
+                        <p>{{ project.designDetails }}</p>
+                    </div>
+                {% endif %}
             </div>
         </div>
-        <div class="project-section__main">
-            <p class="">More info: {{ project.description }}</p>
-{#            {% if project.designDetails %}#}
-{#                <div class="project-section__design">#}
-{#                    <h2>Design Details</h2>#}
-{#                    <p>{{ project.designDetails }}</p>#}
-{#                </div>#}
-{#            {% endif %}#}
+        <div class="project-section__design">
+            <p class="project-section__main--about">{{ project.description }}</p>
         </div>
         {% if project.awards %}
             <div class="project-section__awards">
-                <h2>Awards!</h2>
+                <h2>Notable</h2>
                 <ul>
                     {% for award in project.awards %}
-                    {% for link in project.awardsLinks %}<a target="_blank" href="{{ link }}"><li>{{ award }} <span>&#8599;</span></li></a>{% endfor %}
+                        {% set awardsLinks = project.awardsLinks[loop.index0] %}
+                    <a target="_blank" href="{{ awardsLinks }}"><li>{{ award }} <span>&#8599;</span></li></a>
                     {% endfor %}
                 </ul>
             </div>
