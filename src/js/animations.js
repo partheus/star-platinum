@@ -373,6 +373,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// animate everything in contact-form on load
+document.addEventListener('DOMContentLoaded', () => {
+    const contactFormContent = document.querySelectorAll('.contact-form div');
+
+    anime({
+        targets: contactFormContent,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        delay: anime.stagger(300, {start: 1000})
+    });
+});
+
 // cursor animation
 document.addEventListener('DOMContentLoaded', () => {
     let cursor = document.querySelector('#animatedCursor');
