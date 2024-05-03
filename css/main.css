@@ -91,7 +91,7 @@ hr {
 
 footer {
   color: #092c6c;
-  margin: 5rem 0 0;
+  margin: 5rem 0 2rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -102,6 +102,7 @@ footer a, footer p {
   color: #0088e5;
   text-decoration: none;
   font-size: 0.85rem;
+  margin-bottom: 0;
 }
 footer .footer-icon {
   width: 2rem;
@@ -374,7 +375,6 @@ footer .footer-icon__container {
 }
 .project-card .project-title,
 .project-card .project-subtitle {
-  margin-bottom: 1rem;
   margin-top: 0;
 }
 .project-card .project-title {
@@ -384,6 +384,7 @@ footer .footer-icon__container {
   color: #9d0b0b;
   font-size: 1.25rem;
   line-height: 1.1;
+  margin-bottom: 0.5rem;
 }
 .project-card .project-subtitle {
   color: #f8c35e;
@@ -482,6 +483,28 @@ footer .footer-icon__container {
   font-size: 0.7rem;
   border-radius: 0;
   text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #f8c35e;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+.contact-form h3 {
+  font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Rubik One", sans-serif;
+}
+.contact-form p {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .button {
