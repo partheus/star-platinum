@@ -52,7 +52,7 @@ module.exports = [
         tech: ["Wordpress", "SCSS", "COMPOSER"],
         liveSite: "https://www.thechoosekindnessproject.org/",
         year: "2023",
-        description: "This is a description of the project. Dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies aliquam. Nullam nec purus nec nunc ultricies aliquam.",
+        description: "The Choose Kindness Project is an anti-bullying resource campaign by Disney. The website provides resources, tools, and information to help individuals and communities combat bullying and promote kindness and inclusivity.",
         typography: "Tenon + Work Sans",
         colors: ["#ffc300", "#007B5A", "#fbf4f2", "#2e50fF", "#ff376b"],
         designDetails: "Module development and QA",
