@@ -332,7 +332,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: flex-start;
   justify-content: flex-start;
   color: $color--secondary;
@@ -342,8 +342,11 @@
   h3 {
     font-size: 1.75rem;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
     font-family: "Rubik One", sans-serif;
+    border-left: 1rem solid lighten($color--primary, 50%);
+    padding-left: 1rem;
+    line-height: 1;
   }
 
   p {
