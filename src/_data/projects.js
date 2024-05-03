@@ -3,7 +3,7 @@ module.exports = [
     {
         id: 1,
         title: "Cana",
-        subtitle: "A 3D Printer for Drinks",
+        subtitle: "A Printer for Drinks",
         image: "/img/webp/cana.webp",
         tech: ["TWIG", "Shopify", "Wordpress"],
         liveSite: "https://cana.com",
@@ -11,7 +11,7 @@ module.exports = [
         description: "Developed the navbar and a few modules for the site, helped set up Shopify for the backend.",
         typography: "Degular + Roboto Mono",
         colors: ["#003e4e", "#fff", "#6dcada", "#f20044", "#d3e900"],
-        designDetails: "Module development and Shopify setup",
+        designDetails: "Module development and QA",
         awards: ["Patrick Stewart Approves of it"],
         awardsLinks: ["https://www.businesswire.com/news/home/20230302005097/en/Sir-Patrick-Stewart-Joins-Cana-as-%E2%80%9CMission-Ambassador%E2%80%9D-to-Help-End-the-Global-Trash-Crisis"],
         type: "website"
@@ -33,7 +33,7 @@ module.exports = [
     {
         id: 3,
         title: "UHG",
-        subtitle: "Insurance company offering insurance products under UnitedHealthcare.",
+        subtitle: "Insurance products under UnitedHealthcare and Optum.",
         image: "/img/webp/uhg.webp",
         tech: ["Nunjucks", "Gulp", "DDEV"],
         liveSite: "https://uhg.com",
@@ -96,7 +96,7 @@ module.exports = [
         tech: ["composer", "webpack", "babel"],
         liveSite: "https://www.malarkeyroofing.com/",
         year: "2023",
-        description: "Malarkey Roofing is a website that provides information and services related to roofing. It offers products, resources, and solutions for residential and commercial roofing needs.",
+        description: "A provider of information and services related to roofing. It offers products, resources, and solutions for residential and commercial roofing needs.",
         typography: "Geogrotesque",
         colors: ["#F8F8F8", "#D28122", "#24C26C", "#000", "#efefef"],
         designDetails: "Module development, QA, and deployment",
