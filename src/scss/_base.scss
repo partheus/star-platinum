@@ -99,11 +99,7 @@ footer {
   align-items: center;
   font-size: 0.85rem;
 
-  p {
-    margin: 0 0 0.5em;
-  }
-
-  a {
+  a, p {
     color: darken($color--background, 45%);
     text-decoration: none;
     font-size: 0.85rem;
