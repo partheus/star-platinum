@@ -79,8 +79,7 @@ hr {
 }
 
 .landing-page__container__image, .landing-page__container__image img {
-  width: 100%;
-  max-width: 175px;
+  width: 270px;
   margin-top: 0.4rem;
 
   @include media-query('lg') {
@@ -100,9 +99,9 @@ footer {
   font-size: 0.85rem;
 
   a, p {
-    color: darken($color--background, 45%);
+    color: darken($color--background, 65%);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.65rem;
     margin-bottom: 0;
   }
 
