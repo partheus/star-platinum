@@ -5,7 +5,7 @@
 }
 
 html {
-  //filter: contrast(1.17);
+  filter: contrast(1.08);
   font-size: 100%;
 }
 
@@ -20,12 +20,12 @@ body {
   min-width: 360px;
   letter-spacing: 0.018rem;
 
-  @include media-query('lg') {
-    max-width: 960px;
+  @include media-query('xl') {
+    max-width: 1024px;
   }
 
-  @include media-query('xl') {
-    max-width: 1100px;
+  @include media-query('xxl') {
+    max-width: 1200px;
     padding: 1em 5em;
   }
 }
@@ -140,6 +140,7 @@ footer {
 .nolink, .nolink:hover, .nolink a, .nolink a:hover {
   text-decoration: none;
   font-weight: normal;
+  color: initial !important;
 }
 
 // active link

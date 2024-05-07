@@ -3,6 +3,7 @@
 }
 
 html {
+  filter: contrast(1.08);
   font-size: 100%;
 }
 
@@ -17,14 +18,14 @@ body {
   min-width: 360px;
   letter-spacing: 0.018rem;
 }
-@media (min-width: 1024px) {
-  body {
-    max-width: 960px;
-  }
-}
 @media (min-width: 1200px) {
   body {
-    max-width: 1100px;
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1600px) {
+  body {
+    max-width: 1200px;
     padding: 1em 5em;
   }
 }
@@ -134,6 +135,7 @@ footer .footer-icon__container {
 .nolink, .nolink:hover, .nolink a, .nolink a:hover {
   text-decoration: none;
   font-weight: normal;
+  color: initial !important;
 }
 
 .link.active {
