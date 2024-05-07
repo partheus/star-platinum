@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/js')
     eleventyConfig.addPassthroughCopy('src/lib')
     eleventyConfig.addPassthroughCopy('src/fontfiles')
+    eleventyConfig.addPassthroughCopy('src/favicon.ico')
 
     // Add a Markdown filter using markdown-it
     eleventyConfig.addNunjucksFilter("markdownify", function(value) {
