@@ -25,7 +25,7 @@ body {
   }
 
   @include media-query('xl') {
-    max-width: 1200px;
+    max-width: 1100px;
     padding: 1em 5em;
   }
 }
