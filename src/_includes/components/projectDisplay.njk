@@ -3,8 +3,9 @@
     <div class="project-card">
         <div class="project-number"># {{ project.id }} / {{ totalProjects }}</div>
         <img src="{{ project.image }}" alt="{{ project.title }}" class="project-image">
-        <div class="project-card__content"><h4 class="project-title">{{ project.title }}<span class="project-type"> | {{ project.type }}</span></h4>
+        <div class="project-card__content"><h4 class="project-title">{{ project.title }}</span></h4>
             <p class="project-subtitle">{{ project.subtitle }}</p>
+            <p class="project-year">{{ project.year }}<span class="project-type"> | {{ project.type }}</p>
             <div class="project-button__container button__container">
                 <a href="{{ project.title | slug }}" class="project-link button button--secondary">View more<span>&#8594;</span></a>
                 {% if project.liveSite %}
