@@ -25,7 +25,7 @@ body {
   }
 
   @include media-query('xxl') {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 1em 5em;
   }
 }
@@ -122,6 +122,7 @@ footer {
 
     svg {
       scale: 0.8;
+
       path {
         fill: lighten($color--tertiary, 30%);
         fill-opacity: 70%;

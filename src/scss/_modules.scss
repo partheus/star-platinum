@@ -31,6 +31,13 @@
 
   }
 
+  .project-contribution {
+
+    p {
+      background-color: lighten($color--primary, 6%);
+    }
+  }
+
   p, h2 {
     color: lighten($color--secondary, 1%);
   }
@@ -218,18 +225,35 @@
 
   .project-title {
     background-color: $color--secondary;
-    padding: 0.2em;
+    padding: 0.2em 0.6em;
     width: fit-content;
     color: $color--tertiary;
     font-size: 1.25rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
+
+    @include media-query(lg) {
+      font-size: 1.5rem;
+    }
   }
 
   .project-subtitle {
     color: $color--secondary;
     line-height: 1.35;
     font-size: 1rem;
+  }
+
+  .project-year {
+    color: $color--secondary;
+    font-size: 0.8rem;
+    margin-top: -0.75rem;
+    background: $color--tertiary;
+    padding: 0.2em 0.8em;
+    width: fit-content;
+  }
+
+  .project-type {
+    filter: contrast(1.8) brightness(1.2) saturate(1.2) sepia(0.5) hue-rotate(180deg);
   }
 
   .project-link {

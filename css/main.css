@@ -25,7 +25,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 1em 5em;
   }
 }
@@ -214,6 +214,9 @@ footer .footer-icon__container {
   padding: 0.35em 0.5em;
   border-radius: 0.5em;
 }
+.project-section .project-contribution p {
+  background-color: #0b3888;
+}
 .project-section p, .project-section h2 {
   color: #f8c563;
 }
@@ -383,17 +386,33 @@ footer .footer-icon__container {
 }
 .project-card .project-title {
   background-color: #f8c35e;
-  padding: 0.2em;
+  padding: 0.2em 0.6em;
   width: fit-content;
   color: #9d0b0b;
   font-size: 1.25rem;
   line-height: 1.1;
   margin-bottom: 0.5rem;
 }
+@media (min-width: 1024px) {
+  .project-card .project-title {
+    font-size: 1.5rem;
+  }
+}
 .project-card .project-subtitle {
   color: #f8c35e;
   line-height: 1.35;
   font-size: 1rem;
+}
+.project-card .project-year {
+  color: #f8c35e;
+  font-size: 0.8rem;
+  margin-top: -0.75rem;
+  background: #9d0b0b;
+  padding: 0.2em 0.8em;
+  width: fit-content;
+}
+.project-card .project-type {
+  filter: contrast(1.8) brightness(1.2) saturate(1.2) sepia(0.5) hue-rotate(180deg);
 }
 .project-card .project-link {
   text-decoration: none;
