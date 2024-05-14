@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', function () {
     anime({
         targets: '.homepage__button__container .button',
-        translateX: [anime.stagger('0', {start: -20}), 0], // Start from -20px to 0
-        opacity: [0, 1], // Fade from 0 to 1 opacity
-        delay: anime.stagger(150, {start: 1800}), // Delay each button animation by 150ms, starting after 1800ms
-        duration: 450, // Duration of 450ms for each button animation
-        easing: 'easeOutExpo', // Use an easing for a smooth effect
+        translateX: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1200,
+        delay: anime.stagger(150, {start: 1200})
     });
 });
 
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // animation for nav items on load on desktop, colophon page links
 document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-container ul li');
-    const colophonLinks = document.querySelectorAll('.content ul li');
+    const colophonLinks = document.querySelectorAll('.max-content-width ul li');
     const colophonHeader = document.querySelector('.colophon h2');
     const horizontalRule = document.querySelector('hr');
 
@@ -210,6 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectNumber = document.querySelector('.project-number');
     const projectTitle = document.querySelector('.project-title');
     const projectSubtitle = document.querySelector('.project-subtitle');
+    const projectYear = document.querySelector('.project-year');
     const projectLink = document.querySelectorAll('.project-link');
     const projectCard = document.querySelector('.project-card');
     // button container for the carousel
@@ -255,6 +256,15 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: 2000,
         delay: 1300
     });
+
+    anime({
+        targets: projectYear,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: 1100
+    })
 
     anime({
         targets: projectSubtitle,
@@ -333,8 +343,10 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const projectSection = document.querySelector('.project-section');
     const backToHome = document.querySelector('.back-to-home');
+    const nextProject = document.querySelector('.next-project');
     const projectSectionHeaders = document.querySelectorAll('.project-section h2');
     const projectSectionParagraphs = document.querySelectorAll('.project-section p');
+    const projectSectionAwards = document.querySelectorAll('.project-section__awards li');
 
     anime({
         targets: projectSection,
@@ -346,12 +358,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     anime({
-        targets: backToHome,
+        targets: backToHome + nextProject,
         translateX: [-40, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 400,
-        delay: 1000
+        duration: 1000,
+        delay: 800
     });
 
     anime({
@@ -365,6 +377,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     anime({
         targets: projectSectionParagraphs,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        delay: anime.stagger(300, {start: 800})
+    });
+
+    anime({
+        targets: projectSectionAwards,
         translateY: [-20, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
@@ -450,8 +471,8 @@ document.addEventListener('DOMContentLoaded', () => {
         translateY: [-20, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 600,
-        delay: 1200
+        duration: 300,
+        delay: 1000
     });
 });
 
