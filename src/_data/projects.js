@@ -12,7 +12,8 @@ module.exports = [
         typography: "FreightSans + FreightSans Pro",
         colors: ["#FFFFFF", "#2E437D", "#E3E8EE", "#FF685B", "#D4DEED"],
         contributionDetails: " I developed and modified modules, updated sitewide assets and styles.",
-        type: "website"
+        type: "website",
+        nextProject: "/projects/nike-sb/"
     },
     {
         id: 2,
@@ -26,7 +27,8 @@ module.exports = [
         typography: "Bookmania + Roboto Mono + Gothic FB Wide",
         colors: ["#ff6123", "#79c06b", "#70c8fe", "#000000", "#f4e372"],
         contributionDetails: " I developed and tested modules, updated styles and assets, and conducted QA to ensure the site was responsive and accessible across devices.",
-        type: "website"
+        type: "website",
+        nextProject: "/projects/ybos-by-nike-sb/"
     },
     {
         id: 3,
@@ -40,7 +42,8 @@ module.exports = [
         typography: "Bookmania + Roboto Mono + Gothic FB Wide",
         colors: ["#ff6123", "#79c06b", "#70c8fe", "#000000", "#f4e372"],
         contributionDetails: " I developed and tested modules, updated styles and assets, and conducted QA to ensure the site was responsive and accessible across devices.",
-        type: "website"
+        type: "website",
+        nextProject: "/projects/uhg/"
     },
 
     {
@@ -55,7 +58,8 @@ module.exports = [
         typography: "Optum Sans + Graphik",
         colors: ["#002677", "#0066F5", "#CCE0FC", "#FFFFFF", "#DA5AB6"],
         contributionDetails: "As one of the lead developers, I created several modules, updated styles, and assets for the site, aggregated links for testing and deployment, conducted CI/CD and QA throughout the project lifecycle.",
-        type: "website"
+        type: "website",
+        nextProject: "/projects/digital-garden/"
     },
     {
         id: 5,
@@ -68,7 +72,8 @@ module.exports = [
         typography: "Arial + Courier New",
         colors: ["#000", "#fff", "#000", "#fff", "#000"],
         contributionDetails: "Principal Dev role. I built the project on top of p5.js and used HTML canvas to render the flowers, conducted QA, and deployed the project.",
-        type: "webapp"
+        type: "webapp",
+        nextProject: "/projects/choose-kindness/"
     },
 
     {
@@ -85,7 +90,8 @@ module.exports = [
         contributionDetails: "I developed and tested modules, conducted QA, and ensured the site was responsive and accessible across devices.",
         awards: ["Webby Nominee for Best User Interface", "Anthem Finalist for Best Website"],
         awardsLinks: ["https://winners.webbyawards.com/2023/websites-and-mobile-sites/features-design/best-user-interface/256912/the-choose-kindness-project", "https://www.anthemawards.com/press/press-releases/finalists-announced-for-3rd-annual-anthem-awards/"],
-        type: "website"
+        type: "website",
+        nextProject: "/projects/disney-csr/"
     },
     {
         id: 7,
@@ -99,26 +105,28 @@ module.exports = [
         typography: "Museo Sans + Inspire TWDC",
         colors: ["#fff5f4", "#081351", "#ff6621", "#00d99e", "#e2b2ff"],
         contributionDetails: "I mainly undertook QA and logo/branding tasks for the site.",
-        type: "website"
+        type: "website",
+        nextProject: "/projects/malarkey-roofing/"
     },
     {
         id: 8,
         title: "Malarkey Roofing",
-        subtitle: "Services and products for residential and commercial roofing needs.",
+        subtitle: "Services & products for residential & commercial roofing.",
         image: "/img/webp/malarkey.webp",
         tech: ["composer", "webpack", "babel"],
         liveSite: "https://www.malarkeyroofing.com/",
         year: "2023",
-        description: "A provider of information and services related to roofing. It offers products, resources, and solutions for residential and commercial roofing needs.",
+        description: "A provider of information and services (products, resources, and solutions) related to residential and commercial roofing needs.",
         typography: "Geogrotesque",
         colors: ["#F8F8F8", "#D28122", "#24C26C", "#000", "#efefef"],
         contributionDetails: "I conducted QA to ensure the site was responsive and accessible across devices, and fixed bugs and issues as they arose.",
-        type: "website"
+        type: "website",
+        nextProject: "/projects/uhg-sustainability/"
     },
     {
         id: 9,
         title: "UHG Sustainability",
-        subtitle: "A platform for UnitedHealth Group's sustainability initiatives.",
+        subtitle: "A platform for UHG's sustainability initiatives.",
         image: "/img/webp/uhg-sus.webp",
         tech: ["php", "grunt", "DDEV"],
         liveSite: "https://sustainability.uhg.com",
@@ -127,12 +135,13 @@ module.exports = [
         typography: "Optum Sans + Graphik",
         colors: ["#002677", "#0066F5", "#CCE0FC", "#FFFFFF", "#DA5AB6"],
         contributionDetails: "As one of the lead developers, I developed and tested modules, updated styles and assets, and conducted QA to ensure the site was responsive and accessible across devices.",
-        type: "website"
+        type: "website",
+        nextProject: "/projects/rally-health/"
     },
     {
         id: 10,
         title: "Rally Health",
-        subtitle: "Resources and tools for individuals to improve their overall well-being.",
+        subtitle: "Resources and tools for improvement of overall well-being.",
         image: "/img/webp/rallyhealth.webp",
         tech: ["Craft", "Docker", "Jenkins"],
         liveSite: "https://rallyheath.com",
@@ -141,7 +150,8 @@ module.exports = [
         typography: "Helvetica Nue + Adelle",
         colors: ["#F26C32", "#48BFB0", "#F5885C", "#239F8E", "#4d4d4d"],
         contributionDetails: "Under the guidance of the lead dev, using static assets supplied by the client, I developed and tested modules, updated styles and assets, and conducted QA to ensure the site was responsive and accessible across devices.",
-        type: "website"
+        type: "website",
+        nextProject: "/projects/listening-sessions/"
     },
     {
         id: 11,
@@ -155,7 +165,8 @@ module.exports = [
         typography: "FreightSans + FreightSans Pro",
         colors: ["#1c1c1c", "#41d2af", "#205f86", "#206f53", "#5c80ee"],
         contributionDetails: "I developed and tested modules, updated styles and assets, and conducted QA. Mobile-first design and accessibility were key considerations throughout the project.",
-        type: "website"
+        type: "website",
+        nextProject: "/projects/cana/"
     },
     {
         id: 12,
@@ -171,7 +182,8 @@ module.exports = [
         colors: ["#003e4e", "#fff", "#6dcada", "#f20044", "#d3e900"],
         awards: ["Patrick Stewart Approves of it"],
         awardsLinks: ["https://www.businesswire.com/news/home/20230302005097/en/Sir-Patrick-Stewart-Joins-Cana-as-%E2%80%9CMission-Ambassador%E2%80%9D-to-Help-End-the-Global-Trash-Crisis"],
-        type: "website"
+        type: "website",
+        nextProject: "/projects/the-life-story/"
     },
 ];
 
