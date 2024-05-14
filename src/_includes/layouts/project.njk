@@ -56,7 +56,11 @@ eleventyComputed:
         {% endif %}
     </article>
     <br>
-    <a href="/projects" class="back-to-home button button--primary">Back to Projects<span>&curvearrowleft;</span></a>
+    <a href="/projects" class="back-to-home button button--primary">Back to Carousel<span>&curvearrowleft;</span></a>
+
+    {% if project.nextProject %}
+        <a href="{{ project.nextProject }}" class="next-project button button--secondary">Next Project<span>&curvearrowright;</span></a>
+    {% endif %}
 {% endblock %}
 
 

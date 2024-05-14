@@ -8,9 +8,10 @@
 </head>
 <body>
 
+{% include './navbar.njk' %}
 <h1 class="pagetitle">{{ pageTitle }}</h1>
 <h2 class="pagesubtitle">{{ pageSubtitle }}</h2>
-<div class="content">
+<div class="content max-content-width">
     {{ content | safe }}
 </div>
 <div id="animatedCursor"></div>
