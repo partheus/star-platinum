@@ -1,0 +1,3 @@
+<section class="more-about-me">{% for section in moreAboutMeData %}
+        <div class="more-about-me__content"><h2>{{ section.title }}</h2>
+        <p>{{ section.description | safe }}</p></div>{% endfor %}</section>
