@@ -181,7 +181,7 @@ module.exports = [
         typography: "Degular + Roboto Mono",
         colors: ["#003e4e", "#fff", "#6dcada", "#f20044", "#d3e900"],
         awards: ["Patrick Stewart Approves of it"],
-        awardsLinks: ["https://www.businesswire.com/news/home/20230302005097/en/Sir-Patrick-Stewart-Joins-Cana-as-%E2%80%9CMission-Ambassador%E2%80%9D-to-Help-End-the-Global-Trash-Crisis"],
+        awardsLinks: ["https://www.businesswire.com/news/home/20230302005097/en/"],
         type: "website",
         nextProject: "/projects/the-life-story/"
     },
