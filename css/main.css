@@ -93,6 +93,17 @@ hr {
   }
 }
 
+.resume-page__image {
+  width: 100%;
+  margin-top: 0.4rem;
+}
+@media (min-width: 480px) {
+  .resume-page__image {
+    max-height: 600px;
+    max-width: 360px;
+  }
+}
+
 footer {
   color: #092c6c;
   margin: 5rem 0 2rem 0;
@@ -504,11 +515,6 @@ footer .footer-icon__container {
   width: fit-content;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
-  .carousel-btn__container {
-    gap: 5rem;
-  }
-}
 
 #backToStartBtn {
   margin-bottom: -1px;
@@ -547,6 +553,32 @@ footer .footer-icon__container {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.more-about-me {
+  padding: 1.25rem;
+  background-color: #daf0ff;
+  border-radius: 1rem;
+  display: grid;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .more-about-me {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.more-about-me .more-about-me__content h2 {
+  font-size: 2.5rem;
+  font-family: "Rubik One", sans-serif;
+  margin: 0 0 0.25rem 0;
+  color: #f46666;
+}
+.more-about-me .more-about-me__content p {
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1.3;
 }
 
 .button {
