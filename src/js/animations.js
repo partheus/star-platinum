@@ -44,14 +44,17 @@ document.addEventListener('DOMContentLoaded', function () {
         translateX: [-20, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 1200,
-        delay: anime.stagger(150, {start: 1200})
+        duration: 750,
+        delay: anime.stagger(100, {start: 1400})
     });
 });
 
 // animate the letters in the span .art-word so that they appear one after the other on load of the page
+// also check if the letters exist, only then animate them
 document.addEventListener('DOMContentLoaded', () => {
+
     const artWord = document.querySelector('.art-word');
+    if (!artWord) return; // Exit if the element does not exist
     const letters = artWord.textContent.split('');
 
     artWord.innerHTML = ''; // Clear the text content
@@ -81,6 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuItems = document.querySelectorAll('.nav-container ul li'); // Get all menu items
     const iconOpen = document.querySelector('.menu-open');
     const iconClosed = document.querySelector('.menu-closed');
+
+    // if menu icon does not exist, exit
+    if (!menuIcon) return;
     iconOpen.style.opacity = '0';
     iconOpen.style.visibility = 'hidden';
 
@@ -347,6 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectSectionHeaders = document.querySelectorAll('.project-section h2');
     const projectSectionParagraphs = document.querySelectorAll('.project-section p');
     const projectSectionAwards = document.querySelectorAll('.project-section__awards li');
+    const projectTechStack = document.querySelectorAll('.project-tech-stack li');
 
     anime({
         targets: projectSection,
@@ -385,6 +392,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     anime({
+        targets: projectTechStack,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        delay: anime.stagger(200, {start: 1800})
+    })
+
+    anime({
         targets: projectSectionAwards,
         translateY: [-20, 0],
         opacity: [0, 1],
@@ -400,6 +416,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     anime({
         targets: contactFormContent,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        delay: anime.stagger(300, {start: 1000})
+    });
+});
+
+// animate the more-about-me__content on load
+document.addEventListener('DOMContentLoaded', () => {
+    const moreAboutMeContent = document.querySelectorAll('.more-about-me__content');
+
+    anime({
+        targets: moreAboutMeContent,
         translateY: [-20, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
