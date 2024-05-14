@@ -9,6 +9,7 @@
   font-size: 3rem;
   margin-left: -2px;
   margin-top: 1.5rem;
+  word-wrap: break-word;
 
   @include media-query('md') {
     font-size: 4.5rem;
@@ -18,19 +19,19 @@
 
 .pagesubtitle {
   font-weight: 600;
-  margin: -8px 0 1rem 0;
+  margin: -12px 0 1rem 0;
   opacity: 0;
   font-size: 0.81rem;
   filter: contrast(1.1);
   font-family: 'Space Mono', monospace;
   background-color: $color--secondary;
   width: fit-content;
-  padding: 0.15rem;
+  padding: 0.15rem 0.3rem;
   word-break: normal;
 }
 
 .pagetitle, .pagesubtitle {
-  letter-spacing: 0.18rem;
+  letter-spacing: 0.072rem;
 }
 
 .landing-page-container {

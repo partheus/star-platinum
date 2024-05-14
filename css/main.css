@@ -77,6 +77,10 @@ hr {
   width: 100%;
 }
 
+.max-content-width {
+  max-width: 80ch;
+}
+
 .landing-page__container__image, .landing-page__container__image img {
   width: 270px;
   margin-top: 0.4rem;
@@ -254,7 +258,7 @@ footer .footer-icon__container {
   margin-bottom: 1rem;
   z-index: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .project-section__intro {
     flex-direction: row;
     gap: 2.5rem;
@@ -312,6 +316,7 @@ footer .footer-icon__container {
   border: 2px solid #cbeaff;
   padding: 1rem;
   margin-top: 1rem;
+  width: fit-content;
 }
 .project-section__awards h2 {
   font-size: 3rem;
@@ -386,7 +391,7 @@ footer .footer-icon__container {
 }
 .project-card .project-title {
   background-color: #f8c35e;
-  padding: 0.2em 0.6em;
+  padding: 0.2em 0.4em;
   width: fit-content;
   color: #9d0b0b;
   font-size: 1.25rem;
@@ -406,7 +411,7 @@ footer .footer-icon__container {
 .project-card .project-year {
   color: #f8c35e;
   font-size: 0.8rem;
-  margin-top: -0.75rem;
+  margin-top: -0.5rem;
   background: #9d0b0b;
   padding: 0.2em 0.8em;
   width: fit-content;
@@ -489,7 +494,7 @@ footer .footer-icon__container {
 
 .carousel-btn__container {
   display: flex;
-  gap: 2rem;
+  gap: 3.5rem;
   background: #0b3684;
   padding: 0.5rem;
   border-radius: 4rem;
@@ -498,6 +503,11 @@ footer .footer-icon__container {
   justify-content: center;
   width: fit-content;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .carousel-btn__container {
+    gap: 5rem;
+  }
 }
 
 #backToStartBtn {
@@ -515,7 +525,7 @@ footer .footer-icon__container {
   justify-content: flex-start;
   color: #f8c35e;
   border-radius: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .contact-form h3 {
   font-size: 1.75rem;
@@ -542,15 +552,16 @@ footer .footer-icon__container {
 .button {
   font-weight: 400;
   line-height: 1.5;
-  padding: 0.45em 1.25em;
-  border-radius: 1.25em;
+  padding: 0.36rem 1.5rem;
+  border-radius: 1.5rem;
   cursor: pointer;
   display: inline-block;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  transition: all 0.4s ease;
-  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.008rem;
+  border: 2px solid;
 }
 .button--primary {
   background-color: #092c6c;
@@ -558,8 +569,7 @@ footer .footer-icon__container {
   color: #f8c35e;
 }
 .button--primary:hover {
-  background-color: #05193d;
-  border-color: #05193d;
+  background-color: #0d3f9b;
 }
 .button--secondary {
   background-color: #f8c35e;
@@ -567,8 +577,7 @@ footer .footer-icon__container {
   color: #092c6c;
 }
 .button--secondary:hover {
-  background-color: #f6b12d;
-  border-color: #f6b12d;
+  background-color: #fad58f;
 }
 .button--tertiary {
   background-color: #9d0b0b;
@@ -576,8 +585,7 @@ footer .footer-icon__container {
   color: #f8c35e;
 }
 .button--tertiary:hover {
-  background-color: #6d0808;
-  border-color: #6d0808;
+  background-color: #cd0e0e;
 }
 .button__container {
   display: flex;
@@ -591,7 +599,11 @@ footer .footer-icon__container {
   transition: margin-left 0.4s ease; /* Smooth transition for the left property */
 }
 .button:hover span {
-  margin-left: 0.9rem;
+  margin-left: 0.81rem;
+}
+
+.next-project {
+  margin-top: 1rem;
 }
 
 .nav-container {
@@ -685,6 +697,7 @@ footer .footer-icon__container {
   font-size: 3rem;
   margin-left: -2px;
   margin-top: 1.5rem;
+  word-wrap: break-word;
 }
 @media (min-width: 768px) {
   .pagetitle {
@@ -695,19 +708,19 @@ footer .footer-icon__container {
 
 .pagesubtitle {
   font-weight: 600;
-  margin: -8px 0 1rem 0;
+  margin: -12px 0 1rem 0;
   opacity: 0;
   font-size: 0.81rem;
   filter: contrast(1.1);
   font-family: "Space Mono", monospace;
   background-color: #f8c35e;
   width: fit-content;
-  padding: 0.15rem;
+  padding: 0.15rem 0.3rem;
   word-break: normal;
 }
 
 .pagetitle, .pagesubtitle {
-  letter-spacing: 0.18rem;
+  letter-spacing: 0.072rem;
 }
 
 .landing-page-container {
