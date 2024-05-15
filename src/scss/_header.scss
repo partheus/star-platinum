@@ -2,25 +2,21 @@
   ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 3rem 0;
+    margin: 0 0 1rem 0;
     flex-direction: column;
     display: none; // hides the menu initially on mobile
     font-family: 'Rubik One', sans-serif;
     font-weight: 700;
     row-gap: 1rem;
-    background: darken($color--background, 2%);
-
-    @include media-query(md) {
-      background: initial;
-    }
+    background: darken($color--background, 3%);
   }
 
   li > a {
-    color: $color--tertiary;
+    color: lighten($color--tertiary, 32%);
     transition: all 0.3s ease-in-out;
     border-bottom: 2px solid darken($color--background, 21%);
     text-decoration: none;
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     letter-spacing: 0.045rem;
     line-height: 1.35;
 
@@ -33,7 +29,7 @@
   .menu-icon {
     position: relative;
     cursor: pointer;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
     color: $color--primary;
     display: flex;
     flex-wrap: nowrap;

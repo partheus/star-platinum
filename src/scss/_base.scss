@@ -20,8 +20,13 @@ body {
   min-width: 360px;
   letter-spacing: 0.018rem;
 
+  @include media-query('md') {
+    padding: 1.5rem;
+  }
+
   @include media-query('xl') {
     max-width: 1024px;
+    padding: 0.5rem;
   }
 
   @include media-query('xxl') {
@@ -41,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul li {
   color: $color--primary;
-  line-height: 1.65;
+  line-height: 1.45;
   font-size: 1.1rem;
 }
 
@@ -94,12 +99,32 @@ hr {
 }
 
 .resume-page__image {
-  width: 100%;
-  margin-top: 0.4rem;
+  width: 90%;
+  margin-top: 1.5rem;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media-query('sm') {
     max-height: 600px;
     max-width: 360px;
+    margin-left: 0;
+  }
+
+  img {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+  }
+
+  &:hover {
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
+
+    img {
+      transform: scale(1.01);
+    }
   }
 }
 

@@ -8,7 +8,7 @@
   margin-bottom: 0;
   font-size: 3rem;
   margin-left: -2px;
-  margin-top: 1.5rem;
+  margin-top: 0;
   word-wrap: break-word;
 
   @include media-query('md') {
@@ -19,7 +19,7 @@
 
 .pagesubtitle {
   font-weight: 600;
-  margin: -12px 0 1rem 0;
+  margin: 0.25rem 0 2rem 0;
   opacity: 0;
   font-size: 0.81rem;
   filter: contrast(1.1);
