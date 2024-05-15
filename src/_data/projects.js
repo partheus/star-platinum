@@ -73,7 +73,8 @@ module.exports = [
         colors: ["#000", "#fff", "#000", "#fff", "#000"],
         contributionDetails: "Principal Dev role. I built the project on top of p5.js and used HTML canvas to render the flowers, conducted QA, and deployed the project.",
         type: "webapp",
-        nextProject: "/projects/choose-kindness/"
+        nextProject: "/projects/choose-kindness/",
+        liveSite: "https://heavens-door.pages.dev/"
     },
 
     {
