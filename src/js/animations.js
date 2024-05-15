@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     anime({
         targets: pageTitle,
-        translateY: -15,
+        translateY: [15, 0],
         easing: 'easeInOutExpo',
         opacity: 1,
         duration: 1000,
