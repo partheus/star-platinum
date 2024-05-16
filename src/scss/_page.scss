@@ -19,7 +19,7 @@
 
 .pagesubtitle {
   font-weight: 600;
-  margin: 0.25rem 0 2rem 0;
+  margin: 0.25rem 0 1rem 0;
   opacity: 0;
   font-size: 0.81rem;
   filter: contrast(1.1);
@@ -28,6 +28,10 @@
   width: fit-content;
   padding: 0.15rem 0.3rem;
   word-break: normal;
+
+  @include media-query('md') {
+    margin-bottom: 0.1rem;
+  }
 }
 
 .pagetitle, .pagesubtitle {
@@ -39,9 +43,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   width: fit-content;
   row-gap: 1em;
+  margin: 0 auto;
 
   @include media-query('lg') {
     flex-direction: row;
@@ -50,7 +54,11 @@
   }
 
   &__content {
-    margin-top: 2rem;
+    margin-top: 3rem;
+
+    @include media-query('xl') {
+      margin-top: 7rem;
+    }
   }
 }
 
@@ -59,6 +67,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: flex-start;
+  margin-top: 1rem;
 }
 
 .colophon {

@@ -46,8 +46,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul li {
   color: $color--primary;
-  line-height: 1.45;
-  font-size: 1.1rem;
+  line-height: 1.75;
+  font-size: 1.045rem;
 }
 
 li > a {
@@ -87,6 +87,10 @@ hr {
   max-width: 80ch;
 }
 
+.content {
+  margin-top: 1rem;
+}
+
 .landing-page__container__image, .landing-page__container__image img {
   width: 270px;
   margin-top: 0.4rem;
@@ -94,7 +98,7 @@ hr {
   @include media-query('lg') {
     max-height: 600px;
     max-width: 300px;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 }
 
@@ -130,7 +134,7 @@ hr {
 
 footer {
   color: $color--primary;
-  margin: 5rem 0 2rem 0;
+  margin: 2.5rem 0 0.25rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -151,8 +155,7 @@ footer {
     border-radius: 50%;
     transition: all 0.5s ease;
     opacity: 0.45;
-    margin-top: 0.7rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.45rem;
 
     &:hover {
       box-shadow: 0 0 0 0.1rem rgb(0 0 0 / 10%);
@@ -179,8 +182,8 @@ footer {
 
 .nolink, .nolink:hover, .nolink a, .nolink a:hover {
   text-decoration: none;
-  font-weight: normal;
-  color: initial !important;
+  font-weight: inherit;
+  color: inherit !important;
 }
 
 // active link

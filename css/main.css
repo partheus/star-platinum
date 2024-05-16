@@ -47,8 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul li {
   color: #092c6c;
-  line-height: 1.45;
-  font-size: 1.1rem;
+  line-height: 1.75;
+  font-size: 1.045rem;
 }
 
 li > a {
@@ -87,6 +87,10 @@ hr {
   max-width: 80ch;
 }
 
+.content {
+  margin-top: 1rem;
+}
+
 .landing-page__container__image, .landing-page__container__image img {
   width: 270px;
   margin-top: 0.4rem;
@@ -95,7 +99,7 @@ hr {
   .landing-page__container__image, .landing-page__container__image img {
     max-height: 600px;
     max-width: 300px;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 }
 
@@ -129,7 +133,7 @@ hr {
 
 footer {
   color: #092c6c;
-  margin: 5rem 0 2rem 0;
+  margin: 2.5rem 0 0.25rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -149,8 +153,7 @@ footer .footer-icon {
   border-radius: 50%;
   transition: all 0.5s ease;
   opacity: 0.45;
-  margin-top: 0.7rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.45rem;
 }
 footer .footer-icon:hover {
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
@@ -172,8 +175,8 @@ footer .footer-icon__container {
 
 .nolink, .nolink:hover, .nolink a, .nolink a:hover {
   text-decoration: none;
-  font-weight: normal;
-  color: initial !important;
+  font-weight: inherit;
+  color: inherit !important;
 }
 
 .link.active {
@@ -233,12 +236,13 @@ footer .footer-icon__container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: #092c6c;
-  padding: 1rem;
+  color: #092c6c;
+  border-bottom: 0.3rem solid #80a9f4;
+  padding-bottom: 2rem;
 }
 .project-section .project-tech-stack {
   display: flex;
-  gap: 1rem;
+  gap: 0.7rem;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
@@ -249,14 +253,15 @@ footer .footer-icon__container {
 .project-section .project-tech-stack li {
   background: #1152ca;
   color: #fad58f;
-  padding: 0.35em 0.5em;
-  border-radius: 0.5em;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.65rem;
 }
 .project-section .project-contribution p {
-  background-color: #0b3888;
+  background-color: #fbe0ac;
+  padding: 0.45rem;
 }
 .project-section p, .project-section h2 {
-  color: #f8c563;
+  color: #092e71;
 }
 .project-section h2 {
   margin-top: 0.5rem;
@@ -275,11 +280,6 @@ footer .footer-icon__container {
     transition: all 0.3s ease-in-out;
   }
 }
-@media (min-width: 768px) {
-  .project-section {
-    padding: 1.35rem;
-  }
-}
 .project-section__intro {
   display: flex;
   flex-direction: column;
@@ -289,7 +289,7 @@ footer .footer-icon__container {
   text-align: left;
 }
 .project-section__intro .project-button__live {
-  margin-bottom: 1rem;
+  margin-bottom: 1.75rem;
   z-index: 1;
 }
 @media (min-width: 1024px) {
@@ -298,11 +298,9 @@ footer .footer-icon__container {
     gap: 2.5rem;
   }
 }
-@media (min-width: 768px) {
-  .project-section__main--about {
-    border-left: 1rem solid #fbafaf;
-    padding-left: 1rem;
-  }
+.project-section__main--about {
+  border-left: 1rem solid #fbafaf;
+  padding-left: 1rem;
 }
 .project-section__main, .project-section__design {
   display: grid;
@@ -329,10 +327,14 @@ footer .footer-icon__container {
 }
 .project-section__main .color-palette, .project-section__design .color-palette {
   display: flex;
-  border: 2px solid #80a9f4;
+  border: 2px solid #d5eeff;
   width: fit-content;
   position: relative;
   background-blend-mode: multiply;
+  transition: all 0.3s ease-in-out;
+}
+.project-section__main .color-palette:hover, .project-section__design .color-palette:hover {
+  border: 2px solid white;
 }
 .project-section__main .color-palette__color, .project-section__design .color-palette__color {
   width: 4rem;
@@ -347,7 +349,7 @@ footer .footer-icon__container {
 }
 .project-section__awards {
   transition: all 0.5s ease;
-  border: 2px solid #cbeaff;
+  border: 5px dashed #a10909;
   padding: 1rem;
   margin-top: 1rem;
   width: fit-content;
@@ -391,13 +393,13 @@ footer .footer-icon__container {
   background: #400404;
 }
 .project-section__design {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .project-card {
   background: #092c6c;
   color: #f8c35e;
-  padding: 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -488,6 +490,7 @@ footer .footer-icon__container {
     gap: 1.5rem;
     overflow: hidden;
     justify-content: flex-start;
+    padding: 1rem;
   }
 }
 .project-card img {
@@ -498,7 +501,9 @@ footer .footer-icon__container {
 .carousel-container {
   overflow: hidden;
   position: relative;
-  margin-bottom: 1em;
+  margin-bottom: 0;
+  border-top: 0.3rem dashed #092c6c;
+  border-bottom: 0.3rem dashed #092c6c;
 }
 
 .carousel-slides {
@@ -528,22 +533,30 @@ footer .footer-icon__container {
 
 .carousel-btn__container {
   display: flex;
-  gap: 3.5rem;
-  background: #0b3684;
-  padding: 0.5rem;
-  border-radius: 4rem;
+  gap: 8rem;
+  background: #092c6c;
+  padding: 0.6rem;
+  border-radius: 0 0 2.25rem 2.25rem;
   opacity: 0;
   align-items: center;
   justify-content: center;
   width: fit-content;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .carousel-btn__container {
+    gap: 14rem;
+  }
+}
 
 #backToStartBtn {
   margin-bottom: -1px;
   font-size: 0.7rem;
   border-radius: 0;
-  text-decoration: underline;
+  margin-left: auto;
+  display: flex;
+  width: fit-content;
+  background-color: #0b3684;
 }
 
 .contact-form {
@@ -579,7 +592,7 @@ footer .footer-icon__container {
 }
 
 .more-about-me {
-  padding: 1.25rem;
+  padding: 0.81rem;
   background-color: #daf0ff;
   border-radius: 1rem;
   display: grid;
@@ -590,6 +603,7 @@ footer .footer-icon__container {
 @media (min-width: 768px) {
   .more-about-me {
     grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
   }
 }
 .more-about-me .more-about-me__content h2 {
@@ -603,6 +617,12 @@ footer .footer-icon__container {
   font-size: 1.1rem;
   margin: 0;
   line-height: 1.3;
+}
+
+.bold-border-and-padding {
+  border: 2px solid #a10909;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 .button {
@@ -669,13 +689,13 @@ footer .footer-icon__container {
 .nav-container ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 1rem 0;
+  margin: 0.5rem 0 1rem 0;
   flex-direction: column;
   display: none;
   font-family: "Rubik One", sans-serif;
   font-weight: 700;
   row-gap: 1rem;
-  background: #bce4ff;
+  background: #c1e6ff;
 }
 .nav-container li > a {
   color: #f65858;
@@ -759,7 +779,7 @@ footer .footer-icon__container {
 
 .pagesubtitle {
   font-weight: 600;
-  margin: 0.25rem 0 2rem 0;
+  margin: 0.25rem 0 1rem 0;
   opacity: 0;
   font-size: 0.81rem;
   filter: contrast(1.1);
@@ -768,6 +788,11 @@ footer .footer-icon__container {
   width: fit-content;
   padding: 0.15rem 0.3rem;
   word-break: normal;
+}
+@media (min-width: 768px) {
+  .pagesubtitle {
+    margin-bottom: 0.1rem;
+  }
 }
 
 .pagetitle, .pagesubtitle {
@@ -779,9 +804,9 @@ footer .footer-icon__container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   width: fit-content;
   row-gap: 1em;
+  margin: 0 auto;
 }
 @media (min-width: 1024px) {
   .landing-page-container {
@@ -791,7 +816,12 @@ footer .footer-icon__container {
   }
 }
 .landing-page-container__content {
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+@media (min-width: 1200px) {
+  .landing-page-container__content {
+    margin-top: 7rem;
+  }
 }
 
 .homepage__button__container {
@@ -799,6 +829,7 @@ footer .footer-icon__container {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: flex-start;
+  margin-top: 1rem;
 }
 
 .colophon ul {
