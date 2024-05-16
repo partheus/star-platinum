@@ -329,17 +329,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
                 duration: 1400,
-                delay: 200
+                delay: 400
             });
 
             // slide in from left the first project card on load
             anime({
                 targets: projectCard,
-                translateX: [-110, 0],
+                translateX: [-50, 0],
                 opacity: [0, 1],
                 easing: 'easeInOutExpo',
-                duration: 120,
-                delay: 100
+                duration: 320,
+                delay: 180
             });
         });
     });
@@ -354,6 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectSectionParagraphs = document.querySelectorAll('.project-section p');
     const projectSectionAwards = document.querySelectorAll('.project-section__awards li');
     const projectTechStack = document.querySelectorAll('.project-tech-stack li');
+    const projectPaletteItems = document.querySelectorAll('.color-palette__color');
 
     anime({
         targets: projectSection,
@@ -397,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity: [0, 1],
         easing: 'easeInOutExpo',
         duration: 1000,
-        delay: anime.stagger(200, {start: 1800})
+        delay: anime.stagger(200, {start: 1400})
     })
 
     anime({
@@ -407,6 +408,15 @@ document.addEventListener('DOMContentLoaded', () => {
         easing: 'easeInOutExpo',
         duration: 1000,
         delay: anime.stagger(300, {start: 800})
+    });
+
+    anime({
+        targets: projectPaletteItems,
+        translateY: [-20, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        duration: 2000,
+        delay: anime.stagger(100, {start: 1400})
     });
 });
 
