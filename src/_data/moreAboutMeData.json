@@ -5,14 +5,13 @@
   },
   {
     "title": "Skills",
-    "description": "Proficient in various <b>front-end frameworks</b>, <b>database tech</b>, <b>devops tools</b>, and more magical stuff."
+    "description": "Proficient in various <b>front-end frameworks</b>, <b>database tech</b>, <b>devops tools</b>, <b>UI/UX design</b>, and more magical stuff."
   },
   {
     "title": "Experience",
-    "description": "Working as a <b>full-stack web developer for 3+ years</b>, specializing in <b>front-end development</b>."
-  },
+    "description": "Working as a <b>full-stack web developer for 3+ years</b>, specializing in <b>front-end development</b>. Dabbled in <b>product management</b> and <b><a href=\"/colophon\" class=\"nolink\">spellmaking</a></b> as well."  },
   {
     "title": "What i do best",
-    "description": "I translate <b>designs into code</b>, create <b>responsive web applications</b>, <b>optimize performance</b>, and have fun with it."
+    "description": "I <b>design delightful micro-interfaces</b>, translate <b>designs into code</b>, create <b>responsive web applications</b>, <b>optimize performance</b>, and have fun with it."
   }
 ]
