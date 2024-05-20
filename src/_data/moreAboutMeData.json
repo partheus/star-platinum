@@ -1,5 +1,13 @@
 [
   {
+    "title": "Welcome",
+    "description": "this portfolio is Designed and developed by Parth Shiralkar. See more technical details <a href=\"/colophon\" class=\"nolink\"><b>{here}</b></a>."
+  },
+  {
+    "title": "hola",
+    "description": "I'm a <b>full-stack web developer</b> with a passion for <b>design</b>, <b>product management</b>, and <b>magic</b>. Say hi <a href=\"/contact\" class=\"nolink\"><b>{here}</b></a>."
+  },
+  {
     "title": "Education",
     "description": "Masters in Information Systems/Philosophy, Iowa State, <b>Graduated in 2021</b>. Bachelors in Computer Engineering, Pune University, <b>Graduated in 2018</b>."
   },
