@@ -440,11 +440,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     anime({
         targets: moreAboutMeContent,
-        translateY: [-20, 0],
+        translateX: [-20, 0],
         opacity: [0, 1],
         easing: 'easeInOutExpo',
-        duration: 1000,
-        delay: anime.stagger(300, {start: 1000})
+        duration: 650,
+        delay: anime.stagger(120, {start: 1200})
     });
 });
 
