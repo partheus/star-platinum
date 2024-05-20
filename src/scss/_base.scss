@@ -25,7 +25,7 @@ body {
   }
 
   @include media-query('xl') {
-    max-width: 1024px;
+    max-width: 1200px;
     padding: 0.5rem;
   }
 
@@ -99,11 +99,12 @@ hr {
     max-height: 600px;
     max-width: 300px;
     margin-top: 1rem;
+    margin-right: 3.5rem;
   }
 }
 
 .resume-page__image {
-  width: 90%;
+  width: 81%;
   margin-top: 1.5rem;
   border: 2px solid whitesmoke;
   border-radius: 50%;
@@ -111,11 +112,11 @@ hr {
   transition: all 0.3s ease-in-out;
   margin-left: auto;
   margin-right: auto;
+  position: relative; // Position the container relative for the ::after element to be positioned within it
 
   @include media-query('sm') {
     max-height: 600px;
     max-width: 360px;
-    margin-left: 0;
   }
 
   img {
@@ -129,8 +130,45 @@ hr {
     img {
       transform: scale(1.01);
     }
+
+    a::after {
+      filter: hue-rotate(-150deg) saturate(1.1) brightness(1);
+    }
   }
 }
+
+.resume-page__image {
+  a {
+    display: block; // Make sure the anchor behaves like a block element
+    position: relative; // Position relative to contain the ::after element
+
+    img {
+      display: block; // Ensures the SVG image does not have any unexpected spacing around it
+      width: 100%;    // Adjust as necessary
+      height: auto;   // Maintain aspect ratio
+    }
+
+    &::after {
+      content: "[ resume ]"; // Necessary to create a pseudo-element
+      display: block; // Required to render the content
+      position: absolute;
+      top: 57%;
+      left: 92%;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease-in-out;
+      width: 140px;
+      height: 140px;
+      background-image: url('/img/pdf-down-icon.png');
+      background-size: contain; // Ensures the image is scaled properly
+      background-repeat: no-repeat; // Ensures the image is not repeated
+      filter: hue-rotate(-45deg) saturate(1.2) brightness(0.9); // Adjust as necessary
+      font-size: 0.6em;
+      color: orangered;
+      font-weight: bold;
+    }
+  }
+}
+
 
 footer {
   color: $color--primary;

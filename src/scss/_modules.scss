@@ -423,6 +423,13 @@
   }
 
   .more-about-me__content {
+    display: flex;
+    flex-direction: column;
+    background-color: lighten($color--background, 5%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 0.1rem rgb(0 0 0 / 1%);
+
     h2 {
       font-size: 2.5rem;
       font-family: "Rubik One", sans-serif;
@@ -435,6 +442,15 @@
       font-size: 1.1rem;
       margin: 0;
       line-height: 1.3;
+    }
+
+    &:hover {
+      background-color: lighten($color--background, 16%);
+        box-shadow: 0 0 0 0.1rem rgb(0 0 0 / 10%);
+    }
+
+    @include media-query(md) {
+      padding: 1rem;
     }
   }
 }

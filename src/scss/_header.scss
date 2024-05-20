@@ -12,7 +12,7 @@
   }
 
   li > a {
-    color: lighten($color--tertiary, 32%);
+    color: lighten($color--tertiary, 5%);
     transition: all 0.3s ease-in-out;
     border-bottom: 2px solid darken($color--background, 21%);
     text-decoration: none;
