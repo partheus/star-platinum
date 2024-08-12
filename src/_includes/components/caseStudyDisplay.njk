@@ -1,0 +1,34 @@
+{# src/_includes/components/caseStudyDisplay.njk #}
+{% macro caseStudyCard(caseStudy, totalStudies) %}
+    <div class="case-study-card">
+        <div class="case-study-number"># {{ caseStudy.id }} / {{ totalStudies }}</div>
+        <div class="case-study-card__content">
+            <h4 class="case-study-title">{{ caseStudy.title }}</h4>
+            <p class="case-study-year">{{ caseStudy.year }}<span class="case-study-type"> | {{ caseStudy.type }}</span></p>
+            <p class="case-study-subtitle">{{ caseStudy.subtitle }}</p>
+        </div>
+        <div class="case-study-image__container">
+            <img src="{{ caseStudy.desktopImage }}" alt="{{ caseStudy.title }} - Desktop" class="case-study-image">
+            <img src="{{ caseStudy.mobileImage }}" alt="{{ caseStudy.title }} - Mobile" class="case-study-image">
+        </div>
+        <div class="case-study-card__content">
+            <div class="case-study-details">
+                <h5>&#9728; Requirements</h5>
+                <p>{{ caseStudy.requirements }}</p>
+                <h5>&#9728; Research</h5>
+                <p>{{ caseStudy.research }}</p>
+                <h5>&#9728; Design Process</h5>
+                <p>{{ caseStudy.designProcess }}</p>
+                <h5>&#9728; Challenges</h5>
+                <p>{{ caseStudy.challenges }}</p>
+                <h5>&#9728; Outcome</h5>
+                <p>{{ caseStudy.outcome }}</p>
+            </div>
+            <div class="case-study-button__container button__container">
+                {% if caseStudy.liveSite %}
+                    <a href="{{ caseStudy.liveSite }}" target="_blank" title="{{ caseStudy.title }}" class="case-study-link button button--secondary">View Live Site<span>&#8599;</span></a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
