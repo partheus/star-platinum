@@ -395,6 +395,8 @@
       width: fit-content;
       font-size: 1.5rem;
       color: lighten($color--primary, 20%);
+      font-weight: bold;
+      line-height: 0.5;
     }
 
     .case-study-image__container {
@@ -476,6 +478,8 @@
           color: lighten($color--tertiary, 5%);
           margin-bottom: 0.25rem;
           margin-top: 0.85rem;
+          border-bottom: 3px dashed;
+          width: fit-content;
         }
 
         p {
@@ -486,6 +490,7 @@
           @include media-query(md) {
             font-size: 1.2rem;
             line-height: 1.2;
+            max-width: 80ch;
           }
         }
       }

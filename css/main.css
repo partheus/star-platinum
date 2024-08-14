@@ -618,6 +618,8 @@ footer .footer-icon__container {
   width: fit-content;
   font-size: 1.5rem;
   color: #1152ca;
+  font-weight: bold;
+  line-height: 0.5;
 }
 .case-study-section .case-study-card .case-study-image__container {
   display: flex;
@@ -695,6 +697,8 @@ footer .footer-icon__container {
   color: #b90a0a;
   margin-bottom: 0.25rem;
   margin-top: 0.85rem;
+  border-bottom: 3px dashed;
+  width: fit-content;
 }
 .case-study-section .case-study-card__content .case-study-details p {
   font-size: 1rem;
@@ -705,6 +709,7 @@ footer .footer-icon__container {
   .case-study-section .case-study-card__content .case-study-details p {
     font-size: 1.2rem;
     line-height: 1.2;
+    max-width: 80ch;
   }
 }
 .case-study-section .case-study-card__content .case-study-button__container {
