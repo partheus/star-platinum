@@ -11,6 +11,11 @@
             <img src="{{ caseStudy.desktopImage }}" alt="{{ caseStudy.title }} - Desktop" class="case-study-image">
             <img src="{{ caseStudy.mobileImage }}" alt="{{ caseStudy.title }} - Mobile" class="case-study-image">
         </div>
+        <div class="case-study-button__container button__container">
+            {% if caseStudy.liveSite %}
+                <a href="{{ caseStudy.liveSite }}" target="_blank" title="{{ caseStudy.title }}" class="case-study-link button button--tertiary">View Live Site<span>&#8599;</span></a>
+            {% endif %}
+        </div>
         <div class="case-study-card__content">
             <div class="case-study-details">
                 <h5>&#9728; Requirements</h5>
@@ -23,11 +28,6 @@
                 <p>{{ caseStudy.challenges }}</p>
                 <h5>&#9728; Outcome</h5>
                 <p>{{ caseStudy.outcome }}</p>
-            </div>
-            <div class="case-study-button__container button__container">
-                {% if caseStudy.liveSite %}
-                    <a href="{{ caseStudy.liveSite }}" target="_blank" title="{{ caseStudy.title }}" class="case-study-link button button--secondary">View Live Site<span>&#8599;</span></a>
-                {% endif %}
             </div>
         </div>
     </div>
