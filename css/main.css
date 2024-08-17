@@ -632,6 +632,7 @@ footer .footer-icon__container {
     flex-direction: row;
     border-right: 4px solid #a10909;
     padding-right: 1rem;
+    justify-content: start;
   }
 }
 .case-study-section .case-study-card .case-study-image {
@@ -686,6 +687,12 @@ footer .footer-icon__container {
   background-color: #fad58f;
   width: fit-content;
 }
+@media (min-width: 768px) {
+  .case-study-section .case-study-card__content p.case-study-subtitle {
+    font-size: 1.5rem;
+    max-width: 60ch;
+  }
+}
 .case-study-section .case-study-card__content .case-study-details {
   border-right: 4px solid #a10909;
   padding-right: 1rem;
@@ -724,6 +731,12 @@ footer .footer-icon__container {
   background-color: #0d3f9b;
   color: #cbeaff;
   transition: background-color 0.3s ease-in-out;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .case-study-section .case-study-card__content .case-study-button__container .case-study-link {
+    font-size: 1.75rem;
+  }
 }
 .case-study-section .case-study-card__content .case-study-button__container .case-study-link:hover {
   background-color: #1152ca;

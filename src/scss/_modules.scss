@@ -409,6 +409,7 @@
         flex-direction: row;
         border-right: 4px solid $color--tertiary;
         padding-right: 1rem;
+        justify-content: start;
       }
     }
 
@@ -465,6 +466,11 @@
         padding: 0.5rem;
         background-color: lighten($color--secondary, 10%);
         width: fit-content;
+
+        @include media-query(md) {
+          font-size: 1.5rem;
+          max-width: 60ch;
+        }
       }
 
       .case-study-details {
@@ -507,6 +513,11 @@
           background-color: lighten($color--primary, 10%);
           color: $color--background;
           transition: background-color 0.3s ease-in-out;
+          font-size: 1.5rem;
+
+          @include media-query(md) {
+            font-size: 1.75rem;
+          }
 
           &:hover {
             background-color: lighten($color--primary, 20%);
