@@ -779,8 +779,6 @@ footer .footer-icon__container {
 }
 
 .more-about-me {
-  padding: 0.81rem;
-  background-color: #daf0ff;
   border-radius: 1rem;
   display: grid;
   gap: 2rem;
@@ -790,7 +788,6 @@ footer .footer-icon__container {
 @media (min-width: 768px) {
   .more-about-me {
     grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
   }
 }
 .more-about-me .more-about-me__content {
@@ -800,6 +797,7 @@ footer .footer-icon__container {
   transition: all 0.3s ease-in-out;
   border-radius: 1rem;
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.01);
+  padding: 0.5rem;
 }
 .more-about-me .more-about-me__content h2 {
   font-size: 2.5rem;

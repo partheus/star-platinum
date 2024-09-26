@@ -573,8 +573,8 @@
 
 // more details about me section
 .more-about-me {
-  padding: 0.81rem;
-  background-color: lighten($color--background, 3%);
+  //padding: 0.81rem;
+  //background-color: lighten($color--background, 3%);
   border-radius: 1rem;
   display: grid;
   gap: 2rem;
@@ -583,7 +583,7 @@
 
   @include media-query(md) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
+    //padding: 1rem;
   }
 
   .more-about-me__content {
@@ -593,6 +593,7 @@
     transition: all 0.3s ease-in-out;
     border-radius: 1rem;
     box-shadow: 0 0 0 0.1rem rgb(0 0 0 / 1%);
+    padding: 0.5rem;
 
     h2 {
       font-size: 2.5rem;
