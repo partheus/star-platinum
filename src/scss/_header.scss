@@ -80,6 +80,10 @@
         margin-right: 2.75em;
         margin-bottom: 0.5em;
       }
+
+        li:last-child a {
+            margin-right: 0;
+        }
     }
   }
 }
