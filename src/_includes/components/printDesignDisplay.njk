@@ -1,0 +1,6 @@
+{% macro printDesignCard(design, totalDesigns) %}
+    <div class="print-design-card">
+        <img src="{{ design.image }}" alt="{{ design.title }}" class="print-design-image">
+        <h4 class="print-design-title">{{ design.title }}</h4>
+    </div>
+{% endmacro %}
