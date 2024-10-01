@@ -821,6 +821,62 @@ footer .footer-icon__container {
   }
 }
 
+.print-designs-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .print-designs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+.print-designs-grid .print-designs-section {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .print-designs-grid .print-designs-section {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+.print-designs-grid .print-design-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5f4ff;
+  transition: all 0.3s ease-in-out;
+  border-radius: 1rem;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.01);
+  padding: 0.5rem;
+  text-align: center;
+  height: fit-content;
+}
+.print-designs-grid .print-design-card:hover {
+  background-color: white;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
+}
+.print-designs-grid .print-design-card .print-design-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+.print-designs-grid .print-design-card .print-design-title {
+  font-size: 1.2rem;
+  font-family: "Rubik One", sans-serif;
+  color: #f66666;
+  margin: 0.5rem 0 0;
+  line-height: 1.3;
+}
+@media (min-width: 768px) {
+  .print-designs-grid .print-design-card {
+    padding: 1rem;
+  }
+}
+
 .bold-border-and-padding {
   border: 2px solid #a10909;
   padding: 1rem;
@@ -956,6 +1012,9 @@ footer .footer-icon__container {
     display: inline-block;
     margin-right: 2.75em;
     margin-bottom: 0.5em;
+  }
+  .nav-container ul li:last-child a {
+    margin-right: 0;
   }
 }
 

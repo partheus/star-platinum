@@ -620,6 +620,64 @@
   }
 }
 
+.print-designs-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  grid-template-columns: 1fr;
+
+  @include media-query(md) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .print-designs-section {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    grid-template-columns: 1fr;
+
+    @include media-query(md) {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+
+  .print-design-card {
+    display: flex;
+    flex-direction: column;
+    background-color: lighten($color--background, 5%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 0.1rem rgb(0 0 0 / 1%);
+    padding: 0.5rem;
+    text-align: center;
+    height: fit-content;
+
+    &:hover {
+      background-color: lighten($color--background, 16%);
+      box-shadow: 0 0 0 0.1rem rgb(0 0 0 / 10%);
+    }
+
+    .print-design-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 0.5rem;
+      border-radius: 0.5rem;
+    }
+
+    .print-design-title {
+      font-size: 1.2rem;
+      font-family: "Rubik One", sans-serif;
+      color: lighten($color--tertiary, 35%);
+      margin: 0.5rem 0 0;
+      line-height: 1.3;
+    }
+
+    @include media-query(md) {
+      padding: 1rem;
+    }
+  }
+}
+
 .bold-border-and-padding {
   border: 2px solid $color--tertiary;
   padding: 1rem;
