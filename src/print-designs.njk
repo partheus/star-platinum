@@ -6,15 +6,20 @@ templateOverrideEngine: njk, md
 ---
 {% from "components/printDesignDisplay.njk" import printDesignCard %}
 
+<h2>Book Covers</h2>
 <div class="print-designs-grid">
-    <h2>Book Covers</h2>
     <div class="print-designs-section">
         {% for design in printDesigns.bookCovers %}
             {{ printDesignCard(design, printDesigns.bookCovers.length) }}
         {% endfor %}
     </div>
 
-    <h2>Posters</h2>
+
+</div>
+
+<h2>Posters</h2>
+<div class="print-designs-grid">
+
     <div class="print-designs-section">
         {% for design in printDesigns.posters %}
             {{ printDesignCard(design, printDesigns.posters.length) }}
