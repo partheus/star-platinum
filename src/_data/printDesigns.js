@@ -20,6 +20,21 @@ module.exports = {
             image: "/img/print-designs/4.webp",
             title: "Short Story eBook Cover",
         },
+        {
+            id: 5,
+            image: "/img/print-designs/rare1.webp",
+            title: "Rare Objects Old Book Cover",
+        },
+        {
+            id: 6,
+            image: "/img/print-designs/rare2.webp",
+            title: "Rare Objects Old Book Cover 2",
+        },
+        {
+            id: 7,
+            image: "/img/print-designs/spaces.webp",
+            title: "Collection of Passages eBook Cover",
+        }
     ],
     posters: [
         {
@@ -36,6 +51,16 @@ module.exports = {
             id: 3,
             image: "/img/print-designs/JAWNZ.webp",
             title: "JAWNZ Sneaker x Movie Poster",
+        },
+        {
+            id: 4,
+            image: "/img/print-designs/swissevent.webp",
+            title: "Swiss Event Poster",
+        },
+        {
+            id: 5,
+            image: "/img/print-designs/pugspotify.webp",
+            title: "Spotify Mockup Poster",
         }
     ],
 };
