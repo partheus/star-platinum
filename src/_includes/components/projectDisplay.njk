@@ -9,7 +9,7 @@
             <div class="project-button__container button__container">
                 <a href="{{ project.title | slug }}" class="project-link button button--secondary">View Detail<span>&#8594;</span></a>
                 {% if project.liveSite %}
-                <a href="{{ project.liveSite }}" target="_blank" title="{{ project.title }}" class="project-link button button--secondary">View live site<span>&#8599;</span></a>
+                <a href="{{ project.liveSite }}" target="_blank" title="{{ project.title }}" class="project-link button button--tertiary">View live site<span>&#8599;</span></a>
                 {% endif %}
             </div>
         </div>
