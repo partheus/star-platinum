@@ -4,22 +4,23 @@
     "description": "this portfolio is Designed and developed by me, <b>Parth Shiralkar</b>. See more technical details <a href=\"/colophon\" class=\"nolink\"><b>{here}</b></a>."
   },
   {
-    "title": "hola",
-    "description": "I'm a <b>web designer</b> and <b>developer</b> with a passion for <b>design</b>, <b>product management</b>, and <b>magic</b>. Say hi <a href=\"/contact\" class=\"nolink\"><b>{here}</b></a>."
+    "title": "Hola",
+    "description": "I'm a <b>UX designer</b> and <b>developer</b> with a passion for <b>design</b>, <b>product management</b>, and <b>magic</b>. Say hi <a href=\"/contact\" class=\"nolink\"><b>{here}</b></a>."
   },
   {
     "title": "Education",
-    "description": "Masters in Information Systems/Philosophy, Iowa State, <b>Graduated in 2021</b>. Bachelors in Computer Engineering, Pune University, <b>Graduated in 2018</b>."
+    "description": "Masters in <b>Information Systems - HCI/Philosophy</b>, Iowa State, Bachelors in <b>Computer Engineering</b>, Pune University, <b>Google UX Design Professional</b>."
   },
   {
     "title": "Skills",
-    "description": "Proficient in various <b>web design methodologies</b>, <b>front-end frameworks</b>, <b>UI/UX design</b>, and more magical stuff."
+    "description": "Proficient in various <b>UX design methodologies</b>, <b>front-end frameworks</b>, <b>stealth product design</b> and <b>print work</b>."
   },
   {
     "title": "Experience",
-    "description": "Working as a <b>full-stack web developer and web designer for 4+ years</b>, specializing in <b>front-end development</b> and <b>responsive web design</b>. Dabbled in <b>product management</b> and <b><a href=\"/colophon\" class=\"nolink\">spellmaking</a></b> as well."  },
+    "description": "<b>UX Designer with 5+ years of experience</b>, currently focused on healthcare innovation in the United States. Previously led design systems as a <b>Principal Designer</b>."
+  },
   {
     "title": "What i do best",
-    "description": "I <b>design delightful interfaces for the web</b>, translate <b>designs into efficient code</b>, create <b>responsive web applications</b>, <b>optimize performance</b>, and have fun with it."
+    "description": "I <b>design delightful interfaces for the web</b>, translate <b>product requirements into efficient designs</b>, create <b>responsive web applications</b>, <b>optimize user experiences</b>."
   }
 ]
