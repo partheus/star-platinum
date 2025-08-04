@@ -26,7 +26,7 @@
     li {
       background: lighten($color--primary, 20%);
       color: lighten($color--secondary, 10%);
-      padding: 0.35rem 0.5rem;
+      padding: 0.35rem 0.65rem;
       border-radius: 0.65rem;
     }
 
@@ -263,8 +263,8 @@
 
   .project-link {
     text-decoration: none;
-    // color: $color--primary;
-    // background-color: $color--secondary;
+    color: $color--primary;
+    background-color: $color--secondary;
     word-break: break-word;
     opacity: 0;
     text-align: left;
@@ -593,7 +593,7 @@
     transition: all 0.3s ease-in-out;
     border-radius: 1rem;
     box-shadow: 0 0 0 0.1rem rgb(0 0 0 / 1%);
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
 
     h2 {
       font-size: 2.5rem;
