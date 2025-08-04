@@ -2,6 +2,66 @@
 module.exports = [
     {
         id: 1,
+        title: "Dash Central",
+        subtitle: "An application for American healthcare providers.",
+        image: "/img/webp/dash-central.webp",
+        tech: ["Vue.js", "Webpack", "Ajax"],
+        // liveSite: "",
+        year: "2025",
+        description: "Dash Central is a platform that allows providers to manage appointments, track client progress, and access resources.",
+        typography: "Roboto + Roboto Mono",
+        colors: ["#004D44", "#F3D25B", "#004D44", "#F3D25B", "#004D44"],
+        contributionDetails: "I designed modules and components in Figma and led the overall design system for the project. I spearheaded the design for the AI Voice and Chat features, ensuring a user-friendly interface and seamless integration with the existing system.",
+        type: "webapp",
+        nextProject: "/projects/dash-self2/"
+    },
+    {
+        id: 2,
+        title: "Dash Self2",
+        subtitle: "An application ecosystem for patients to manage their healthcare faster and better.",
+        image: "/img/webp/dash-self2.webp",
+        tech: ["Vue.js", "Webpack", "Ajax"],
+        // liveSite: "",
+        year: "2025",
+        description: "Dash Self2 is a webapp ecosystem that allows patients to book and manage appointments, access resources, and communicate with providers.",
+        typography: "Roboto + Roboto Mono",
+        colors: ["#004D44", "#F3D25B", "#004D44", "#F3D25B", "#004D44"],
+        contributionDetails: "I led the design system for the project, creating a cohesive and user-friendly interface. I also designed modules and components in Figma, ensuring a seamless user experience across the platform, including the AI Voice and Chat features.",
+        type: "webapp",
+        nextProject: "/projects/towork-malaysia/"
+    },
+        {
+        id: 3,
+        title: "ToWork Malaysia",
+        subtitle: "A middleman platform for job seekers and employers in Malaysia.",
+        image: "/img/webp/towork-malay.webp",
+        tech: ["Vue.js", "Webpack", "Ajax"],
+        // liveSite: "",
+        year: "2024",
+        description: "ToWork Malaysia is a platform that connects job seekers with employers in Malaysia, providing a streamlined process for job applications and hiring.",
+        typography: "FreightSans + FreightSans Pro",
+        colors: ["#FB7B24", "#A4FCFF", "#F5F535", "#000000", "#FFFFFF"],
+        contributionDetails: "I redesigned the site and came up with a cohesive color palette and typography. I also designed modules and components in Figma, ensuring a user-friendly interface and seamless navigation.",
+        type: "website",
+        nextProject: "/projects/the-laughing-tree/"
+    },
+    {
+        id: 4,
+        title: "The Laughing Tree",
+        subtitle: "Brand identity for the Laughing Tree Foundation.",
+        image: "/img/webp/laughingtree.webp",
+        tech: ["Vue.js", "Webpack", "Ajax"],
+        // liveSite: "",
+        year: "2024",
+        description: "The Laughing Tree Foundation is a Malaysian organization that holds lectures and workshops to help small businesses and entrepreneurs grow. The website serves as a platform to share resources, connect with the community, and promote events.",
+        typography: "FreightSans + FreightSans Pro",
+        colors: ["#FFFFFF", "#006182", "#EDDBCF", "#3E918D", "#000000"],
+        contributionDetails: "As one of 2 designers, I created the brand identity, designed the website, and developed modules and components in Figma. I also collaborated with the development team to ensure a seamless user experience.",
+        type: "website",
+        nextProject: "/projects/the-life-story/"
+    },
+    {
+        id: 5,
         title: "The Life Story",
         subtitle: "An ecosystem to address exploitation in the sex trade.",
         image: "/img/webp/lifestory.webp",
@@ -11,12 +71,12 @@ module.exports = [
         description: "This website offers funding and support to service providers, thought partnership to fellow funders and connections for this emerging community of practice.",
         typography: "FreightSans + FreightSans Pro",
         colors: ["#FFFFFF", "#2E437D", "#E3E8EE", "#FF685B", "#D4DEED"],
-        contributionDetails: " I developed and modified modules, updated sitewide assets and styles.",
+        contributionDetails: "I developed and modified modules, updated sitewide assets and styles.",
         type: "website",
         nextProject: "/projects/nike-sb/"
     },
     {
-        id: 2,
+        id: 6,
         title: "Nike SB",
         subtitle: "A sub-brand of Nike, Inc. that focuses on skateboarding products.",
         image: "/img/webp/nikesb.webp",
@@ -26,12 +86,12 @@ module.exports = [
         description: "Nike SB is dedicated to showcasing and selling Nike's skateboarding products, offering a range of skateboarding shoes, apparel, and accessories designed for skateboarders.",
         typography: "Bookmania + Roboto Mono + Gothic FB Wide",
         colors: ["#ff6123", "#79c06b", "#70c8fe", "#000000", "#f4e372"],
-        contributionDetails: " I developed and tested modules, updated styles and assets, and conducted QA to ensure the site was responsive and accessible across devices.",
+        contributionDetails: "I developed and tested modules, updated styles and assets, and conducted QA to ensure the site was responsive and accessible across devices.",
         type: "website",
         nextProject: "/projects/ybos-by-nike-sb/"
     },
     {
-        id: 3,
+        id: 7,
         title: "YBOS by Nike SB",
         subtitle: "Your Brain on Sport by Nike SB",
         image: "/img/webp/ybos-nikesb.webp",
@@ -41,13 +101,13 @@ module.exports = [
         description: "YBOS follows research on the effects of sport on the brain, and how it can help improve mental health and cognitive function. The website features articles, videos, and interactive content to educate and inspire users to get active and engage in sports.",
         typography: "Bookmania + Roboto Mono + Gothic FB Wide",
         colors: ["#ff6123", "#79c06b", "#70c8fe", "#000000", "#f4e372"],
-        contributionDetails: " I developed and tested modules, updated styles and assets, and conducted QA to ensure the site was responsive and accessible across devices.",
+        contributionDetails: "I developed and tested modules, updated styles and assets, and conducted QA to ensure the site was responsive and accessible across devices.",
         type: "website",
         nextProject: "/projects/uhg/"
     },
 
     {
-        id: 4,
+        id: 8,
         title: "UHG",
         subtitle: "Insurance products under UnitedHealthcare and Optum.",
         image: "/img/webp/uhg.webp",
@@ -62,7 +122,7 @@ module.exports = [
         nextProject: "/projects/digital-garden/"
     },
     {
-        id: 5,
+        id: 9,
         title: "Digital Garden",
         subtitle: "A p5.js project",
         image: "/img/webp/digital-garden.webp",
@@ -78,7 +138,7 @@ module.exports = [
     },
 
     {
-        id: 6,
+        id: 10,
         title: "Choose Kindness",
         subtitle: "An anti-bullying resource campaign by Disney.",
         image: "/img/webp/disney.webp",
@@ -95,7 +155,7 @@ module.exports = [
         nextProject: "/projects/disney-csr/"
     },
     {
-        id: 7,
+        id: 11,
         title: "Disney CSR",
         subtitle: "Corporate Social Responsibility initiatives by Disney.",
         image: "/img/webp/disney-csr.webp",
@@ -110,7 +170,7 @@ module.exports = [
         nextProject: "/projects/malarkey-roofing/"
     },
     {
-        id: 8,
+        id: 12,
         title: "Malarkey Roofing",
         subtitle: "Services & products for residential & commercial roofing.",
         image: "/img/webp/malarkey.webp",
@@ -125,7 +185,7 @@ module.exports = [
         nextProject: "/projects/uhg-sustainability/"
     },
     {
-        id: 9,
+        id: 13,
         title: "UHG Sustainability",
         subtitle: "A platform for UHG's sustainability initiatives.",
         image: "/img/webp/uhg-sus.webp",
@@ -140,7 +200,7 @@ module.exports = [
         nextProject: "/projects/rally-health/"
     },
     {
-        id: 10,
+        id: 14,
         title: "Rally Health",
         subtitle: "Resources and tools for improvement of overall well-being.",
         image: "/img/webp/rallyhealth.webp",
@@ -155,7 +215,7 @@ module.exports = [
         nextProject: "/projects/listening-sessions/"
     },
     {
-        id: 11,
+        id: 15,
         title: "Listening Sessions",
         subtitle: "A platform for sharing and documenting personal life stories.",
         image: "/img/webp/calltolisten.webp",
@@ -170,7 +230,7 @@ module.exports = [
         nextProject: "/projects/cana/"
     },
     {
-        id: 12,
+        id: 16,
         title: "Cana",
         subtitle: "A Molecular Printer for Drinks",
         image: "/img/webp/cana.webp",
@@ -184,7 +244,7 @@ module.exports = [
         awards: ["Patrick Stewart Approves of it"],
         awardsLinks: ["https://www.businesswire.com/news/home/20230302005097/en/"],
         type: "website",
-        nextProject: "/projects/the-life-story/"
+        nextProject: "/projects/dash-central/"
     },
 ];
 
