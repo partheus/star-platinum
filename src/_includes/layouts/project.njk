@@ -7,6 +7,9 @@ eleventyComputed:
 ---
 {% block content %}
     <article class="project-section">
+        <div class="project-section__design">
+            <p class="project-section__main--about">{{ project.description }}</p>
+        </div>
         <div class="project-section__intro">
             <div style="display: grid;">
                 {% if project.liveSite %}
@@ -40,9 +43,7 @@ eleventyComputed:
                 {% endif %}
             </div>
         </div>
-        <div class="project-section__design">
-            <p class="project-section__main--about">{{ project.description }}</p>
-        </div>
+
         {% if project.awards %}
             <div class="project-section__awards">
                 <h2>Notable</h2>
