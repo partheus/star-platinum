@@ -1,6 +1,10 @@
 module.exports = {
     bookCovers: [
         {
+            image: "/img/print-designs/pieces.webp",
+            title: "Short Stories eBook Cover",
+        },
+        {
             id: 1,
             image: "/img/print-designs/1.webp",
             title: "Short Stories eBook Cover",
